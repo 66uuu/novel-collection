@@ -1,0 +1,43 @@
+{
+  "name": "白衣的她",
+  "aliases": ["她", "白衣女人"],
+  "importance": "protagonist",
+  "oneLiner": "站在床头的白衣女人，湿发滴水，脸藏在阴影里，是整个循环唯一的机关。",
+  "persona": {
+    "gender": "女",
+    "ageRange": "二十六岁（与苏晚同龄）",
+    "identity": "苏晚在循环里的自己，最初以鬼影面目出现",
+    "appearance": "穿一件很旧的青白衬衫，领口磨毛、袖口有一块洗不掉的黄，下摆垂到地上、边角湿透，洇出一圈深色浸在地板上。黑色长发湿透，一缕缕贴在脸颊两侧，往下滴水。皮肤苍白泛青，像在水里泡过很久（推断），脸瘦，眼下青黑，嘴唇干裂结痂，脸颊有一枚细小的针眼。日常呈现为垂着头、脸被湿发和阴影盖住，只在被托起下巴时露出全脸——那张脸与苏晚是同一张脸，只是更白、更湿、更像从水里捞出来的。",
+    "personality": ["沉默", "安静", "坚持"],
+    "temperament": "不说不动不应声，唯一的动作是滴水；发梢的水滴从十七倒数到一。开口只说别睡两个字，声音从很远的地方传来，像隔着水。",
+    "motivation": "让苏晚别睡、别留在这间屋子里（后段揭示）。",
+    "arc": "从令人恐惧的鬼影、滴水倒数的机关，到被认出的、一直在等自己敢看她的那部分苏晚",
+    "relationships": [
+      { "name": "苏晚", "relation": "循环里的自己，一直站在床头看着她的人" }
+    ],
+    "evidence": [
+      "白衣裳。那种很旧的、洗过很多次的、没有花纹的白色。",
+      "头发很长，黑色的，湿的。头发一缕一缕贴在脸颊两侧，往下滴水。",
+      "她的脸是一片完全的漆黑。",
+      "别睡。",
+      "她的眼睛是睁着的。",
+      "她看着我，眼里的水在动。"
+    ]
+  },
+  "image": {
+    "prompt": "A ghostly gaunt young Chinese woman in her twenties, drenched and dripping, wearing an old washed-out blue-white shirt with a frayed collar and a yellowed patch on one sleeve, the hem sodden and darkened where it touches the floor. Long black wet hair plastered in thick strands against her cheeks and neck, dripping water from the tips. Skin pale with a cold bluish undertone, translucent like skin soaked in water, sunken dark eye sockets, chapped split lips, a faint needle mark on one cheek, eyes open but glassy and empty with a wet glint; slightly asymmetrical eyelids and brows. Face partly hidden behind wet hair and shadow in its default state, head hanging low. The wet fabric clings to the body with real translucent weight, heavier and darker at the hem; water drops visible on the hair tips and shoulders. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. near-monochrome cold grey-blue palette, contemporary urban China, eerie dim single-room apartment, dripping silence, readable silhouette from every angle.",
+    "promptLocal": "幽灵般消瘦的二十多岁中国女性，浑身湿透、滴着水，穿一件很旧的青白衬衫，领口磨毛、一只袖口有块洗不掉的黄，下摆湿透洇深贴地。黑色长发湿透，一缕缕贴在脸颊与脖颈，发梢滴水。皮肤苍白泛青、半透明，像在水里泡过，眼窝深陷发青，嘴唇干裂起皮，脸颊有一枚细小的针眼，眼睛睁着却空洞湿润。常态垂着头，脸被湿发与阴影盖住。湿衣贴身有真实半透重量，下摆更重更深；发梢与肩头可见水珠。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。近单色的冷灰蓝调，当代中国都市，逼仄昏暗的出租单间，滴水般的寂静，任意角度剪影可辨。",
+    "negativePrompt": "plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop",
+    "tags": ["character sheet", "near-monochrome cold grey-blue palette", "contemporary urban china", "drenched wet look", "translucent pale skin", "directional key light"],
+    "sheet": "Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears an old washed-out blue-white shirt, long black wet hair plastered to the cheeks, with the face rendered in full detail: thin gaunt face with sunken dark eye sockets, pale skin with a cold bluish undertone, chapped split lips, a faint needle mark on one cheek, eyes open and glassy with a wet glint, slightly asymmetrical eyelids and brows; the face is lifted and visible in this portrait, not hidden by hair. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line, head hanging low in the default posture. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Standing posture with arms hanging limp at the sides, wet fabric clinging to the body with translucent weight, water drops on hair tips and shoulders. The figure is a ghostly gaunt young Chinese woman in her twenties, drenched, wearing an old washed-out blue-white shirt with a frayed collar and a yellowed patch on one sleeve. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the wet hair tip with a single hanging water drop; the frayed collar and the yellowed patch on the sleeve; the faint needle mark on the cheek; the sodden darkened hem of the shirt; the glassy wet eye. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. near-monochrome cold grey-blue palette, contemporary urban China, eerie dim single-room apartment, dripping silence, readable silhouette from every angle."
+  },
+  "voice": {
+    "timbre": "年轻女声，气声极重，像隔着水传过来，尾音发虚",
+    "pitch": "中音，气息不稳",
+    "pace": "极慢，字与字之间拖长",
+    "accent": "标准普通话，字音发飘",
+    "emotion": "空、累、恳求，几乎不带情绪波动",
+    "prompt": "26-year-old female, heavily breathy hushed voice, mid pitch with unstable airy support, narrow dynamic range. Very slow pace with elongated syllable tails, words arriving from far away through water. Standard Mandarin, softened drifting articulation. Hollow, exhausted, quietly pleading.",
+    "referenceHint": "像一个在水底憋了很久、好不容易开口说一句话的人"
+  }
+}

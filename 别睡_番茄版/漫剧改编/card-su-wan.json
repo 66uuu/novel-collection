@@ -1,0 +1,46 @@
+{
+  "name": "苏晚",
+  "aliases": ["晚晚"],
+  "importance": "protagonist",
+  "oneLiner": "二十六岁的电商运营，凌晨两点被困在出租屋里反复醒来，身上的伤一天比一天多。",
+  "persona": {
+    "gender": "女",
+    "ageRange": "二十六岁",
+    "identity": "电商代运营公司职员，都市打工族，租住十四平米朝北单间",
+    "appearance": "身形偏瘦，久坐办公室的体态，肩颈略前倾（推断）。头发黑色中长，常态是半湿或随手扎起的低马尾，常有碎发贴脸；洗完澡不吹头就躺下，头发一缕缕贴在脸颊两侧。脸瘦，黑眼圈重到发青，嘴唇上有一小块干裂的口子，眼睛容易充血发红。右手食指侧面有一道很细的划痕，指关节与手腕有来历不明的淤青，随剧情逐集加深（是外面病床上真实的她被抢救留下的映射）。常态造型是宽松旧棉T恤配家居长裤，光脚或穿拖鞋，秋冬会套一件起球的毛衣。",
+    "personality": ["能扛", "嘴硬", "习惯拆解问题", "心软"],
+    "temperament": "平时说话利落、带点自嘲，会把问题拆成清单一条条试；被吓到时会用气音压住自己，拼命数数、掐手心稳住神；对妈妈发来的消息习惯想等会儿再回，语气笃定到近乎轻慢，这成了她全剧的心结。",
+    "motivation": "要回去——回妈妈那条消息。",
+    "arc": "从恐惧、绝望、崩溃，到敢于看清自己并承认不肯走的是自己，最后拼尽力气回出那条消息",
+    "relationships": [
+      { "name": "张秀兰", "relation": "妈妈，每天发消息等她回音的人" },
+      { "name": "苏晚父亲", "relation": "爸爸，脑梗后行动不便" },
+      { "name": "白衣的她", "relation": "循环里的自己，被她看着的人" }
+    ],
+    "evidence": [
+      "黑眼圈已经重到发青",
+      "嘴唇上有一小块干裂的口子",
+      "脸瘦了一圈",
+      "我右手食指的侧面，有一道很细的划痕",
+      "妈，我在这儿。",
+      "我不跑了。",
+      "我不睡了。"
+    ]
+  },
+  "image": {
+    "prompt": "A gaunt twenty-six-year-old Chinese woman in a cramped modern city apartment, nightwear of an oversized faded cotton t-shirt and loose home pants, barefoot, black medium-length hair half-dried and sticking to her cheeks in loose strands, carelessly tied low ponytail. Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips with a small healing split at the corner, tired bloodshot eyes with a damp lower lid, faint reddened inner corners; slightly asymmetrical eyelids and brows; a thin pale scratch on the side of her right index finger and faint bruises on the knuckles and wrist. Young but exhausted skin, uneven tone, faint capillaries at the nostrils, visible pores, subtle subsurface scattering at the ear edge; eyes with a wet specular highlight and visible iris fibres; individual flyaway strands breaking the hairline and ponytail silhouette. Loose cotton knit with a visible weave, softened and slightly pilled at the collar and cuffs, the t-shirt hanging with real weight and soft folds. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold grey-blue palette, contemporary urban China, dim single-room rental apartment, lonely midnight mood, readable silhouette from every angle.",
+    "promptLocal": "消瘦的二十六岁中国都市女性，身处逼仄的现代出租单间，穿宽大的褪色棉T恤和宽松家居裤，光脚，黑色中长发半干，碎发贴脸，随手扎着低马尾。脸瘦、颧骨明显，黑眼圈重到发青，嘴唇干裂、唇角有一小块结痂的口子，眼睛疲惫充血、下眼睑湿润、内眼角泛红；眼睑和眉毛略不对称；右手食指侧面有一道细划痕，指关节与手腕有淡淡的淤青。年轻却疲惫的皮肤，肤色不匀、鼻翼有细微毛细血管、毛孔可见、耳缘透光；眼睛有湿润高光与虹膜纤维；发际线与马尾边缘有碎发破开轮廓。宽松棉针织可见织纹，领口袖口磨软起球，T恤垂坠有真实重量与柔软褶皱。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷灰蓝调，当代中国都市，深夜出租屋，孤寂氛围，任意角度剪影可辨。",
+    "negativePrompt": "plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop",
+    "tags": ["character sheet", "cold grey-blue palette", "contemporary urban china", "home nightwear", "exhausted skin", "directional key light"],
+    "sheet": "Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears an oversized faded cotton t-shirt, black medium-length hair half-dried and sticking to the cheeks, carelessly tied low ponytail, with the face rendered in full detail: thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips with a small healing split at the corner, tired bloodshot eyes, slightly asymmetrical eyelids and brows, a thin pale scratch on the right index finger. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Neutral relaxed standing posture, arms at the sides, barefoot. The figure is a gaunt twenty-six-year-old Chinese woman in home nightwear of an oversized faded cotton t-shirt and loose home pants, black medium-length hair half-dried in loose strands. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the bluish-black under-eye circle and the chapped split at the lip corner; the thin pale scratch on the right index finger; the loose wet hair strands sticking to the cheek; the pilled collar of the faded t-shirt; the carelessly tied low ponytail. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold grey-blue palette, contemporary urban China, lonely midnight mood, readable silhouette from every angle."
+  },
+  "voice": {
+    "timbre": "年轻女声，音色偏沉带一点哑，气声明显",
+    "pitch": "中音，偏低",
+    "pace": "中偏慢，紧张时字句变碎",
+    "accent": "标准普通话，无明显地域口音",
+    "emotion": "疲惫而警觉，强撑镇定",
+    "prompt": "26-year-old female, low mezzo with a slightly husky edge, mid-to-low pitch, modest chest support, medium dynamic range. Medium-slow pace, words tightening into short bursts when stressed, occasional swallowed breath. Standard Mandarin, no regional accent. Exhausted, watchful, holding calm by effort.",
+    "referenceHint": "像一个加班到深夜、被吓得半死还要告诉自己别慌的都市女孩"
+  }
+}

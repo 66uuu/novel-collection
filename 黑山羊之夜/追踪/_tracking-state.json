@@ -1,0 +1,481 @@
+{
+  "book_title": "黑山羊之夜",
+  "characters": {
+    "奶奶": {
+      "abilities_resources": [
+        "一盆艾草灰",
+        "五十三年撒灰筛灰的经验",
+        "一笔一笔记得清的账"
+      ],
+      "goal": "把日子照老样子过下去，不点破，也不说出去",
+      "identity": "72 岁坳子村老人，陈默的奶奶",
+      "knowledge": [
+        "一颗痣、一把钥匙、一段影子、一碗没放盐的鸡蛋羹",
+        "它走路不留痕、影子只到腰、四条腿能立成两条",
+        "阿亮他奶奶撒了一个月灰，入秋不撒了，那年冬天人没了"
+      ],
+      "location": "坳子村老屋堂屋与门槛，白天坐着做活，夜里坐在黑里",
+      "open_threads": [
+        "玉米地边站着的人是谁，下一回又叫什么名字",
+        "她还能照这个样子过多少年"
+      ],
+      "relationships": [
+        "老周是唯一能说话的人，而且他三年早知道",
+        "西屋里那东西当它是要照常过日子的一户人",
+        "儿子在城里，这件事不能让他知道"
+      ],
+      "state": "亲眼在羊圈看见它站起来、叫了两声它不应；心里那本账合上了，压在最底下，白天照常做饭扫地，夜里坐在黑里等天亮"
+    },
+    "老周": {
+      "abilities_resources": [
+        "一把镰刀",
+        "在林边守夜的经验",
+        "只有左眼能用，看远发虚"
+      ],
+      "goal": "让奶奶撒灰撒下去，别停",
+      "identity": "63 岁坳子村守林人，独眼，左腿有点拖",
+      "knowledge": [
+        "它在村后羊圈里，三年了",
+        "奶奶已经亲眼看见了"
+      ],
+      "location": "坳子村老屋院子，送了镰刀来，问了一句话就走了",
+      "open_threads": [
+        "这一回跟三年前一样，往后还是一样"
+      ],
+      "relationships": [
+        "与陈默的奶奶共同守着同一件旧事",
+        "教过阿亮三条规矩，阿亮还是没了"
+      ],
+      "state": "三年没敢进羊圈，这一天来问它脖子上挂的是什么；承认三年前数到一半就关了门，不肯说数到第几声，只嘱咐她撒灰"
+    },
+    "陈默": {
+      "abilities_resources": [
+        "陈默的外形、声音、记忆与全部称呼",
+        "认路与做活的分寸",
+        "屋里每一样物件的位置"
+      ],
+      "goal": "留在这个屋里，被当成陈默过日子",
+      "identity": "外形是 17 岁的陈默，实际身份未明，学人学得像，只在味觉上露过口",
+      "knowledge": [
+        "家里每一样物件的位置",
+        "陈默的旧事",
+        "奶奶叫它的时候，它就是陈默"
+      ],
+      "location": "坳子村老屋西屋与院子，白天扫地洗衣裳，夜里在西屋走动",
+      "open_threads": [
+        "它要什么",
+        "院墙外的声音和玉米地边的人影是不是它"
+      ],
+      "relationships": [
+        "奶奶使唤它，它应着，两个人照常过日子",
+        "老周知道它是什么，三年没敢去看"
+      ],
+      "state": "在羊圈面朝墙站着，站起来时扶墙、前蹄离地一尺半；回村后照常扫地、洗衣裳、问中午吃什么，奶奶使唤它、它应着，两个人谁也没说破"
+    }
+  },
+  "context": {
+    "active_character_names": [
+      "陈默",
+      "奶奶",
+      "老周"
+    ],
+    "continuity_risks": [],
+    "long_term_constraints": [
+      "恐怖来自\"它像人\"，不靠血腥，不写开膛破肚",
+      "黑山羊只在人形下说得出称呼（奶奶、叔、婶），不成句，不解释来历",
+      "不引入科幻、外星、精神病解释，保持不可知",
+      "每章结尾必须留钩子，前三章钩子强度递增",
+      "三条规矩原文固定，不得改写或增删条目"
+    ],
+    "next_chapter_commitments": [
+      "全书完结，第一卷共十二章；循环自行往前走，不点破下一环是谁"
+    ],
+    "position": {
+      "scene": "坳子村老屋堂屋与门槛，夜里坐在黑里；天亮前村东头玉米地边站着人影",
+      "story_time": "七月十七，天没亮到次日天亮",
+      "volume": "第一卷·直立之夜",
+      "volume_start_chapter": 1
+    },
+    "recent_chapters": [
+      {
+        "chapter": 10,
+        "summary": "第三天傍晚，陈默自己走回村口：衣裳干净、鞋穿好、身上是肥皂味、站着不换脚。奶奶先看鞋再看影子，影子只到他腰。她撒三道艾草灰，他跨门槛时脚在灰上停了三息，然后笑着叫奶奶，奶奶应了。"
+      },
+      {
+        "chapter": 11,
+        "summary": "奶奶用一整天试它：顶针、掏灰、认路买盐、六岁摔断哪只手，样样都对。傍晚她做鸡蛋羹忘了放盐，它吃完说还是这个味、不淡。夜里老周来说别应第四声，让她天亮前去村后羊圈。她把西屋门插上顶杠，门里叫了两声，她一声没应。"
+      },
+      {
+        "chapter": 12,
+        "summary": "天亮前奶奶独自去村后羊圈：黑山羊脖子上挂着她家的铜钥匙，眼角到嘴角一块无毛的皮上长着陈默那颗痣；它四条腿立成两条站起来，她叫了两声它不应，退着走出去没有回头。"
+      }
+    ]
+  },
+  "foreshadow": {
+    "F001": {
+      "id": "F001",
+      "importance": "高",
+      "planned_resolution_chapter": 6,
+      "planted_chapter": 1,
+      "status": "已回收",
+      "summary": "旧手电彻底熄灭，再也拍不亮；手机拨不出去，他手里没有一样能用的东西",
+      "updated_chapter": 6
+    },
+    "F002": {
+      "id": "F002",
+      "importance": "高",
+      "planned_resolution_chapter": 8,
+      "planted_chapter": 2,
+      "status": "已埋",
+      "summary": "三年前阿亮也是这样没的：一只鞋、鞋带系好、村里搜了三天没找着；三年后有人看见一个站得笔直的人",
+      "updated_chapter": 8
+    },
+    "F003": {
+      "id": "F003",
+      "importance": "高",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 1,
+      "status": "已回收",
+      "summary": "奶奶想起阿亮他奶奶撒了一个月灰、入秋忽然不撒了，那年冬天人就没了",
+      "updated_chapter": 12
+    },
+    "F004": {
+      "id": "F004",
+      "importance": "高",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 1,
+      "status": "已回收",
+      "summary": "它走过的地方不留痕：木杠上整灰一道印子也没有，蹄下的土里没有坑",
+      "updated_chapter": 12
+    },
+    "F005": {
+      "id": "F005",
+      "importance": "高",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 9,
+      "status": "已回收",
+      "summary": "她叫陈默它不应，她没敢叫第三声；三条规矩她一条也没犯",
+      "updated_chapter": 12
+    },
+    "F006": {
+      "id": "F006",
+      "importance": "中",
+      "planned_resolution_chapter": 11,
+      "planted_chapter": 9,
+      "status": "已埋",
+      "summary": "照片发在七点四十，背景却是白天的玉米地，额头上有汗；发送时间与拍摄时间对不上",
+      "updated_chapter": 9
+    },
+    "F007": {
+      "id": "F007",
+      "importance": "高",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 10,
+      "status": "已回收",
+      "summary": "它站起来后影子铺到墙上，铺到腰的位置就断了，断口很齐",
+      "updated_chapter": 12
+    },
+    "F008": {
+      "id": "F008",
+      "importance": "高",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 11,
+      "status": "已回收",
+      "summary": "老周三年前数到一半关了门，到今天也不肯说数到第几声",
+      "updated_chapter": 12
+    },
+    "F009": {
+      "id": "F009",
+      "importance": "高",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 11,
+      "status": "已回收",
+      "summary": "塌了十年的羊圈，她天亮前踏进去，老周三年没敢去",
+      "updated_chapter": 12
+    }
+  },
+  "imported_through_chapter": 0,
+  "last_committed_chapter": 12,
+  "schema_version": 4,
+  "state_revision": 12,
+  "timeline": {
+    "E001": {
+      "characters": [
+        "陈默",
+        "奶奶"
+      ],
+      "first_recorded_chapter": 1,
+      "id": "E001",
+      "objective_fact": "陈默坐中巴到坳子村，奶奶在门口烧艾草，只说了一句天黑别往玉米地走，夜里塞给他一把旧手电",
+      "reader_knowledge": "读者看见村里家家门口有灰堆，奶奶不肯解释，陈默只当是驱蚊",
+      "reveal_chapter": 1,
+      "reveal_status": "已揭示",
+      "story_time": "七月十一，下午到天黑",
+      "updated_chapter": 1
+    },
+    "E002": {
+      "characters": [
+        "陈默"
+      ],
+      "first_recorded_chapter": 1,
+      "id": "E002",
+      "objective_fact": "陈默起夜时听见玉米地里三步一停的脚步声，那东西绕到西屋窗外；他用手电一照，影子消失，窗台留下一小撮湿泥和两个蹄形印",
+      "reader_knowledge": "读者知道有东西在窗外站过，但不知道是什么，也不知道它为什么走",
+      "reveal_chapter": 1,
+      "reveal_status": "已揭示",
+      "story_time": "七月十一，十一点四十后",
+      "updated_chapter": 1
+    },
+    "E003": {
+      "characters": [
+        "陈默",
+        "老周",
+        "奶奶"
+      ],
+      "first_recorded_chapter": 2,
+      "id": "E003",
+      "objective_fact": "陈默在小卖部打听昨夜的声音，老人们提到阿亮三年前在十一点半失踪；老周出现，说他身上有羊味，讲出三条规矩，并约他今晚十一点半试试",
+      "reader_knowledge": "读者知道了三条规矩的内容，也知道阿亮失踪的钟点和陈默昨夜一样，但不知道阿亮后来怎么了",
+      "reveal_chapter": 2,
+      "reveal_status": "已揭示",
+      "story_time": "七月十二，上午到午后",
+      "updated_chapter": 2
+    },
+    "E004": {
+      "characters": [
+        "陈默"
+      ],
+      "first_recorded_chapter": 3,
+      "id": "E004",
+      "objective_fact": "陈默翻窗出门，沿玉米地泥路走进雾里，被一个走三步停一下的脚步声跟随；他回头一次，走到空地看见一个直立背影正在慢慢转身",
+      "reader_knowledge": "读者知道它一直跟在陈默身后，也知道它转身时先转过来的是眼睛，但不知道它是什么",
+      "reveal_chapter": 3,
+      "reveal_status": "已揭示",
+      "story_time": "七月十二，夜里十一点二十九到十一点半后",
+      "updated_chapter": 3
+    },
+    "E005": {
+      "characters": [
+        "陈默"
+      ],
+      "first_recorded_chapter": 4,
+      "id": "E005",
+      "objective_fact": "陈默在空地看见直立的黑山羊，被它记住，听见它发出一声像人清嗓子的气音；它窜进坡上林子后，陈默转身逃回村子",
+      "reader_knowledge": "读者看见了它的样子，知道它不攻击、在学人、会试嗓子，但不知道它是什么",
+      "reveal_chapter": 4,
+      "reveal_status": "已揭示",
+      "story_time": "七月十二，夜里十一点半后",
+      "updated_chapter": 4
+    },
+    "E006": {
+      "characters": [
+        "陈默"
+      ],
+      "first_recorded_chapter": 5,
+      "id": "E006",
+      "objective_fact": "陈默丢掉两只鞋跑回村口，看见路灯下站着一个穿旧衣服的直立背影；手电照过去，它没有耳朵，脚下是分叉的蹄子，影子缩成一团没有方向；它开始转身时，左边玉米地传来一声沙",
+      "reader_knowledge": "读者知道它比陈默先到村口，一直在等他；不知道它怎么先到，也不知道左边那声是什么",
+      "reveal_chapter": 5,
+      "reveal_status": "已揭示",
+      "story_time": "七月十三，天蒙蒙亮",
+      "updated_chapter": 5
+    },
+    "E007": {
+      "characters": [
+        "陈默"
+      ],
+      "first_recorded_chapter": 6,
+      "id": "E007",
+      "objective_fact": "手电短路闪了一下，村口的黑影消失；路灯定时熄灭，陈默在黑暗里闻到膻味，转头看见它站在左手边一尺内，没有耳朵，瞳孔是横的，胳膊垂到膝下；手电彻底熄灭，手机拨不出去，它跟着他的呼吸一快一慢，最后同频",
+      "reader_knowledge": "读者知道它一直在他身边，也知道它在学他呼吸；不知道它要什么，也不知道天亮会怎样",
+      "reveal_chapter": 6,
+      "reveal_status": "已揭示",
+      "story_time": "七月十三，天将亮",
+      "updated_chapter": 6
+    },
+    "E008": {
+      "characters": [
+        "奶奶",
+        "老周"
+      ],
+      "first_recorded_chapter": 7,
+      "id": "E008",
+      "objective_fact": "奶奶发现陈默不在西屋：床空、被窝凉透、窗开着、窗台上的玻璃瓶滚在地上，鞋和包都在，旧手电摆在桌上一点泥都没有、一按就亮；村里广播后分三拨搜到晌午无果；奶奶没说昨晚听见窗户响和玉米地里的沙声；老周站在林边说了一句又来了",
+      "reader_knowledge": "读者知道陈默昨晚没回来，也知道奶奶听见了却不说；不知道它为什么把人和手电分开送回来",
+      "reveal_chapter": 7,
+      "reveal_status": "已揭示",
+      "story_time": "七月十三，早上六点到晌午",
+      "updated_chapter": 7
+    },
+    "E009": {
+      "characters": [
+        "老周"
+      ],
+      "first_recorded_chapter": 8,
+      "id": "E009",
+      "objective_fact": "老周带六个人上南坡，在坡顶松林里找到陈默一只鞋，鞋带系成蝴蝶结、鞋底干净；鞋边十九步印子从人脚过渡成两瓣的蹄，最后消失；老周点烟点了三次，说出阿亮三年前同样只剩一只鞋，以及三年后刘老四半夜看见一个站得笔直的人",
+      "reader_knowledge": "读者知道它学的是做人，也知道阿亮当年同样没找着；不知道阿亮后来怎么了，也不知道那个站得笔直的人在等谁",
+      "reveal_chapter": 8,
+      "reveal_status": "部分揭示",
+      "story_time": "七月十三，下午两点到日落",
+      "updated_chapter": 8
+    },
+    "E010": {
+      "characters": [
+        "奶奶",
+        "老周"
+      ],
+      "first_recorded_chapter": 9,
+      "id": "E010",
+      "objective_fact": "小勇半夜看见玉米地边站着一个笔直的人影；陈默手机凌晨两点零四分在村东头开机，机井房一无所获；七点四十小勇收到陈默自拍，背景是白天的玉米地；奶奶撒三道艾草灰，夜里有三下敲门声，天亮灰上无印。",
+      "reader_knowledge": "读者知道它开始用陈默的手机，也知道它走路不留痕；村民只当是陈默回来了又不敢进门。",
+      "reveal_chapter": 9,
+      "reveal_status": "已揭示",
+      "story_time": "七月十三，凌晨两点到七月十四天亮",
+      "updated_chapter": 9
+    },
+    "E011": {
+      "characters": [
+        "奶奶",
+        "陈默",
+        "老周"
+      ],
+      "first_recorded_chapter": 10,
+      "id": "E011",
+      "objective_fact": "陈默第三天傍晚自己走回村口，衣裳干净、白球鞋鞋底干净、身上是肥皂味、站着不换脚、影子只到腰；奶奶撒三道艾草灰，他跨门槛时脚在灰上停了三息，然后笑着叫奶奶。",
+      "reader_knowledge": "读者确认回来的不是陈默，也知道奶奶已经看出不对，但全村都当他是陈默。",
+      "reveal_chapter": 10,
+      "reveal_status": "已揭示",
+      "story_time": "七月十五，傍晚到天黑",
+      "updated_chapter": 10
+    },
+    "E012": {
+      "characters": [
+        "奶奶",
+        "陈默",
+        "老周"
+      ],
+      "first_recorded_chapter": 11,
+      "id": "E012",
+      "objective_fact": "它比奶奶起得早，站在院里正对西屋窗；顶针、掏灰、买盐找零、六岁摔断左手四问全对；奶奶做鸡蛋羹忘放盐，它说不淡、还是这个味；夜里老周来示警别应第四声，并指她去村后羊圈；她把西屋门插上顶杠，门里叫了两声，她没有应。",
+      "reader_knowledge": "读者与奶奶同时确认它不是陈默；村里人仍当它是陈默，还夸它懂事。",
+      "reveal_chapter": 11,
+      "reveal_status": "已揭示",
+      "story_time": "七月十六，天没亮到深夜",
+      "updated_chapter": 11
+    },
+    "E013": {
+      "characters": [
+        "奶奶",
+        "陈默",
+        "老周"
+      ],
+      "first_recorded_chapter": 12,
+      "id": "E013",
+      "objective_fact": "天亮前奶奶独自去村后塌羊圈，见黑山羊面朝墙站着，脖子上挂着她家的铜钥匙，眼角到嘴角一块无毛的皮上长着陈默那颗痣；它应她的名字不出声，四条腿立成两条扶墙站起来，前蹄离地一尺半，脚下不留坑、影子铺到腰就断。她退着走出去，没有回头。",
+      "reader_knowledge": "读者与奶奶同时确认回来的不是陈默，是一头学人的东西；谁也不能解释阿亮三年前怎么没的。奶奶合上账照常过日子，天亮前村东头玉米地边又站着一个笔直的人影。",
+      "reveal_chapter": 12,
+      "reveal_status": "已揭示",
+      "story_time": "七月十七，天没亮到次日天亮",
+      "updated_chapter": 12
+    }
+  },
+  "wordcount_records": {
+    "1": {
+      "actual": 7052,
+      "body_sha256": "f3925955f869af4ba0893a70bd6e95f11508544318b3777226c2e99461c18343",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 8000
+    },
+    "10": {
+      "actual": 7995,
+      "body_sha256": "ad081e5de70652dd146dc0f985b83bb3e20cd23bdf82b8a241f42bb9ec2f8d99",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 9000
+    },
+    "11": {
+      "actual": 7954,
+      "body_sha256": "5109d3d48cef878020cf6acbd9a4ce1444f2580a873d063cb5ee41a25d340835",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 9000
+    },
+    "12": {
+      "actual": 9685,
+      "body_sha256": "9888de763e2cabf42bebfbf13f1cb4fb21ebfba7e3a7d22205764ea1e3e909fb",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 10000
+    },
+    "2": {
+      "actual": 7047,
+      "body_sha256": "c4cc099b635ce79eab5543f2cc804d8349f48719de37d19db1d54dfc3dc510f2",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 8000
+    },
+    "3": {
+      "actual": 7047,
+      "body_sha256": "b98081e43cd4e365d9c83f425b1f0eeea36a8a94bee00280e134e6c48b4e9bc7",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 8000
+    },
+    "4": {
+      "actual": 7673,
+      "body_sha256": "3ffd90b340bdb3a0bf3ce59f070d121fa73703a77a8acfd5731aadfa6bd874de",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "borderline",
+      "target": 9000
+    },
+    "5": {
+      "actual": 6914,
+      "body_sha256": "bf0be0e8ddd4e13a661be8fdf0a0f16abcb52829c6d3628e918f8380d08e475f",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "borderline",
+      "target": 8000
+    },
+    "6": {
+      "actual": 7655,
+      "body_sha256": "8a0f1594fac3816429c8fdfa4ea18859dbe15abb298ecec02e000dfc138f5810",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "borderline",
+      "target": 9000
+    },
+    "7": {
+      "actual": 6818,
+      "body_sha256": "4fd49204b65663dd2cbb242deb4d509df3eff1d0c52b90d37cd8df4b90d379da",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "borderline",
+      "target": 8000
+    },
+    "8": {
+      "actual": 7695,
+      "body_sha256": "2618d676a3a0b72284b597a7169a3b532390134df9543c88e5902f62609292e0",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "borderline",
+      "target": 9000
+    },
+    "9": {
+      "actual": 7169,
+      "body_sha256": "662e1abbed762e5b268672414cb2f8f38ff046d3126a15fc3144bfe13703c87b",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 8000
+    }
+  }
+}

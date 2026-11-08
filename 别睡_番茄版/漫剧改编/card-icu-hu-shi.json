@@ -1,0 +1,42 @@
+{
+  "name": "ICU护士",
+  "aliases": [],
+  "importance": "minor",
+  "oneLiner": "重症监护室的护士，走路快，声音克制，是病房内外唯一传话的人。",
+  "persona": {
+    "gender": "女（推断）",
+    "ageRange": "三十岁上下（推断）",
+    "identity": "重症监护室护士",
+    "appearance": "穿白大褂，内衬淡色洗手服，胸前挂着工牌，头发利落地盘起或扎紧（推断），口罩常挂在下巴（推断）。步伐快而稳，眼底有夜班的青（推断）。说话时微微放轻声音，职业但不冷漠。",
+    "personality": ["专业", "克制", "有分寸"],
+    "temperament": "语速快而轻，报讯时不带多余情绪，但会特意放轻声音、放慢一拍；叫家属时声音稳定，像在递一个事实。",
+    "motivation": "做好分内的事，把病房里的动静传出去。",
+    "arc": "静止。她是病房与走廊之间的报讯人，情绪始终保持职业的克制。",
+    "relationships": [
+      { "name": "苏晚", "relation": "病房里的病人" },
+      { "name": "张秀兰", "relation": "病人家属，报讯的对象" }
+    ],
+    "evidence": [
+      "心率上来了。",
+      "再观察。你们继续跟她说。",
+      "你们家孩子刚才，右手动了一下。",
+      "很轻，但是动了。机器上看得出来。"
+    ]
+  },
+  "image": {
+    "prompt": "A composed Chinese hospital nurse in her early thirties, wearing a clean white coat over pale scrubs with an ID badge on the chest, hair pulled back tightly in a low bun, surgical mask hanging at the chin. Neat oval face, calm steady eyes with faint dark circles from night shifts, light professional makeup or none, thin neutral mouth; slightly asymmetrical eyelids and brows. Even-toned skin with visible pores, faint capillaries at the nostrils. The white coat is crisp but slightly creased at the elbows from work, the scrubs a soft pale blue-grey. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold white-blue palette, contemporary Chinese hospital, fluorescent corridor light, professional quiet restraint, readable silhouette from every angle.",
+    "promptLocal": "沉稳的中国医院护士，三十岁上下，穿干净的白大褂，内搭淡色洗手服，胸前挂工牌，头发利落地盘成低发髻，口罩挂在下巴。脸型端正，眼神平静沉稳，眼底有夜班的淡青，妆容清淡或素颜，嘴唇薄而中性；眼睑与眉毛略不对称。皮肤肤色均匀、毛孔可见、鼻翼有细微毛细血管。白大褂挺括但肘部有工作折痕，洗手服是柔和的淡蓝灰色。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷白蓝调，当代中国医院，荧光走廊的光，专业克制的安静，任意角度剪影可辨。",
+    "negativePrompt": "plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop",
+    "tags": ["character sheet", "cold white-blue palette", "contemporary chinese hospital", "icu nurse", "white coat", "fluorescent light"],
+    "sheet": "Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears a clean white coat over pale scrubs with an ID badge on the chest, hair pulled back in a low bun, surgical mask hanging at the chin, with the face rendered in full detail: neat oval face, calm steady eyes with faint dark circles, thin neutral mouth, slightly asymmetrical eyelids and brows. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Neutral upright standing posture, arms at the sides, wearing flat white ward shoes. The figure is a composed Chinese hospital nurse in her early thirties in a clean white coat over pale scrubs. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the ID badge on the chest; the surgical mask hanging at the chin; the low bun with strands tucked in; the flat white ward shoes; the slightly creased elbow of the white coat. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold white-blue palette, contemporary Chinese hospital, fluorescent corridor light, professional quiet restraint, readable silhouette from every angle."
+  },
+  "voice": {
+    "timbre": "三十岁上下女声，音色清亮偏干，训练过的平稳",
+    "pitch": "中高",
+    "pace": "快而稳，报讯时会放轻放慢一拍",
+    "accent": "标准普通话，医院用语干净",
+    "emotion": "专业平静，带一点小心",
+    "prompt": "30-year-old female, clear slightly dry mid-high voice, steady breath support, medium dynamic range. Fast and even pace, slowing and softening a beat when delivering news to family. Standard Mandarin, clean clinical phrasing. Professional calm with a careful edge.",
+    "referenceHint": "像一个每天在病房里报了很多次消息、懂得把坏消息放轻的护士"
+  }
+}

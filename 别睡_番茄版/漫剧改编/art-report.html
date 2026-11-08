@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="zh"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>别睡 · 美术设定集</title>
+<style>
+:root{
+  --paper:#eceded; --panel:#f5f6f5; --side:#e4e6e3; --ink:#191d21; --ink-2:#5b636a; --ink-3:#8c9298;
+  --rule:#d2d5d0; --rule-2:#c2c6bf; --seal:#8a3324; --seal-2:#c56a4e; --seal-soft:#8a332412; --ok:#3d6b4f;
+  --serif:"Songti SC","STSong","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+.page{max-width:1600px;margin:0 auto;padding:24px 32px 90px}
+h1,h2,h3,h4{margin:0;font-weight:400}
+
+.hd{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.hd h1{font:400 28px/1.1 var(--serif);letter-spacing:.06em}
+.hd .sub{font-size:13px;color:var(--ink-2)}
+.hd .right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.gatepill{display:inline-flex;align-items:center;gap:6px;font:500 12px/1 var(--sans);border-radius:99px;padding:6px 12px}
+.gatepill.pass{color:var(--ok);border:1px solid var(--ok)}
+.gatepill.fail{color:var(--seal);border:1px solid var(--seal);background:var(--seal-soft)}
+.expo{font:500 11px/1 var(--sans);color:var(--ink-2);background:var(--panel);
+  border:1px solid var(--rule-2);border-radius:2px;padding:7px 11px;cursor:pointer;transition:.15s}
+.expo:hover{border-color:var(--seal);color:var(--seal)}
+.expo:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 6px}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--panel);border:1px solid var(--rule);border-radius:2px;padding:11px 14px 9px}
+.kpi .l{font:500 10px/1 var(--sans);letter-spacing:.18em;color:var(--ink-3)}
+.kpi .v{font:400 28px/1.15 var(--serif);margin-top:5px}
+.kpi .d{font-size:11px;color:var(--ink-2);margin-top:1px}
+.kpi.accent{border-top:2px solid var(--seal)}
+.galert{margin:14px 0 0;border:1px solid var(--seal);background:var(--seal-soft);border-radius:2px;
+  padding:10px 14px;font-size:13px}
+.galert b{color:var(--seal)}
+.galert span{display:block;font-size:12px;color:var(--ink-2)}
+
+section.top-sec{margin-top:34px}
+.sec-h{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--rule-2);padding-bottom:8px;margin-bottom:16px}
+.sec-h .no{font:500 12px/1 var(--mono);color:var(--seal)}
+.sec-h h2{font:400 20px/1.2 var(--serif);letter-spacing:.05em}
+.sec-h .note{margin-left:auto;font-size:12px;color:var(--ink-3)}
+
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--rule);font-size:13px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+th{font:500 11px/1 var(--sans);letter-spacing:.1em;color:var(--ink-3);background:var(--side)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-family:var(--mono);font-size:12px;color:var(--ink-2);white-space:nowrap}
+.mono{font:400 11.5px/1.7 var(--mono);color:var(--ink-2);word-break:break-word}
+
+/* 场景设定卡：一排两张（方便截图宣传），卡内纵排、设定图占满卡宽 */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+@media(max-width:1100px){.cards{grid-template-columns:1fr}}
+.scene{background:var(--panel);border:1px solid var(--rule);border-radius:2px;padding:18px 20px}
+.sc-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--rule-2);padding-bottom:10px}
+.sc-id{font:500 12px/1 var(--mono);color:var(--seal)}
+.sc-h h3{font:400 20px/1.2 var(--serif);letter-spacing:.04em}
+.badge{font:500 10.5px/1 var(--sans);padding:2px 8px;border-radius:99px;border:1px solid var(--seal);color:var(--seal)}
+.badge.once{border-color:var(--seal-2);color:var(--seal-2)}
+.sc-use{margin-left:auto;font-size:12px;color:var(--ink-2)}
+.sc-sum{margin:10px 0 12px;font:400 14.5px/1.9 var(--serif)}
+.scene .blk{margin-top:16px}
+.scene .pgroup{margin-top:16px}
+
+.plate{margin:0;background:#fff;border:1px solid var(--rule-2);border-radius:2px;overflow:hidden}
+.plate .zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.plate .zoom:focus-visible{outline:2px solid var(--seal);outline-offset:-2px}
+.plate img{display:block;width:100%;height:auto}
+/* 图片弹层 */
+.lightbox{position:fixed;inset:0;z-index:50;display:none;place-items:center;
+  background:#191d21e6;padding:32px;cursor:zoom-out}
+.lightbox.on{display:grid}
+.lightbox img{max-width:100%;max-height:100%;background:#fff;border-radius:2px;
+  box-shadow:0 8px 40px #0006}
+.lightbox-x{position:absolute;top:18px;right:22px;font:500 13px/1 var(--sans);color:#fff;
+  background:none;border:1px solid #fff6;border-radius:3px;padding:8px 12px;cursor:pointer}
+.lightbox-x:hover{border-color:#fff}
+.plate figcaption{font-size:11px;letter-spacing:.08em;color:var(--ink-3);padding:6px 10px;border-top:1px solid var(--rule)}
+.plate-empty{display:grid;place-items:center;min-height:180px;text-align:center;
+  border:1px dashed var(--rule-2);background:var(--paper);color:var(--ink-3);font-size:13px}
+.plate-empty em{font-style:normal;font-size:12px;opacity:.8}
+.variant{margin:10px 0 0;font-size:12.5px;color:var(--seal);background:var(--seal-soft);padding:7px 10px;border-radius:2px}
+.variant b{font-family:var(--mono);font-weight:500}
+
+.blk{margin-bottom:16px}
+.blk h4{font:500 11px/1.6 var(--sans);letter-spacing:.18em;color:var(--seal);margin-bottom:8px}
+.blk h4 small{display:block;letter-spacing:0;font-weight:400;color:var(--ink-3);font-size:11px}
+.anchors{margin:0;padding:0 0 0 2px;list-style:none;counter-reset:an}
+/* ::before 序号也是网格项，desc 必须显式钉在第二列，否则会掉进 22px 窄列一字一行 */
+.anchors li{counter-increment:an;display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:8px;
+  padding:6px 0;border-top:1px solid var(--rule);font-size:13px}
+.anchors li:first-child{border-top:0}
+.anchors li::before{content:counter(an,decimal-leading-zero);grid-column:1;grid-row:1;
+  font:500 11px/1.9 var(--mono);color:var(--seal)}
+.anchors b{grid-column:2;font-weight:500}
+.anchors span{grid-column:2;display:block;font-size:12px;color:var(--ink-2)}
+.lights{display:flex;flex-direction:column;gap:6px}
+.light{display:flex;align-items:baseline;gap:10px;background:var(--paper);border:1px solid var(--rule);
+  border-radius:2px;padding:7px 10px}
+.light i{flex:none;font-style:normal;font:500 12px/1.6 var(--sans);color:var(--ink)}
+.light .mono{flex:1;min-width:0}
+
+.pgroup{border:1px solid var(--rule);border-radius:2px;background:var(--paper);padding:4px 12px 8px;margin-top:12px}
+.pr{border-bottom:1px solid var(--rule)}
+.pgroup .pr:last-of-type{border-bottom:0}
+.pr summary{display:flex;align-items:center;gap:10px;padding:10px 0;cursor:pointer;list-style:none;
+  font:500 12px/1 var(--sans);letter-spacing:.04em}
+.pr summary::-webkit-details-marker{display:none}
+.pr summary::before{content:"▸";color:var(--seal);font-size:11px;transition:transform .15s}
+.pr[open] summary::before{transform:rotate(90deg)}
+.pr summary span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pr p{margin:0 0 10px;padding:10px 12px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:2px;font:400 12px/1.75 var(--mono);white-space:pre-wrap;word-break:break-word}
+.pgroup-f{padding:10px 0 4px}
+.copy{flex:none;font:500 11px/1 var(--sans);color:var(--ink-2);background:var(--panel);
+  border:1px solid var(--rule-2);border-radius:2px;padding:4px 10px;cursor:pointer;transition:.15s}
+.copy:hover{border-color:var(--seal);color:var(--seal)}
+.copy:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+.copy[data-done]{border-color:var(--seal);color:var(--seal)}
+.copy.wide{width:100%;padding:9px}
+.copy.mini{padding:2px 7px;font-size:10.5px}
+
+.gate{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:2px 28px}
+@media(max-width:900px){.gate{grid-template-columns:1fr}}
+.gate li{display:flex;gap:8px;padding:5px 0;font-size:12.5px;line-height:1.55}
+.gate .m{flex:none;font-weight:700}
+.gate li.ok .m{color:var(--ok)}
+.gate li.bad .m{color:var(--seal)}
+.gate li.bad{background:var(--seal-soft);border-radius:2px;padding-left:6px}
+.gate small{display:block;color:var(--ink-3)}
+.gsum{margin:10px 0 0;font-size:12px;color:var(--ink-2)}
+.gsum b{color:var(--seal)}
+
+.foot{margin-top:40px;font-size:11px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:14px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{
+  .expo,.copy{display:none!important}
+  .pr p{display:block!important}
+  .pr summary::before{content:""}
+  .page{max-width:none;padding:0}
+  section.top-sec,.scene{page-break-inside:avoid}
+  body{background:#fff}
+}
+</style></head><body>
+<div class="page">
+
+<header class="hd">
+  <h1>别睡</h1>
+  <span class="sub">美术设定集</span>
+  <span class="right">
+    <span class="gatepill pass">✓ 质量门 10 / 10</span>
+    <button class="expo" data-name="别睡-art.json">导出 JSON</button>
+  </span>
+</header>
+
+<div class="kpis">
+  <div class="kpi accent"><div class="l">场景</div><div class="v">4</div><div class="d">主场景 3 · 变体 2</div></div>
+  <div class="kpi"><div class="l">叙事道具</div><div class="v">6</div><div class="d">15 个状态变体</div></div>
+  <div class="kpi"><div class="l">一致性锚点</div><div class="v">35</div><div class="d">生成镜头的核对表（场景 + 道具）</div></div>
+  <div class="kpi"><div class="l">光照状态</div><div class="v">9</div><div class="d">换时段 = 重新生成</div></div>
+</div>
+
+
+<section class="top-sec" id="sec-list">
+  <div class="sec-h"><span class="no">01</span><h2>场景清单</h2></div>
+  <table><thead><tr><th>ID</th><th>场景</th><th>类型</th><th>出现集</th><th>锚点</th><th>光照</th><th>变体</th></tr></thead>
+<tbody><tr><td>S01</td><td>十四平米出租屋卧室</td><td>主场景</td><td>1、2、3、4、5、6</td><td>4</td><td>深夜手机屏光、假清晨天光、全黑对峙、废墟昏光</td><td>—</td></tr>
+<tr><td>S02</td><td>出租屋楼道与单元门</td><td>变体 ← S01</td><td>3</td><td>4</td><td>深夜楼道黑</td><td>机位从卧室拉到门外的窄楼道：去掉室内家具，改成起壳白灰墙、不亮的声控灯、水泥窄楼梯、一楼铁皮单元门，门缝外能看到路灯下的电动车</td></tr>
+<tr><td>S04</td><td>ICU走廊与玻璃门</td><td>主场景</td><td>6</td><td>4</td><td>走廊荧光冷光、清晨走廊微光</td><td>—</td></tr>
+<tr><td>S03</td><td>ICU病房内</td><td>变体 ← S04</td><td>6</td><td>4</td><td>病房夜灯、清晨病房光</td><td>机位翻到玻璃内侧：病床、床头监护仪、输液架、缠纱布的病人、玻璃门外走廊人影与冷光</td></tr></tbody></table>
+</section>
+
+<section class="top-sec" id="sec-cards">
+  <div class="sec-h"><span class="no">02</span><h2>场景设定卡</h2></div>
+  <div class="cards">
+<article class="scene" id="sc-S01">
+  <header class="sc-h">
+    <span class="sc-id">S01</span>
+    <h3>十四平米出租屋卧室</h3>
+    <span class="badge">主场景</span>
+    <span class="sc-use">出现集 1、2、3、4、5、6　承载爽点 恐怖钩 · 循环揭示 · 倒计时发现 · 镜中真相 · 封锁 · 身体异变 · 假妈妈识破 · 记忆流失 · 位置揭示 · 真声音 · 最大反转 · 情感收束</span>
+  </header>
+  <p class="sc-sum">设计意图：全剧循环的舞台，一间逼仄到无处藏身、又把苏晚困死的十四平米朝北单间。这个空间要同时讲两件事：一个独居打工人攒出来的小窝，和循环里一切重置、只有她不动的那种恐怖。书桌与墙之间四十公分的缝是恐惧的坐标，床头是她站的位置。</p>
+  <div class="plate plate-empty"><span>十四平米出租屋卧室 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>四十公分的缝</b><span>书桌与墙之间堆着四个纸箱、一摞旧书、一个没拆封的空气炸锅，缝口狭窄到只容一人侧身</span></li><li><b>床头三件套</b><span>床头那一小块地方固定摆着：一杯水、一块充电宝、一本翻了一半的《罪与罚》</span></li><li><b>衣柜门整块镜</b><span>衣柜门上是一整面落地镜，泼水会浮出影子、写别回头三个字的那块</span></li><li><b>拉紧的窗帘</b><span>窗帘始终拉紧，窗外那条缝是天，循环里永远不变亮</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>光照与时段</h4>
+    <div class="lights"><div class="light"><i>深夜手机屏光</i><span class="mono">deep night, the cold white glow of a smartphone screen as the only light source, a small patch of coloured light reflected on the ceiling, dim blue-grey ambience, deep shadows around the single bed and the desk, volumetric dust in the phone beam</span><button class="copy mini" data-copy="deep night, the cold white glow of a smartphone screen as the only light source, a small patch of coloured light reflected on the ceiling, dim blue-grey ambience, deep shadows around the single bed and the desk, volumetric dust in the phone beam">复制</button></div><div class="light"><i>假清晨天光</i><span class="mono">a greyish muted dawn light leaking through the gap in the closed curtains, flat replayed-video feel, washed-out colours, no warm sun, dust motes hanging in the pale shaft of light</span><button class="copy mini" data-copy="a greyish muted dawn light leaking through the gap in the closed curtains, flat replayed-video feel, washed-out colours, no warm sun, dust motes hanging in the pale shaft of light">复制</button></div><div class="light"><i>全黑对峙</i><span class="mono">near-total darkness after the phone is switched off, faint city night glow around the curtain edges, barely visible furniture silhouettes, heavy oppressive blackness</span><button class="copy mini" data-copy="near-total darkness after the phone is switched off, faint city night glow around the curtain edges, barely visible furniture silhouettes, heavy oppressive blackness">复制</button></div><div class="light"><i>废墟昏光</i><span class="mono">a wrecked room under a single dim ceiling light, splintered furniture and torn paper scattered on the floor, dust and debris in the air catching the light, harsh long shadows</span><button class="copy mini" data-copy="a wrecked room under a single dim ceiling light, splintered furniture and torn paper scattered on the floor, dust and debris in the air catching the light, harsh long shadows">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="An empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, 2020s. A narrow 90cm single bed against the east wall with a plain washed white-grey bedsheet; a bedside area holding a glass of water, a power bank and a half-read thick paperback; a small desk pushed against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and a still-unboxed air fryer; a full-length mirror on the wardrobe door; closed curtains with a sliver of grey light at the gap. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Three-quarter view from the doorway, plain composition, cold grey-blue palette, muted desaturated tones, dim lonely midnight mood, readable structure from every angle.">复制</button></summary>
+  <p>An empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, 2020s. A narrow 90cm single bed against the east wall with a plain washed white-grey bedsheet; a bedside area holding a glass of water, a power bank and a half-read thick paperback; a small desk pushed against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and a still-unboxed air fryer; a full-length mirror on the wardrobe door; closed curtains with a sliver of grey light at the gap. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Three-quarter view from the doorway, plain composition, cold grey-blue palette, muted desaturated tones, dim lonely midnight mood, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard establishing view of the scene in its first lighting state, an empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, narrow single bed against the east wall with a washed white-grey bedsheet, bedside glass of water with power bank and half-read paperback, desk against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and an unboxed air fryer, full-length mirror on the wardrobe door, closed curtains with a sliver of grey light; deep-night mood lit by the cold glow of a smartphone screen. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each one a cropped enlargement of a real part of the master view: the narrow 40cm gap between the desk and the wall with the cardboard boxes and air fryer; the full-length mirror on the wardrobe door with its wooden frame. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the bedside glass of water with the power bank and the half-read paperback; the washed white-grey bedsheet with its worn weave and creases; the closed curtains with the sliver of grey light at the gap. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — the same wall, the same furniture, the same proportions, nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Plain muted cold grey-blue palette, dim lonely midnight mood, readable structure from every angle.">复制</button></summary>
+  <p>Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard establishing view of the scene in its first lighting state, an empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, narrow single bed against the east wall with a washed white-grey bedsheet, bedside glass of water with power bank and half-read paperback, desk against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and an unboxed air fryer, full-length mirror on the wardrobe door, closed curtains with a sliver of grey light; deep-night mood lit by the cold glow of a smartphone screen. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each one a cropped enlargement of a real part of the master view: the narrow 40cm gap between the desk and the wall with the cardboard boxes and air fryer; the full-length mirror on the wardrobe door with its wooden frame. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the bedside glass of water with the power bank and the half-read paperback; the washed white-grey bedsheet with its worn weave and creases; the closed curtains with the sliver of grey light at the gap. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — the same wall, the same furniture, the same proportions, nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Plain muted cold grey-blue palette, dim lonely midnight mood, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature">复制</button></summary>
+  <p>people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;S01&quot;,
+  &quot;name&quot;: &quot;十四平米出租屋卧室&quot;,
+  &quot;primary&quot;: true,
+  &quot;summary&quot;: &quot;设计意图：全剧循环的舞台，一间逼仄到无处藏身、又把苏晚困死的十四平米朝北单间。这个空间要同时讲两件事：一个独居打工人攒出来的小窝，和循环里一切重置、只有她不动的那种恐怖。书桌与墙之间四十公分的缝是恐惧的坐标，床头是她站的位置。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;四十公分的缝&quot;,
+      &quot;desc&quot;: &quot;书桌与墙之间堆着四个纸箱、一摞旧书、一个没拆封的空气炸锅，缝口狭窄到只容一人侧身&quot;
+    },
+    {
+      &quot;name&quot;: &quot;床头三件套&quot;,
+      &quot;desc&quot;: &quot;床头那一小块地方固定摆着：一杯水、一块充电宝、一本翻了一半的《罪与罚》&quot;
+    },
+    {
+      &quot;name&quot;: &quot;衣柜门整块镜&quot;,
+      &quot;desc&quot;: &quot;衣柜门上是一整面落地镜，泼水会浮出影子、写别回头三个字的那块&quot;
+    },
+    {
+      &quot;name&quot;: &quot;拉紧的窗帘&quot;,
+      &quot;desc&quot;: &quot;窗帘始终拉紧，窗外那条缝是天，循环里永远不变亮&quot;
+    }
+  ],
+  &quot;lighting&quot;: [
+    {
+      &quot;state&quot;: &quot;深夜手机屏光&quot;,
+      &quot;prompt&quot;: &quot;deep night, the cold white glow of a smartphone screen as the only light source, a small patch of coloured light reflected on the ceiling, dim blue-grey ambience, deep shadows around the single bed and the desk, volumetric dust in the phone beam&quot;
+    },
+    {
+      &quot;state&quot;: &quot;假清晨天光&quot;,
+      &quot;prompt&quot;: &quot;a greyish muted dawn light leaking through the gap in the closed curtains, flat replayed-video feel, washed-out colours, no warm sun, dust motes hanging in the pale shaft of light&quot;
+    },
+    {
+      &quot;state&quot;: &quot;全黑对峙&quot;,
+      &quot;prompt&quot;: &quot;near-total darkness after the phone is switched off, faint city night glow around the curtain edges, barely visible furniture silhouettes, heavy oppressive blackness&quot;
+    },
+    {
+      &quot;state&quot;: &quot;废墟昏光&quot;,
+      &quot;prompt&quot;: &quot;a wrecked room under a single dim ceiling light, splintered furniture and torn paper scattered on the floor, dust and debris in the air catching the light, harsh long shadows&quot;
+    }
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;An empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, 2020s. A narrow 90cm single bed against the east wall with a plain washed white-grey bedsheet; a bedside area holding a glass of water, a power bank and a half-read thick paperback; a small desk pushed against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and a still-unboxed air fryer; a full-length mirror on the wardrobe door; closed curtains with a sliver of grey light at the gap. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Three-quarter view from the doorway, plain composition, cold grey-blue palette, muted desaturated tones, dim lonely midnight mood, readable structure from every angle.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature&quot;,
+    &quot;sheet&quot;: &quot;Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard establishing view of the scene in its first lighting state, an empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, narrow single bed against the east wall with a washed white-grey bedsheet, bedside glass of water with power bank and half-read paperback, desk against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and an unboxed air fryer, full-length mirror on the wardrobe door, closed curtains with a sliver of grey light; deep-night mood lit by the cold glow of a smartphone screen. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each one a cropped enlargement of a real part of the master view: the narrow 40cm gap between the desk and the wall with the cardboard boxes and air fryer; the full-length mirror on the wardrobe door with its wooden frame. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the bedside glass of water with the power bank and the half-read paperback; the washed white-grey bedsheet with its worn weave and creases; the closed curtains with the sliver of grey light at the gap. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — the same wall, the same furniture, the same proportions, nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Plain muted cold grey-blue palette, dim lonely midnight mood, readable structure from every angle.&quot;,
+    &quot;tags&quot;: [
+      &quot;environment sheet&quot;,
+      &quot;contemporary urban china&quot;,
+      &quot;single-room rental&quot;,
+      &quot;night phone glow&quot;,
+      &quot;weathered materials&quot;,
+      &quot;cinematic&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    &quot;beats&quot;: [
+      &quot;恐怖钩&quot;,
+      &quot;循环揭示&quot;,
+      &quot;倒计时发现&quot;,
+      &quot;镜中真相&quot;,
+      &quot;封锁&quot;,
+      &quot;身体异变&quot;,
+      &quot;假妈妈识破&quot;,
+      &quot;记忆流失&quot;,
+      &quot;位置揭示&quot;,
+      &quot;真声音&quot;,
+      &quot;最大反转&quot;,
+      &quot;情感收束&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="sc-S02">
+  <header class="sc-h">
+    <span class="sc-id">S02</span>
+    <h3>出租屋楼道与单元门</h3>
+    <span class="badge once">变体</span>
+    <span class="sc-use">出现集 3　承载爽点 镜中真相 · 封锁</span>
+  </header>
+  <p class="sc-sum">设计意图：循环里走出去的死路。窄楼道、不亮的声控灯、推不开的铁皮单元门，门缝外能看到真实世界的路灯和电动车，但就是出不去。恐惧从这里开始转向这个世界是假的。</p>
+  <div class="plate plate-empty"><span>出租屋楼道与单元门 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">变体来源：<b>S01</b>　改动：机位从卧室拉到门外的窄楼道：去掉室内家具，改成起壳白灰墙、不亮的声控灯、水泥窄楼梯、一楼铁皮单元门，门缝外能看到路灯下的电动车</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>起壳白灰墙</b><span>楼道墙面的白灰起壳翘皮，水泥地裸露，潮味感</span></li><li><b>不亮的声控灯</b><span>每一层楼道口的声控灯，拍手也不亮</span></li><li><b>铁皮单元门</b><span>一楼那扇铁皮单元门，推不动、撞不开</span></li><li><b>门缝外的电动车</b><span>门缝里能看见路灯、树和一辆停在路边的电动车——看得见出不去</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>光照与时段</h4>
+    <div class="lights"><div class="light"><i>深夜楼道黑</i><span class="mono">deep night in a narrow stairwell, near-darkness with a single cold phone-torch beam cutting the dark, faint street-lamp glow seeping through the crack under the unit door, heavy shadows on the peeling white-grey walls</span><button class="copy mini" data-copy="deep night in a narrow stairwell, near-darkness with a single cold phone-torch beam cutting the dark, faint street-lamp glow seeping through the crack under the unit door, heavy shadows on the peeling white-grey walls">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="An empty narrow stairwell of an old Chinese walk-up apartment building, 2020s, seen from the upper landing looking down: peeling white-grey plaster walls, bare concrete steps, an unlit motion-sensor light at each landing, a dark iron unit door at the bottom, through the door crack a faint street lamp and the silhouette of a parked e-bike. Keep the structure, materials and wear identical to the reference image of the rented room building — the same aged plaster, the same worn concrete, the same dim cold palette. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.">复制</button></summary>
+  <p>An empty narrow stairwell of an old Chinese walk-up apartment building, 2020s, seen from the upper landing looking down: peeling white-grey plaster walls, bare concrete steps, an unlit motion-sensor light at each landing, a dark iron unit door at the bottom, through the door crack a faint street lamp and the silhouette of a parked e-bike. Keep the structure, materials and wear identical to the reference image of the rented room building — the same aged plaster, the same worn concrete, the same dim cold palette. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the rented room building. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the narrow stairwell in deep night, peeling white-grey plaster walls, bare concrete steps, unlit motion-sensor lights, dark iron unit door at the bottom with faint street-lamp glow through the crack. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the peeling white-grey plaster wall; the dark iron unit door with its worn handle. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the unlit motion-sensor light; the bare concrete steps with worn edges; the street lamp and parked e-bike glimpsed through the door crack. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts. Atmospheric depth with haze or volumetric light where the space allows. Plain cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.">复制</button></summary>
+  <p>Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the rented room building. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the narrow stairwell in deep night, peeling white-grey plaster walls, bare concrete steps, unlit motion-sensor lights, dark iron unit door at the bottom with faint street-lamp glow through the crack. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the peeling white-grey plaster wall; the dark iron unit door with its worn handle. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the unlit motion-sensor light; the bare concrete steps with worn edges; the street lamp and parked e-bike glimpsed through the door crack. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts. Atmospheric depth with haze or volumetric light where the space allows. Plain cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature">复制</button></summary>
+  <p>people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;S02&quot;,
+  &quot;name&quot;: &quot;出租屋楼道与单元门&quot;,
+  &quot;primary&quot;: false,
+  &quot;variantOf&quot;: &quot;S01&quot;,
+  &quot;changes&quot;: &quot;机位从卧室拉到门外的窄楼道：去掉室内家具，改成起壳白灰墙、不亮的声控灯、水泥窄楼梯、一楼铁皮单元门，门缝外能看到路灯下的电动车&quot;,
+  &quot;summary&quot;: &quot;设计意图：循环里走出去的死路。窄楼道、不亮的声控灯、推不开的铁皮单元门，门缝外能看到真实世界的路灯和电动车，但就是出不去。恐惧从这里开始转向这个世界是假的。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;起壳白灰墙&quot;,
+      &quot;desc&quot;: &quot;楼道墙面的白灰起壳翘皮，水泥地裸露，潮味感&quot;
+    },
+    {
+      &quot;name&quot;: &quot;不亮的声控灯&quot;,
+      &quot;desc&quot;: &quot;每一层楼道口的声控灯，拍手也不亮&quot;
+    },
+    {
+      &quot;name&quot;: &quot;铁皮单元门&quot;,
+      &quot;desc&quot;: &quot;一楼那扇铁皮单元门，推不动、撞不开&quot;
+    },
+    {
+      &quot;name&quot;: &quot;门缝外的电动车&quot;,
+      &quot;desc&quot;: &quot;门缝里能看见路灯、树和一辆停在路边的电动车——看得见出不去&quot;
+    }
+  ],
+  &quot;lighting&quot;: [
+    {
+      &quot;state&quot;: &quot;深夜楼道黑&quot;,
+      &quot;prompt&quot;: &quot;deep night in a narrow stairwell, near-darkness with a single cold phone-torch beam cutting the dark, faint street-lamp glow seeping through the crack under the unit door, heavy shadows on the peeling white-grey walls&quot;
+    }
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;An empty narrow stairwell of an old Chinese walk-up apartment building, 2020s, seen from the upper landing looking down: peeling white-grey plaster walls, bare concrete steps, an unlit motion-sensor light at each landing, a dark iron unit door at the bottom, through the door crack a faint street lamp and the silhouette of a parked e-bike. Keep the structure, materials and wear identical to the reference image of the rented room building — the same aged plaster, the same worn concrete, the same dim cold palette. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature&quot;,
+    &quot;sheet&quot;: &quot;Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the rented room building. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the narrow stairwell in deep night, peeling white-grey plaster walls, bare concrete steps, unlit motion-sensor lights, dark iron unit door at the bottom with faint street-lamp glow through the crack. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the peeling white-grey plaster wall; the dark iron unit door with its worn handle. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the unlit motion-sensor light; the bare concrete steps with worn edges; the street lamp and parked e-bike glimpsed through the door crack. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts. Atmospheric depth with haze or volumetric light where the space allows. Plain cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.&quot;,
+    &quot;tags&quot;: [
+      &quot;environment sheet&quot;,
+      &quot;old chinese walk-up stairwell&quot;,
+      &quot;peeling plaster&quot;,
+      &quot;night darkness&quot;,
+      &quot;weathered materials&quot;,
+      &quot;cinematic&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      3
+    ],
+    &quot;beats&quot;: [
+      &quot;镜中真相&quot;,
+      &quot;封锁&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="sc-S04">
+  <header class="sc-h">
+    <span class="sc-id">S04</span>
+    <h3>ICU走廊与玻璃门</h3>
+    <span class="badge">主场景</span>
+    <span class="sc-use">出现集 6　承载爽点 真声音 · 最大反转 · 情感收束</span>
+  </header>
+  <p class="sc-sum">设计意图：妈妈的世界，也是循环里所有墙后声音的真实来源。荧光灯走廊、塑料座椅、玻璃门上的手印——外部世界的情感出口，用冷白和出租屋的暗暖形成真实与循环的对照。</p>
+  <div class="plate plate-empty"><span>ICU走廊与玻璃门 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>玻璃门上的手印</b><span>重症监护室玻璃门上拍满的手印与掌痕，一左一右的旧印</span></li><li><b>走廊塑料座椅</b><span>荧光灯下的一排塑料座椅，坐着守夜的人</span></li><li><b>荧光灯管</b><span>走廊顶上一排冷白荧光灯管，照得人发青</span></li><li><b>监护室门牌</b><span>玻璃门旁贴着重症监护室的门牌与消毒提示</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>光照与时段</h4>
+    <div class="lights"><div class="light"><i>走廊荧光冷光</i><span class="mono">harsh cold white fluorescent light from the corridor ceiling tubes, flat clinical illumination, pale greenish-white walls, glass door reflections, shadows of waiting people stretching on the floor</span><button class="copy mini" data-copy="harsh cold white fluorescent light from the corridor ceiling tubes, flat clinical illumination, pale greenish-white walls, glass door reflections, shadows of waiting people stretching on the floor">复制</button></div><div class="light"><i>清晨走廊微光</i><span class="mono">early dawn, the fluorescent tubes still on but dimmer, pale grey morning light mixing from the window at the corridor end, quieter softer shadows</span><button class="copy mini" data-copy="early dawn, the fluorescent tubes still on but dimmer, pale grey morning light mixing from the window at the corridor end, quieter softer shadows">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="An empty ICU corridor of a modern Chinese public hospital, 2020s, at night: a row of cold white fluorescent tubes on the ceiling, pale greenish-white walls, a glass door with the intensive care sign and handprints on the pane, a row of plastic waiting chairs, disinfectant smell implied by the clean clinical surfaces. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette, clinical quiet dread, readable structure from every angle.">复制</button></summary>
+  <p>An empty ICU corridor of a modern Chinese public hospital, 2020s, at night: a row of cold white fluorescent tubes on the ceiling, pale greenish-white walls, a glass door with the intensive care sign and handprints on the pane, a row of plastic waiting chairs, disinfectant smell implied by the clean clinical surfaces. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette, clinical quiet dread, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU corridor at night, cold white fluorescent tubes, pale greenish-white walls, glass door with the intensive care sign and handprints, row of plastic waiting chairs. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the handprints on the glass door pane; the intensive care sign beside the door. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the row of plastic waiting chairs; the cold white fluorescent tubes; the worn threshold directly inside the door. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette, clinical quiet dread, readable structure from every angle.">复制</button></summary>
+  <p>Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU corridor at night, cold white fluorescent tubes, pale greenish-white walls, glass door with the intensive care sign and handprints, row of plastic waiting chairs. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the handprints on the glass door pane; the intensive care sign beside the door. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the row of plastic waiting chairs; the cold white fluorescent tubes; the worn threshold directly inside the door. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette, clinical quiet dread, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature">复制</button></summary>
+  <p>people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;S04&quot;,
+  &quot;name&quot;: &quot;ICU走廊与玻璃门&quot;,
+  &quot;primary&quot;: true,
+  &quot;summary&quot;: &quot;设计意图：妈妈的世界，也是循环里所有墙后声音的真实来源。荧光灯走廊、塑料座椅、玻璃门上的手印——外部世界的情感出口，用冷白和出租屋的暗暖形成真实与循环的对照。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;玻璃门上的手印&quot;,
+      &quot;desc&quot;: &quot;重症监护室玻璃门上拍满的手印与掌痕，一左一右的旧印&quot;
+    },
+    {
+      &quot;name&quot;: &quot;走廊塑料座椅&quot;,
+      &quot;desc&quot;: &quot;荧光灯下的一排塑料座椅，坐着守夜的人&quot;
+    },
+    {
+      &quot;name&quot;: &quot;荧光灯管&quot;,
+      &quot;desc&quot;: &quot;走廊顶上一排冷白荧光灯管，照得人发青&quot;
+    },
+    {
+      &quot;name&quot;: &quot;监护室门牌&quot;,
+      &quot;desc&quot;: &quot;玻璃门旁贴着重症监护室的门牌与消毒提示&quot;
+    }
+  ],
+  &quot;lighting&quot;: [
+    {
+      &quot;state&quot;: &quot;走廊荧光冷光&quot;,
+      &quot;prompt&quot;: &quot;harsh cold white fluorescent light from the corridor ceiling tubes, flat clinical illumination, pale greenish-white walls, glass door reflections, shadows of waiting people stretching on the floor&quot;
+    },
+    {
+      &quot;state&quot;: &quot;清晨走廊微光&quot;,
+      &quot;prompt&quot;: &quot;early dawn, the fluorescent tubes still on but dimmer, pale grey morning light mixing from the window at the corridor end, quieter softer shadows&quot;
+    }
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;An empty ICU corridor of a modern Chinese public hospital, 2020s, at night: a row of cold white fluorescent tubes on the ceiling, pale greenish-white walls, a glass door with the intensive care sign and handprints on the pane, a row of plastic waiting chairs, disinfectant smell implied by the clean clinical surfaces. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette, clinical quiet dread, readable structure from every angle.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature&quot;,
+    &quot;sheet&quot;: &quot;Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU corridor at night, cold white fluorescent tubes, pale greenish-white walls, glass door with the intensive care sign and handprints, row of plastic waiting chairs. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the handprints on the glass door pane; the intensive care sign beside the door. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the row of plastic waiting chairs; the cold white fluorescent tubes; the worn threshold directly inside the door. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette, clinical quiet dread, readable structure from every angle.&quot;,
+    &quot;tags&quot;: [
+      &quot;environment sheet&quot;,
+      &quot;modern chinese hospital&quot;,
+      &quot;icu corridor&quot;,
+      &quot;fluorescent light&quot;,
+      &quot;maintained materials&quot;,
+      &quot;cinematic&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      6
+    ],
+    &quot;beats&quot;: [
+      &quot;真声音&quot;,
+      &quot;最大反转&quot;,
+      &quot;情感收束&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="sc-S03">
+  <header class="sc-h">
+    <span class="sc-id">S03</span>
+    <h3>ICU病房内</h3>
+    <span class="badge">变体</span>
+    <span class="sc-use">出现集 6　承载爽点 真声音 · 最大反转 · 情感收束</span>
+  </header>
+  <p class="sc-sum">设计意图：真实世界的终点。病床、监护仪、输液架，苏晚躺在这里。消毒水的白与机器的滴声，是循环里所有墙后声音的来源；玻璃门把妈妈挡在外面，也把循环里的水声翻译成了这台机器的滴声。</p>
+  <div class="plate plate-empty"><span>ICU病房内 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">变体来源：<b>S04</b>　改动：机位翻到玻璃内侧：病床、床头监护仪、输液架、缠纱布的病人、玻璃门外走廊人影与冷光</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>床头监护仪</b><span>床头的监护仪，绿色波形线一跳一跳，机器滴声的来源</span></li><li><b>输液架与针管</b><span>床侧输液架，输液管连着病人手背的针</span></li><li><b>缠纱布的头部</b><span>病人头上缠着纱布，脸白，鼻里有管</span></li><li><b>玻璃门外的人影</b><span>玻璃门外走廊冷光下站着的人影，隔着玻璃看不清脸</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>光照与时段</h4>
+    <div class="lights"><div class="light"><i>病房夜灯</i><span class="mono">dim ICU night lighting, the green glow of the bedside monitor as the main light accent, soft blue-white ambient, patient lying still under a thin white sheet, cold clinical darkness</span><button class="copy mini" data-copy="dim ICU night lighting, the green glow of the bedside monitor as the main light accent, soft blue-white ambient, patient lying still under a thin white sheet, cold clinical darkness">复制</button></div><div class="light"><i>清晨病房光</i><span class="mono">early dawn grey light through the corridor window and glass door, quieter softer tone, monitor still glowing green, pale clinical morning</span><button class="copy mini" data-copy="early dawn grey light through the corridor window and glass door, quieter softer tone, monitor still glowing green, pale clinical morning">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="An empty ICU ward bay of a modern Chinese public hospital, 2020s, at night — no people, only the bed made up with a thin white sheet, a bedside monitor with a glowing green waveform, an IV stand with tubing, head bandaging folded at the pillow, a glass door at the side with faint corridor light and a blurred figure silhouette outside. Keep the structure, materials and wear identical to the reference image of the ICU corridor — the same pale greenish-white walls, the same cold white-blue palette. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.">复制</button></summary>
+  <p>An empty ICU ward bay of a modern Chinese public hospital, 2020s, at night — no people, only the bed made up with a thin white sheet, a bedside monitor with a glowing green waveform, an IV stand with tubing, head bandaging folded at the pillow, a glass door at the side with faint corridor light and a blurred figure silhouette outside. Keep the structure, materials and wear identical to the reference image of the ICU corridor — the same pale greenish-white walls, the same cold white-blue palette. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the ICU corridor. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU ward bay at night, bed with thin white sheet, bedside monitor with glowing green waveform, IV stand, glass door with blurred corridor light. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the bedside monitor with its green waveform; the IV stand with tubing. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the folded head bandaging on the pillow; the glass door with the blurred corridor silhouette outside; the thin white sheet with its clinical creases. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.">复制</button></summary>
+  <p>Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the ICU corridor. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU ward bay at night, bed with thin white sheet, bedside monitor with glowing green waveform, IV stand, glass door with blurred corridor light. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the bedside monitor with its green waveform; the IV stand with tubing. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the folded head bandaging on the pillow; the glass door with the blurred corridor silhouette outside; the thin white sheet with its clinical creases. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature">复制</button></summary>
+  <p>people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;S03&quot;,
+  &quot;name&quot;: &quot;ICU病房内&quot;,
+  &quot;primary&quot;: true,
+  &quot;variantOf&quot;: &quot;S04&quot;,
+  &quot;changes&quot;: &quot;机位翻到玻璃内侧：病床、床头监护仪、输液架、缠纱布的病人、玻璃门外走廊人影与冷光&quot;,
+  &quot;summary&quot;: &quot;设计意图：真实世界的终点。病床、监护仪、输液架，苏晚躺在这里。消毒水的白与机器的滴声，是循环里所有墙后声音的来源；玻璃门把妈妈挡在外面，也把循环里的水声翻译成了这台机器的滴声。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;床头监护仪&quot;,
+      &quot;desc&quot;: &quot;床头的监护仪，绿色波形线一跳一跳，机器滴声的来源&quot;
+    },
+    {
+      &quot;name&quot;: &quot;输液架与针管&quot;,
+      &quot;desc&quot;: &quot;床侧输液架，输液管连着病人手背的针&quot;
+    },
+    {
+      &quot;name&quot;: &quot;缠纱布的头部&quot;,
+      &quot;desc&quot;: &quot;病人头上缠着纱布，脸白，鼻里有管&quot;
+    },
+    {
+      &quot;name&quot;: &quot;玻璃门外的人影&quot;,
+      &quot;desc&quot;: &quot;玻璃门外走廊冷光下站着的人影，隔着玻璃看不清脸&quot;
+    }
+  ],
+  &quot;lighting&quot;: [
+    {
+      &quot;state&quot;: &quot;病房夜灯&quot;,
+      &quot;prompt&quot;: &quot;dim ICU night lighting, the green glow of the bedside monitor as the main light accent, soft blue-white ambient, patient lying still under a thin white sheet, cold clinical darkness&quot;
+    },
+    {
+      &quot;state&quot;: &quot;清晨病房光&quot;,
+      &quot;prompt&quot;: &quot;early dawn grey light through the corridor window and glass door, quieter softer tone, monitor still glowing green, pale clinical morning&quot;
+    }
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;An empty ICU ward bay of a modern Chinese public hospital, 2020s, at night — no people, only the bed made up with a thin white sheet, a bedside monitor with a glowing green waveform, an IV stand with tubing, head bandaging folded at the pillow, a glass door at the side with faint corridor light and a blurred figure silhouette outside. Keep the structure, materials and wear identical to the reference image of the ICU corridor — the same pale greenish-white walls, the same cold white-blue palette. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature&quot;,
+    &quot;sheet&quot;: &quot;Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the ICU corridor. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU ward bay at night, bed with thin white sheet, bedside monitor with glowing green waveform, IV stand, glass door with blurred corridor light. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the bedside monitor with its green waveform; the IV stand with tubing. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the folded head bandaging on the pillow; the glass door with the blurred corridor silhouette outside; the thin white sheet with its clinical creases. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.&quot;,
+    &quot;tags&quot;: [
+      &quot;environment sheet&quot;,
+      &quot;modern chinese hospital&quot;,
+      &quot;icu ward&quot;,
+      &quot;night monitor glow&quot;,
+      &quot;maintained materials&quot;,
+      &quot;cinematic&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      6
+    ],
+    &quot;beats&quot;: [
+      &quot;真声音&quot;,
+      &quot;最大反转&quot;,
+      &quot;情感收束&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="top-sec" id="sec-prop-list">
+  <div class="sec-h"><span class="no">03</span><h2>道具清单</h2></div>
+  <table><thead><tr><th>ID</th><th>道具</th><th>尺度</th><th>状态</th><th>关联场景</th><th>出现集</th><th>锚点</th></tr></thead>
+<tbody><tr><td>P01</td><td>手机（三格电）</td><td>手持级</td><td>亮屏02:00三格电、黑屏关机、微信发出到家了妈</td><td>S01、S03、S04</td><td>1、2、3、4、5、6</td><td>3</td></tr>
+<tr><td>P02</td><td>床头那杯水</td><td>桌面级</td><td>半杯温水、杯垫边缘水痕</td><td>S01</td><td>1</td><td>3</td></tr>
+<tr><td>P03</td><td>便利贴（1与17）</td><td>手持级</td><td>一张写1、两张并排1与17、墙面空白</td><td>S01</td><td>2</td><td>3</td></tr>
+<tr><td>P04</td><td>衣柜镜</td><td>家具级</td><td>干净镜面、泼水水痕、湿指痕三个字</td><td>S01</td><td>3</td><td>3</td></tr>
+<tr><td>P05</td><td>水果刀</td><td>手持级</td><td>合上、打开刀尖崩口沾灰</td><td>S01</td><td>4</td><td>3</td></tr>
+<tr><td>P06</td><td>青白旧衬衫</td><td>手持级</td><td>湿透挂着的旧衬衫、叠在柜底</td><td>S01、S03</td><td>6</td><td>4</td></tr></tbody></table>
+</section>
+
+<section class="top-sec" id="sec-prop-cards">
+  <div class="sec-h"><span class="no">04</span><h2>道具设定卡</h2></div>
+  <div class="cards">
+<article class="scene" id="pr-P01">
+  <header class="sc-h">
+    <span class="sc-id">P01</span>
+    <h3>手机（三格电）</h3>
+    <span class="badge">手持级</span>
+    <span class="sc-use">出现集 1、2、3、4、5、6　承载爽点 循环揭示 · 情感收束</span>
+  </header>
+  <p class="sc-sum">戏剧功能：循环里唯一属于人的东西。电量和时间永远卡在02:00与三格电，是循环的判据；结尾用它发出那条到家的消息，屏幕还剩三格电然后没电。</p>
+  <div class="plate plate-empty"><span>手机（三格电） · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">关联场景：<b>S01、S03、S04</b>　关联角色：苏晚</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>红色小电池三格</b><span>右上角红色小电池图标，永远只剩三格，充电也不涨</span></li><li><b>02:00时间显示</b><span>屏幕右上角时间永远停在02:00</span></li><li><b>白色充电线</b><span>一条绕在枕边的白色充电线，插上也不涨电</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>状态变体</h4>
+    <div class="lights"><div class="light"><i>亮屏02:00三格电</i><span class="mono">a modern smartphone on a worn wooden bedside table, handheld scale, screen lit showing the time 02:00 with a red battery icon at three bars, dim cold light from the screen, plain white background</span><button class="copy mini" data-copy="a modern smartphone on a worn wooden bedside table, handheld scale, screen lit showing the time 02:00 with a red battery icon at three bars, dim cold light from the screen, plain white background">复制</button></div><div class="light"><i>黑屏关机</i><span class="mono">a modern smartphone lying face-up on a worn wooden bedside table, handheld scale, screen completely black and off, red battery icon faintly visible when the power key is pressed, plain white background</span><button class="copy mini" data-copy="a modern smartphone lying face-up on a worn wooden bedside table, handheld scale, screen completely black and off, red battery icon faintly visible when the power key is pressed, plain white background">复制</button></div><div class="light"><i>微信发出到家了妈</i><span class="mono">a modern smartphone held in screen view, handheld scale, chat interface showing a sent green message bubble with the Chinese characters reading dao jia le ma (arrived home, mom), the time 02:00 and a red battery icon at three bars at the top, plain white background</span><button class="copy mini" data-copy="a modern smartphone held in screen view, handheld scale, chat interface showing a sent green message bubble with the Chinese characters reading dao jia le ma (arrived home, mom), the time 02:00 and a red battery icon at three bars at the top, plain white background">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="A modern smartphone, handheld scale, lying on a worn wooden bedside table next to a glass of water and a power bank, screen lit showing the time 02:00 with a red battery icon at exactly three bars, a white charging cable loosely coiled beside it, dim cold blue-grey ambient from the screen. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.">复制</button></summary>
+  <p>A modern smartphone, handheld scale, lying on a worn wooden bedside table next to a glass of water and a power bank, screen lit showing the time 02:00 with a red battery icon at exactly three bars, a white charging cable loosely coiled beside it, dim cold blue-grey ambient from the screen. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the smartphone at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the smartphone on the worn wooden bedside table, screen showing 02:00 with a red battery icon at three bars, white charging cable beside it. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the red battery icon at three bars; the time display 02:00. BOTTOM ROW — three detail close-ups in a row beneath the master view: the white charging cable coil; the worn wood grain of the tabletop; the screen edge with the chat interface hint. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Plain pure white background, balanced composition with generous even white margins.">复制</button></summary>
+  <p>Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the smartphone at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the smartphone on the worn wooden bedside table, screen showing 02:00 with a red battery icon at three bars, white charging cable beside it. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the red battery icon at three bars; the time display 02:00. BOTTOM ROW — three detail close-ups in a row beneath the master view: the white charging cable coil; the worn wood grain of the tabletop; the screen edge with the chat interface hint. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Plain pure white background, balanced composition with generous even white margins.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background">复制</button></summary>
+  <p>people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;P01&quot;,
+  &quot;name&quot;: &quot;手机（三格电）&quot;,
+  &quot;scale&quot;: &quot;手持级&quot;,
+  &quot;summary&quot;: &quot;戏剧功能：循环里唯一属于人的东西。电量和时间永远卡在02:00与三格电，是循环的判据；结尾用它发出那条到家的消息，屏幕还剩三格电然后没电。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;红色小电池三格&quot;,
+      &quot;desc&quot;: &quot;右上角红色小电池图标，永远只剩三格，充电也不涨&quot;
+    },
+    {
+      &quot;name&quot;: &quot;02:00时间显示&quot;,
+      &quot;desc&quot;: &quot;屏幕右上角时间永远停在02:00&quot;
+    },
+    {
+      &quot;name&quot;: &quot;白色充电线&quot;,
+      &quot;desc&quot;: &quot;一条绕在枕边的白色充电线，插上也不涨电&quot;
+    }
+  ],
+  &quot;states&quot;: [
+    {
+      &quot;state&quot;: &quot;亮屏02:00三格电&quot;,
+      &quot;prompt&quot;: &quot;a modern smartphone on a worn wooden bedside table, handheld scale, screen lit showing the time 02:00 with a red battery icon at three bars, dim cold light from the screen, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;黑屏关机&quot;,
+      &quot;prompt&quot;: &quot;a modern smartphone lying face-up on a worn wooden bedside table, handheld scale, screen completely black and off, red battery icon faintly visible when the power key is pressed, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;微信发出到家了妈&quot;,
+      &quot;prompt&quot;: &quot;a modern smartphone held in screen view, handheld scale, chat interface showing a sent green message bubble with the Chinese characters reading dao jia le ma (arrived home, mom), the time 02:00 and a red battery icon at three bars at the top, plain white background&quot;
+    }
+  ],
+  &quot;relatedScenes&quot;: [
+    &quot;S01&quot;,
+    &quot;S03&quot;,
+    &quot;S04&quot;
+  ],
+  &quot;carriedBy&quot;: [
+    &quot;苏晚&quot;
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;A modern smartphone, handheld scale, lying on a worn wooden bedside table next to a glass of water and a power bank, screen lit showing the time 02:00 with a red battery icon at exactly three bars, a white charging cable loosely coiled beside it, dim cold blue-grey ambient from the screen. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background&quot;,
+    &quot;sheet&quot;: &quot;Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the smartphone at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the smartphone on the worn wooden bedside table, screen showing 02:00 with a red battery icon at three bars, white charging cable beside it. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the red battery icon at three bars; the time display 02:00. BOTTOM ROW — three detail close-ups in a row beneath the master view: the white charging cable coil; the worn wood grain of the tabletop; the screen edge with the chat interface hint. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Plain pure white background, balanced composition with generous even white margins.&quot;,
+    &quot;tags&quot;: [
+      &quot;prop sheet&quot;,
+      &quot;smartphone&quot;,
+      &quot;handheld scale&quot;,
+      &quot;white background&quot;,
+      &quot;night screen glow&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    &quot;beats&quot;: [
+      &quot;循环揭示&quot;,
+      &quot;情感收束&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="pr-P02">
+  <header class="sc-h">
+    <span class="sc-id">P02</span>
+    <h3>床头那杯水</h3>
+    <span class="badge">桌面级</span>
+    <span class="sc-use">出现集 1　承载爽点 循环揭示</span>
+  </header>
+  <p class="sc-sum">戏剧功能：第一件让苏晚发现循环的物证。放了一夜的温吞水证明这不是新的一天；杯垫边上一滩圆形的积水是她在过的痕迹。</p>
+  <div class="plate plate-empty"><span>床头那杯水 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">关联场景：<b>S01</b>　关联角色：</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>透明玻璃杯</b><span>一只普通透明玻璃杯，半杯水</span></li><li><b>圆形水痕</b><span>杯垫边上一滩圆形的积水印，像从很高处垂直落下来的</span></li><li><b>杯垫</b><span>床头柜上的旧杯垫，边缘洇着水印</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>状态变体</h4>
+    <div class="lights"><div class="light"><i>半杯温水</i><span class="mono">a plain transparent glass with half a glass of water on a worn bedside table, tabletop scale, condensation faint on the glass, dim cold blue-grey room ambience, plain white background</span><button class="copy mini" data-copy="a plain transparent glass with half a glass of water on a worn bedside table, tabletop scale, condensation faint on the glass, dim cold blue-grey room ambience, plain white background">复制</button></div><div class="light"><i>杯垫边缘水痕</i><span class="mono">a plain transparent glass beside a round wet stain on the coaster at the edge of a worn bedside table, tabletop scale, the stain shaped like drops falling from a height, plain white background</span><button class="copy mini" data-copy="a plain transparent glass beside a round wet stain on the coaster at the edge of a worn bedside table, tabletop scale, the stain shaped like drops falling from a height, plain white background">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="A plain transparent glass of water, tabletop scale, sitting on a worn wooden bedside table on an old coaster, half full with faint condensation, a round wet stain on the coaster edge shaped like drops falling from a height, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.">复制</button></summary>
+  <p>A plain transparent glass of water, tabletop scale, sitting on a worn wooden bedside table on an old coaster, half full with faint condensation, a round wet stain on the coaster edge shaped like drops falling from a height, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the glass of water at tabletop scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the transparent glass half full of water on the old coaster on the worn bedside table, round wet stain on the coaster edge. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the round wet stain on the coaster; the condensation on the glass. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water surface with its faint rim light; the worn wood grain of the tabletop; the glass rim with a small chip. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Plain pure white background, balanced composition with generous even white margins.">复制</button></summary>
+  <p>Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the glass of water at tabletop scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the transparent glass half full of water on the old coaster on the worn bedside table, round wet stain on the coaster edge. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the round wet stain on the coaster; the condensation on the glass. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water surface with its faint rim light; the worn wood grain of the tabletop; the glass rim with a small chip. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Plain pure white background, balanced composition with generous even white margins.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background">复制</button></summary>
+  <p>people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;P02&quot;,
+  &quot;name&quot;: &quot;床头那杯水&quot;,
+  &quot;scale&quot;: &quot;桌面级&quot;,
+  &quot;summary&quot;: &quot;戏剧功能：第一件让苏晚发现循环的物证。放了一夜的温吞水证明这不是新的一天；杯垫边上一滩圆形的积水是她在过的痕迹。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;透明玻璃杯&quot;,
+      &quot;desc&quot;: &quot;一只普通透明玻璃杯，半杯水&quot;
+    },
+    {
+      &quot;name&quot;: &quot;圆形水痕&quot;,
+      &quot;desc&quot;: &quot;杯垫边上一滩圆形的积水印，像从很高处垂直落下来的&quot;
+    },
+    {
+      &quot;name&quot;: &quot;杯垫&quot;,
+      &quot;desc&quot;: &quot;床头柜上的旧杯垫，边缘洇着水印&quot;
+    }
+  ],
+  &quot;states&quot;: [
+    {
+      &quot;state&quot;: &quot;半杯温水&quot;,
+      &quot;prompt&quot;: &quot;a plain transparent glass with half a glass of water on a worn bedside table, tabletop scale, condensation faint on the glass, dim cold blue-grey room ambience, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;杯垫边缘水痕&quot;,
+      &quot;prompt&quot;: &quot;a plain transparent glass beside a round wet stain on the coaster at the edge of a worn bedside table, tabletop scale, the stain shaped like drops falling from a height, plain white background&quot;
+    }
+  ],
+  &quot;relatedScenes&quot;: [
+    &quot;S01&quot;
+  ],
+  &quot;carriedBy&quot;: [],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;A plain transparent glass of water, tabletop scale, sitting on a worn wooden bedside table on an old coaster, half full with faint condensation, a round wet stain on the coaster edge shaped like drops falling from a height, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background&quot;,
+    &quot;sheet&quot;: &quot;Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the glass of water at tabletop scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the transparent glass half full of water on the old coaster on the worn bedside table, round wet stain on the coaster edge. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the round wet stain on the coaster; the condensation on the glass. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water surface with its faint rim light; the worn wood grain of the tabletop; the glass rim with a small chip. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Plain pure white background, balanced composition with generous even white margins.&quot;,
+    &quot;tags&quot;: [
+      &quot;prop sheet&quot;,
+      &quot;glass of water&quot;,
+      &quot;tabletop scale&quot;,
+      &quot;white background&quot;,
+      &quot;water stain&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      1
+    ],
+    &quot;beats&quot;: [
+      &quot;循环揭示&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="pr-P03">
+  <header class="sc-h">
+    <span class="sc-id">P03</span>
+    <h3>便利贴（1与17）</h3>
+    <span class="badge">手持级</span>
+    <span class="sc-use">出现集 2　承载爽点 倒计时发现</span>
+  </header>
+  <p class="sc-sum">戏剧功能：苏晚试图留下痕迹的锚。写上1和17贴在床头，下一次醒来一张不剩——坐实循环会重置一切，包括她亲手写下的字。</p>
+  <div class="plate plate-empty"><span>便利贴（1与17） · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">关联场景：<b>S01</b>　关联角色：</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>黄色便利贴</b><span>巴掌大的黄色便利贴，边角微卷</span></li><li><b>黑笔手写1</b><span>黑笔手写的数字1，笔迹用力</span></li><li><b>黑笔手写17</b><span>第二张便利贴上黑笔手写的17</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>状态变体</h4>
+    <div class="lights"><div class="light"><i>一张写1</i><span class="mono">a single yellow sticky note on a white wall beside a bed, handheld scale, the number 1 hand-written in black pen with pressed strokes, slightly curled corner, plain white background</span><button class="copy mini" data-copy="a single yellow sticky note on a white wall beside a bed, handheld scale, the number 1 hand-written in black pen with pressed strokes, slightly curled corner, plain white background">复制</button></div><div class="light"><i>两张并排1与17</i><span class="mono">two yellow sticky notes side by side on a white wall beside a bed, handheld scale, the numbers 1 and 17 hand-written in black pen with pressed strokes, slightly curled corners, plain white background</span><button class="copy mini" data-copy="two yellow sticky notes side by side on a white wall beside a bed, handheld scale, the numbers 1 and 17 hand-written in black pen with pressed strokes, slightly curled corners, plain white background">复制</button></div><div class="light"><i>墙面空白</i><span class="mono">a bare white wall beside a bed, handheld scale context, absolutely clean with no sticky notes, no pen marks, no tape residue, plain white background</span><button class="copy mini" data-copy="a bare white wall beside a bed, handheld scale context, absolutely clean with no sticky notes, no pen marks, no tape residue, plain white background">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="A yellow sticky note, handheld scale, stuck on a bare white wall beside a bed, the number 1 hand-written in black pen with pressed firm strokes, corner slightly curled, a second identical note beside it showing the number 17, dim cold blue-grey ambience. Weathered, lived-in materials: faint shadow of the bed rail on the wall. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.">复制</button></summary>
+  <p>A yellow sticky note, handheld scale, stuck on a bare white wall beside a bed, the number 1 hand-written in black pen with pressed firm strokes, corner slightly curled, a second identical note beside it showing the number 17, dim cold blue-grey ambience. Weathered, lived-in materials: faint shadow of the bed rail on the wall. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the sticky notes at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state, two yellow sticky notes side by side on the bare white wall, the numbers 1 and 17 in pressed black pen strokes. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the number 1 with its pressed pen strokes; the number 17. BOTTOM ROW — three detail close-ups in a row beneath the master view: the curled corner of the note; the note edge against the white wall; the empty clean wall state with no residue. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Plain pure white background, balanced composition with generous even white margins.">复制</button></summary>
+  <p>Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the sticky notes at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state, two yellow sticky notes side by side on the bare white wall, the numbers 1 and 17 in pressed black pen strokes. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the number 1 with its pressed pen strokes; the number 17. BOTTOM ROW — three detail close-ups in a row beneath the master view: the curled corner of the note; the note edge against the white wall; the empty clean wall state with no residue. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Plain pure white background, balanced composition with generous even white margins.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background">复制</button></summary>
+  <p>people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;P03&quot;,
+  &quot;name&quot;: &quot;便利贴（1与17）&quot;,
+  &quot;scale&quot;: &quot;手持级&quot;,
+  &quot;summary&quot;: &quot;戏剧功能：苏晚试图留下痕迹的锚。写上1和17贴在床头，下一次醒来一张不剩——坐实循环会重置一切，包括她亲手写下的字。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;黄色便利贴&quot;,
+      &quot;desc&quot;: &quot;巴掌大的黄色便利贴，边角微卷&quot;
+    },
+    {
+      &quot;name&quot;: &quot;黑笔手写1&quot;,
+      &quot;desc&quot;: &quot;黑笔手写的数字1，笔迹用力&quot;
+    },
+    {
+      &quot;name&quot;: &quot;黑笔手写17&quot;,
+      &quot;desc&quot;: &quot;第二张便利贴上黑笔手写的17&quot;
+    }
+  ],
+  &quot;states&quot;: [
+    {
+      &quot;state&quot;: &quot;一张写1&quot;,
+      &quot;prompt&quot;: &quot;a single yellow sticky note on a white wall beside a bed, handheld scale, the number 1 hand-written in black pen with pressed strokes, slightly curled corner, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;两张并排1与17&quot;,
+      &quot;prompt&quot;: &quot;two yellow sticky notes side by side on a white wall beside a bed, handheld scale, the numbers 1 and 17 hand-written in black pen with pressed strokes, slightly curled corners, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;墙面空白&quot;,
+      &quot;prompt&quot;: &quot;a bare white wall beside a bed, handheld scale context, absolutely clean with no sticky notes, no pen marks, no tape residue, plain white background&quot;
+    }
+  ],
+  &quot;relatedScenes&quot;: [
+    &quot;S01&quot;
+  ],
+  &quot;carriedBy&quot;: [],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;A yellow sticky note, handheld scale, stuck on a bare white wall beside a bed, the number 1 hand-written in black pen with pressed firm strokes, corner slightly curled, a second identical note beside it showing the number 17, dim cold blue-grey ambience. Weathered, lived-in materials: faint shadow of the bed rail on the wall. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background&quot;,
+    &quot;sheet&quot;: &quot;Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the sticky notes at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state, two yellow sticky notes side by side on the bare white wall, the numbers 1 and 17 in pressed black pen strokes. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the number 1 with its pressed pen strokes; the number 17. BOTTOM ROW — three detail close-ups in a row beneath the master view: the curled corner of the note; the note edge against the white wall; the empty clean wall state with no residue. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Plain pure white background, balanced composition with generous even white margins.&quot;,
+    &quot;tags&quot;: [
+      &quot;prop sheet&quot;,
+      &quot;sticky note&quot;,
+      &quot;handheld scale&quot;,
+      &quot;white background&quot;,
+      &quot;handwritten number&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      2
+    ],
+    &quot;beats&quot;: [
+      &quot;倒计时发现&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="pr-P04">
+  <header class="sc-h">
+    <span class="sc-id">P04</span>
+    <h3>衣柜镜</h3>
+    <span class="badge">家具级</span>
+    <span class="sc-use">出现集 3　承载爽点 镜中真相</span>
+  </header>
+  <p class="sc-sum">戏剧功能：第一个她不是外来者的暗示。泼水后镜中浮出白衣影子，用湿手指写下别回头三个字——镜面是循环里唯一会说话的界面。</p>
+  <div class="plate plate-empty"><span>衣柜镜 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">关联场景：<b>S01</b>　关联角色：</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>整块镜面</b><span>衣柜门上整块落地镜，擦干净时映出整间屋</span></li><li><b>泼水水痕</b><span>泼水后镜面淌下的水痕，一条一条</span></li><li><b>湿指痕三个字</b><span>水汽里用湿手指写的三个字，笔迹模糊</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>状态变体</h4>
+    <div class="lights"><div class="light"><i>干净镜面</i><span class="mono">a full-length mirror on a wardrobe door in a small rented room, furniture scale, clean reflective surface showing an empty dim room, wooden frame, plain white background</span><button class="copy mini" data-copy="a full-length mirror on a wardrobe door in a small rented room, furniture scale, clean reflective surface showing an empty dim room, wooden frame, plain white background">复制</button></div><div class="light"><i>泼水水痕</i><span class="mono">a full-length mirror on a wardrobe door, furniture scale, water streaks running down the reflective surface, a faint pale figure-shaped blur inside the water streaks, wooden frame, dim cold ambience, plain white background</span><button class="copy mini" data-copy="a full-length mirror on a wardrobe door, furniture scale, water streaks running down the reflective surface, a faint pale figure-shaped blur inside the water streaks, wooden frame, dim cold ambience, plain white background">复制</button></div><div class="light"><i>湿指痕三个字</i><span class="mono">a full-length mirror on a wardrobe door, furniture scale, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, water droplets running down, wooden frame, plain white background</span><button class="copy mini" data-copy="a full-length mirror on a wardrobe door, furniture scale, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, water droplets running down, wooden frame, plain white background">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="A full-length mirror mounted on a wardrobe door, furniture scale, in a small rented room, wooden frame, the reflective surface showing water streaks and a faint pale figure-shaped blur inside them, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.">复制</button></summary>
+  <p>A full-length mirror mounted on a wardrobe door, furniture scale, in a small rented room, wooden frame, the reflective surface showing water streaks and a faint pale figure-shaped blur inside them, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the wardrobe mirror at furniture scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the full-length mirror on the wardrobe door, water streaks and the faint pale figure-shaped blur inside them, wet fingerprint characters on the misted glass. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the three wet-fingerprint characters bie hui tou; the pale figure-shaped blur inside the water streaks. BOTTOM ROW — three detail close-ups in a row beneath the master view: the wooden frame corner with worn grain; the water streaks running down the glass; the misted glass edge with droplets. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Plain pure white background, balanced composition with generous even white margins.">复制</button></summary>
+  <p>Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the wardrobe mirror at furniture scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the full-length mirror on the wardrobe door, water streaks and the faint pale figure-shaped blur inside them, wet fingerprint characters on the misted glass. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the three wet-fingerprint characters bie hui tou; the pale figure-shaped blur inside the water streaks. BOTTOM ROW — three detail close-ups in a row beneath the master view: the wooden frame corner with worn grain; the water streaks running down the glass; the misted glass edge with droplets. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Plain pure white background, balanced composition with generous even white margins.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background">复制</button></summary>
+  <p>people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;P04&quot;,
+  &quot;name&quot;: &quot;衣柜镜&quot;,
+  &quot;scale&quot;: &quot;家具级&quot;,
+  &quot;summary&quot;: &quot;戏剧功能：第一个她不是外来者的暗示。泼水后镜中浮出白衣影子，用湿手指写下别回头三个字——镜面是循环里唯一会说话的界面。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;整块镜面&quot;,
+      &quot;desc&quot;: &quot;衣柜门上整块落地镜，擦干净时映出整间屋&quot;
+    },
+    {
+      &quot;name&quot;: &quot;泼水水痕&quot;,
+      &quot;desc&quot;: &quot;泼水后镜面淌下的水痕，一条一条&quot;
+    },
+    {
+      &quot;name&quot;: &quot;湿指痕三个字&quot;,
+      &quot;desc&quot;: &quot;水汽里用湿手指写的三个字，笔迹模糊&quot;
+    }
+  ],
+  &quot;states&quot;: [
+    {
+      &quot;state&quot;: &quot;干净镜面&quot;,
+      &quot;prompt&quot;: &quot;a full-length mirror on a wardrobe door in a small rented room, furniture scale, clean reflective surface showing an empty dim room, wooden frame, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;泼水水痕&quot;,
+      &quot;prompt&quot;: &quot;a full-length mirror on a wardrobe door, furniture scale, water streaks running down the reflective surface, a faint pale figure-shaped blur inside the water streaks, wooden frame, dim cold ambience, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;湿指痕三个字&quot;,
+      &quot;prompt&quot;: &quot;a full-length mirror on a wardrobe door, furniture scale, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, water droplets running down, wooden frame, plain white background&quot;
+    }
+  ],
+  &quot;relatedScenes&quot;: [
+    &quot;S01&quot;
+  ],
+  &quot;carriedBy&quot;: [],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;A full-length mirror mounted on a wardrobe door, furniture scale, in a small rented room, wooden frame, the reflective surface showing water streaks and a faint pale figure-shaped blur inside them, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background&quot;,
+    &quot;sheet&quot;: &quot;Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the wardrobe mirror at furniture scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the full-length mirror on the wardrobe door, water streaks and the faint pale figure-shaped blur inside them, wet fingerprint characters on the misted glass. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the three wet-fingerprint characters bie hui tou; the pale figure-shaped blur inside the water streaks. BOTTOM ROW — three detail close-ups in a row beneath the master view: the wooden frame corner with worn grain; the water streaks running down the glass; the misted glass edge with droplets. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Plain pure white background, balanced composition with generous even white margins.&quot;,
+    &quot;tags&quot;: [
+      &quot;prop sheet&quot;,
+      &quot;wardrobe mirror&quot;,
+      &quot;furniture scale&quot;,
+      &quot;white background&quot;,
+      &quot;water streaks&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      3
+    ],
+    &quot;beats&quot;: [
+      &quot;镜中真相&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="pr-P05">
+  <header class="sc-h">
+    <span class="sc-id">P05</span>
+    <h3>水果刀</h3>
+    <span class="badge">手持级</span>
+    <span class="sc-use">出现集 4　承载爽点 假妈妈识破</span>
+  </header>
+  <p class="sc-sum">戏剧功能：挖开热墙的工具。刀尖插进墙里挖出一个拳头大的洞，挖进去是凉的、空的——热的只是表面那层皮，是自己在摸自己。</p>
+  <div class="plate plate-empty"><span>水果刀 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">关联场景：<b>S01</b>　关联角色：苏晚</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>折叠水果刀</b><span>一把普通折叠水果刀，刀柄旧塑料</span></li><li><b>崩口的刀尖</b><span>挖墙挖到刀尖崩了一个口</span></li><li><b>刀上白灰</b><span>刀刃和刀尖沾着白漆、腻子、砖灰</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>状态变体</h4>
+    <div class="lights"><div class="light"><i>合上</i><span class="mono">a closed folding fruit knife, handheld scale, worn plastic handle, plain white background</span><button class="copy mini" data-copy="a closed folding fruit knife, handheld scale, worn plastic handle, plain white background">复制</button></div><div class="light"><i>打开刀尖崩口沾灰</i><span class="mono">an open folding fruit knife, handheld scale, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, worn plastic handle, plain white background</span><button class="copy mini" data-copy="an open folding fruit knife, handheld scale, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, worn plastic handle, plain white background">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="An open folding fruit knife, handheld scale, worn plastic handle, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, dim cold blue-grey ambience. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.">复制</button></summary>
+  <p>An open folding fruit knife, handheld scale, worn plastic handle, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, dim cold blue-grey ambience. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the fruit knife at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the open folding knife with chipped tip and dust on the blade. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the chipped blade tip; the white plaster dust and brick crumbs on the blade. BOTTOM ROW — three detail close-ups in a row beneath the master view: the worn plastic handle; the hinge of the folding mechanism; the fine scratches on the blade metal. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Plain pure white background, balanced composition with generous even white margins.">复制</button></summary>
+  <p>Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the fruit knife at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the open folding knife with chipped tip and dust on the blade. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the chipped blade tip; the white plaster dust and brick crumbs on the blade. BOTTOM ROW — three detail close-ups in a row beneath the master view: the worn plastic handle; the hinge of the folding mechanism; the fine scratches on the blade metal. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Plain pure white background, balanced composition with generous even white margins.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background">复制</button></summary>
+  <p>people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;P05&quot;,
+  &quot;name&quot;: &quot;水果刀&quot;,
+  &quot;scale&quot;: &quot;手持级&quot;,
+  &quot;summary&quot;: &quot;戏剧功能：挖开热墙的工具。刀尖插进墙里挖出一个拳头大的洞，挖进去是凉的、空的——热的只是表面那层皮，是自己在摸自己。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;折叠水果刀&quot;,
+      &quot;desc&quot;: &quot;一把普通折叠水果刀，刀柄旧塑料&quot;
+    },
+    {
+      &quot;name&quot;: &quot;崩口的刀尖&quot;,
+      &quot;desc&quot;: &quot;挖墙挖到刀尖崩了一个口&quot;
+    },
+    {
+      &quot;name&quot;: &quot;刀上白灰&quot;,
+      &quot;desc&quot;: &quot;刀刃和刀尖沾着白漆、腻子、砖灰&quot;
+    }
+  ],
+  &quot;states&quot;: [
+    {
+      &quot;state&quot;: &quot;合上&quot;,
+      &quot;prompt&quot;: &quot;a closed folding fruit knife, handheld scale, worn plastic handle, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;打开刀尖崩口沾灰&quot;,
+      &quot;prompt&quot;: &quot;an open folding fruit knife, handheld scale, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, worn plastic handle, plain white background&quot;
+    }
+  ],
+  &quot;relatedScenes&quot;: [
+    &quot;S01&quot;
+  ],
+  &quot;carriedBy&quot;: [
+    &quot;苏晚&quot;
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;An open folding fruit knife, handheld scale, worn plastic handle, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, dim cold blue-grey ambience. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background&quot;,
+    &quot;sheet&quot;: &quot;Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the fruit knife at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the open folding knife with chipped tip and dust on the blade. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the chipped blade tip; the white plaster dust and brick crumbs on the blade. BOTTOM ROW — three detail close-ups in a row beneath the master view: the worn plastic handle; the hinge of the folding mechanism; the fine scratches on the blade metal. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Plain pure white background, balanced composition with generous even white margins.&quot;,
+    &quot;tags&quot;: [
+      &quot;prop sheet&quot;,
+      &quot;folding knife&quot;,
+      &quot;handheld scale&quot;,
+      &quot;white background&quot;,
+      &quot;chipped blade&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      4
+    ],
+    &quot;beats&quot;: [
+      &quot;假妈妈识破&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+<article class="scene" id="pr-P06">
+  <header class="sc-h">
+    <span class="sc-id">P06</span>
+    <h3>青白旧衬衫</h3>
+    <span class="badge">手持级</span>
+    <span class="sc-use">出现集 6　承载爽点 最大反转</span>
+  </header>
+  <p class="sc-sum">戏剧功能：身份反转的关键物证。衣柜里那件是以为有过的，她身上那件是出事当晚真的穿过的——青白、领口磨毛、袖子一块黄，下摆湿透。</p>
+  <div class="plate plate-empty"><span>青白旧衬衫 · 尚未出图<br><em>用下方提示词生成</em></span></div>
+  <p class="variant">关联场景：<b>S01、S03</b>　关联角色：白衣的她</p>
+  <section class="blk">
+    <h4>一致性锚点<small>每次生成都必须出现的特征——认场景靠它，QC 也靠它</small></h4>
+    <ol class="anchors"><li><b>青白泛灰</b><span>旧棉布的颜色发青发灰，不是纯白</span></li><li><b>领口磨毛</b><span>领口磨起毛边</span></li><li><b>袖子一块黄</b><span>一只袖子上有一块洗不掉的黄渍</span></li><li><b>下摆湿透</b><span>下摆湿透，洇出深色</span></li></ol>
+  </section>
+  <section class="blk">
+    <h4>状态变体</h4>
+    <div class="lights"><div class="light"><i>湿透挂着的旧衬衫</i><span class="mono">an old washed-out blue-white shirt hanging from a hanger, handheld scale context, fabric damp and darkened at the hem, water droplets on the fabric, frayed collar, a yellow stain on one sleeve, plain white background</span><button class="copy mini" data-copy="an old washed-out blue-white shirt hanging from a hanger, handheld scale context, fabric damp and darkened at the hem, water droplets on the fabric, frayed collar, a yellow stain on one sleeve, plain white background">复制</button></div><div class="light"><i>叠在柜底</i><span class="mono">an old washed-out blue-white shirt folded at the bottom of an empty wardrobe, handheld scale context, dry and creased, frayed collar, a yellow stain on one sleeve, plain white background</span><button class="copy mini" data-copy="an old washed-out blue-white shirt folded at the bottom of an empty wardrobe, handheld scale context, dry and creased, frayed collar, a yellow stain on one sleeve, plain white background">复制</button></div></div>
+  </section>
+  <div class="pgroup">
+    <details class="pr">
+  <summary><span>主视角 EN</span><button class="copy" data-copy="An old washed-out blue-white shirt, handheld scale context, hanging from a plain hanger, fabric damp and darkened at the hem with water droplets on the cloth, frayed collar, a yellow stain that will not wash out on one sleeve, dim cold blue-grey ambience. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.">复制</button></summary>
+  <p>An old washed-out blue-white shirt, handheld scale context, hanging from a plain hanger, fabric damp and darkened at the hem with water droplets on the cloth, frayed collar, a yellow stain that will not wash out on one sleeve, dim cold blue-grey ambience. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.</p>
+</details>
+    <details class="pr">
+  <summary><span>设定图 EN</span><button class="copy" data-copy="Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the old shirt at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the damp blue-white shirt hanging from a hanger, darkened hem, water droplets on the fabric. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the frayed collar with pilling; the yellow stain on the sleeve. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water droplets on the damp hem; the faded uneven cotton weave; the soft worn fabric texture at the shoulder. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Plain pure white background, balanced composition with generous even white margins.">复制</button></summary>
+  <p>Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the old shirt at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the damp blue-white shirt hanging from a hanger, darkened hem, water droplets on the fabric. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the frayed collar with pilling; the yellow stain on the sleeve. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water droplets on the damp hem; the faded uneven cotton weave; the soft worn fabric texture at the shoulder. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Plain pure white background, balanced composition with generous even white margins.</p>
+</details>
+    <details class="pr">
+  <summary><span>反向提示词</span><button class="copy" data-copy="people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background">复制</button></summary>
+  <p>people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background</p>
+</details>
+    <div class="pgroup-f"><button class="copy wide" data-copy="{
+  &quot;id&quot;: &quot;P06&quot;,
+  &quot;name&quot;: &quot;青白旧衬衫&quot;,
+  &quot;scale&quot;: &quot;手持级&quot;,
+  &quot;summary&quot;: &quot;戏剧功能：身份反转的关键物证。衣柜里那件是以为有过的，她身上那件是出事当晚真的穿过的——青白、领口磨毛、袖子一块黄，下摆湿透。&quot;,
+  &quot;anchors&quot;: [
+    {
+      &quot;name&quot;: &quot;青白泛灰&quot;,
+      &quot;desc&quot;: &quot;旧棉布的颜色发青发灰，不是纯白&quot;
+    },
+    {
+      &quot;name&quot;: &quot;领口磨毛&quot;,
+      &quot;desc&quot;: &quot;领口磨起毛边&quot;
+    },
+    {
+      &quot;name&quot;: &quot;袖子一块黄&quot;,
+      &quot;desc&quot;: &quot;一只袖子上有一块洗不掉的黄渍&quot;
+    },
+    {
+      &quot;name&quot;: &quot;下摆湿透&quot;,
+      &quot;desc&quot;: &quot;下摆湿透，洇出深色&quot;
+    }
+  ],
+  &quot;states&quot;: [
+    {
+      &quot;state&quot;: &quot;湿透挂着的旧衬衫&quot;,
+      &quot;prompt&quot;: &quot;an old washed-out blue-white shirt hanging from a hanger, handheld scale context, fabric damp and darkened at the hem, water droplets on the fabric, frayed collar, a yellow stain on one sleeve, plain white background&quot;
+    },
+    {
+      &quot;state&quot;: &quot;叠在柜底&quot;,
+      &quot;prompt&quot;: &quot;an old washed-out blue-white shirt folded at the bottom of an empty wardrobe, handheld scale context, dry and creased, frayed collar, a yellow stain on one sleeve, plain white background&quot;
+    }
+  ],
+  &quot;relatedScenes&quot;: [
+    &quot;S01&quot;,
+    &quot;S03&quot;
+  ],
+  &quot;carriedBy&quot;: [
+    &quot;白衣的她&quot;
+  ],
+  &quot;image&quot;: {
+    &quot;prompt&quot;: &quot;An old washed-out blue-white shirt, handheld scale context, hanging from a plain hanger, fabric damp and darkened at the hem with water droplets on the cloth, frayed collar, a yellow stain that will not wash out on one sleeve, dim cold blue-grey ambience. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.&quot;,
+    &quot;negativePrompt&quot;: &quot;people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background&quot;,
+    &quot;sheet&quot;: &quot;Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the old shirt at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the damp blue-white shirt hanging from a hanger, darkened hem, water droplets on the fabric. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the frayed collar with pilling; the yellow stain on the sleeve. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water droplets on the damp hem; the faded uneven cotton weave; the soft worn fabric texture at the shoulder. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Plain pure white background, balanced composition with generous even white margins.&quot;,
+    &quot;tags&quot;: [
+      &quot;prop sheet&quot;,
+      &quot;old blue-white shirt&quot;,
+      &quot;handheld scale&quot;,
+      &quot;white background&quot;,
+      &quot;damp fabric&quot;
+    ]
+  },
+  &quot;usage&quot;: {
+    &quot;episodes&quot;: [
+      6
+    ],
+    &quot;beats&quot;: [
+      &quot;最大反转&quot;
+    ]
+  }
+}">复制整个场景 JSON</button></div>
+  </div>
+</article>
+  </div>
+</section>
+
+<section class="top-sec" id="sec-gates">
+  <div class="sec-h"><span class="no">05</span><h2>质量门</h2></div>
+  <ul class="gate">
+  <li class="ok"><span class="m">✓</span><span>一致性锚点 3–5 个</span></li>
+  <li class="ok"><span class="m">✓</span><span>光照状态至少 1 个且落成提示词</span></li>
+  <li class="ok"><span class="m">✓</span><span>参考图无人：反向提示词禁人（场景与道具都查）</span></li>
+  <li class="ok"><span class="m">✓</span><span>出图提示词全部英文</span></li>
+  <li class="ok"><span class="m">✓</span><span>提示词不含角色名<small>未提供 cast.json，本门跳过（视为通过）</small></span></li>
+  <li class="ok"><span class="m">✓</span><span>变体引用完整（variantOf 存在且带 changes）</span></li>
+  <li class="ok"><span class="m">✓</span><span>道具状态至少 1 个且落成提示词</span></li>
+  <li class="ok"><span class="m">✓</span><span>道具尺度参照写进提示词</span></li>
+  <li class="ok"><span class="m">✓</span><span>道具参考图无手：反向提示词禁手</span></li>
+  <li class="ok"><span class="m">✓</span><span>道具设定图纯白背景可抠</span></li>
+</ul>
+  <p class="gsum">全部通过</p>
+</section>
+
+<p class="foot">设定与提示词由模型依据大纲/原文生成，质量门由脚本确定性检查。参考图一律无人——人是另一层资产；道具参考图另加无手、纯白背景。</p>
+</div>
+
+<div class="lightbox" role="dialog" aria-modal="true">
+  <button class="lightbox-x" aria-label="关闭">关闭</button>
+  <img alt="">
+</div>
+
+<script type="application/json" id="art-data">{"source":"别睡","dynasty":"2020年代中国都市","scenes":[{"id":"S01","name":"十四平米出租屋卧室","primary":true,"summary":"设计意图：全剧循环的舞台，一间逼仄到无处藏身、又把苏晚困死的十四平米朝北单间。这个空间要同时讲两件事：一个独居打工人攒出来的小窝，和循环里一切重置、只有她不动的那种恐怖。书桌与墙之间四十公分的缝是恐惧的坐标，床头是她站的位置。","anchors":[{"name":"四十公分的缝","desc":"书桌与墙之间堆着四个纸箱、一摞旧书、一个没拆封的空气炸锅，缝口狭窄到只容一人侧身"},{"name":"床头三件套","desc":"床头那一小块地方固定摆着：一杯水、一块充电宝、一本翻了一半的《罪与罚》"},{"name":"衣柜门整块镜","desc":"衣柜门上是一整面落地镜，泼水会浮出影子、写别回头三个字的那块"},{"name":"拉紧的窗帘","desc":"窗帘始终拉紧，窗外那条缝是天，循环里永远不变亮"}],"lighting":[{"state":"深夜手机屏光","prompt":"deep night, the cold white glow of a smartphone screen as the only light source, a small patch of coloured light reflected on the ceiling, dim blue-grey ambience, deep shadows around the single bed and the desk, volumetric dust in the phone beam"},{"state":"假清晨天光","prompt":"a greyish muted dawn light leaking through the gap in the closed curtains, flat replayed-video feel, washed-out colours, no warm sun, dust motes hanging in the pale shaft of light"},{"state":"全黑对峙","prompt":"near-total darkness after the phone is switched off, faint city night glow around the curtain edges, barely visible furniture silhouettes, heavy oppressive blackness"},{"state":"废墟昏光","prompt":"a wrecked room under a single dim ceiling light, splintered furniture and torn paper scattered on the floor, dust and debris in the air catching the light, harsh long shadows"}],"image":{"prompt":"An empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, 2020s. A narrow 90cm single bed against the east wall with a plain washed white-grey bedsheet; a bedside area holding a glass of water, a power bank and a half-read thick paperback; a small desk pushed against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and a still-unboxed air fryer; a full-length mirror on the wardrobe door; closed curtains with a sliver of grey light at the gap. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Three-quarter view from the doorway, plain composition, cold grey-blue palette, muted desaturated tones, dim lonely midnight mood, readable structure from every angle.","negativePrompt":"people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature","sheet":"Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard establishing view of the scene in its first lighting state, an empty fourteen-square-metre north-facing single-room rental apartment in contemporary urban China, narrow single bed against the east wall with a washed white-grey bedsheet, bedside glass of water with power bank and half-read paperback, desk against the wall leaving a narrow 40cm gap crammed with cardboard boxes, old books and an unboxed air fryer, full-length mirror on the wardrobe door, closed curtains with a sliver of grey light; deep-night mood lit by the cold glow of a smartphone screen. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each one a cropped enlargement of a real part of the master view: the narrow 40cm gap between the desk and the wall with the cardboard boxes and air fryer; the full-length mirror on the wardrobe door with its wooden frame. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the bedside glass of water with the power bank and the half-read paperback; the washed white-grey bedsheet with its worn weave and creases; the closed curtains with the sliver of grey light at the gap. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — the same wall, the same furniture, the same proportions, nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Plain muted cold grey-blue palette, dim lonely midnight mood, readable structure from every angle.","tags":["environment sheet","contemporary urban china","single-room rental","night phone glow","weathered materials","cinematic"]},"usage":{"episodes":[1,2,3,4,5,6],"beats":["恐怖钩","循环揭示","倒计时发现","镜中真相","封锁","身体异变","假妈妈识破","记忆流失","位置揭示","真声音","最大反转","情感收束"]}},{"id":"S02","name":"出租屋楼道与单元门","primary":false,"variantOf":"S01","changes":"机位从卧室拉到门外的窄楼道：去掉室内家具，改成起壳白灰墙、不亮的声控灯、水泥窄楼梯、一楼铁皮单元门，门缝外能看到路灯下的电动车","summary":"设计意图：循环里走出去的死路。窄楼道、不亮的声控灯、推不开的铁皮单元门，门缝外能看到真实世界的路灯和电动车，但就是出不去。恐惧从这里开始转向这个世界是假的。","anchors":[{"name":"起壳白灰墙","desc":"楼道墙面的白灰起壳翘皮，水泥地裸露，潮味感"},{"name":"不亮的声控灯","desc":"每一层楼道口的声控灯，拍手也不亮"},{"name":"铁皮单元门","desc":"一楼那扇铁皮单元门，推不动、撞不开"},{"name":"门缝外的电动车","desc":"门缝里能看见路灯、树和一辆停在路边的电动车——看得见出不去"}],"lighting":[{"state":"深夜楼道黑","prompt":"deep night in a narrow stairwell, near-darkness with a single cold phone-torch beam cutting the dark, faint street-lamp glow seeping through the crack under the unit door, heavy shadows on the peeling white-grey walls"}],"image":{"prompt":"An empty narrow stairwell of an old Chinese walk-up apartment building, 2020s, seen from the upper landing looking down: peeling white-grey plaster walls, bare concrete steps, an unlit motion-sensor light at each landing, a dark iron unit door at the bottom, through the door crack a faint street lamp and the silhouette of a parked e-bike. Keep the structure, materials and wear identical to the reference image of the rented room building — the same aged plaster, the same worn concrete, the same dim cold palette. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts; fabric and paper props show creases and age; nothing looks factory-new. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.","negativePrompt":"people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature","sheet":"Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the rented room building. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the narrow stairwell in deep night, peeling white-grey plaster walls, bare concrete steps, unlit motion-sensor lights, dark iron unit door at the bottom with faint street-lamp glow through the crack. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the peeling white-grey plaster wall; the dark iron unit door with its worn handle. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the unlit motion-sensor light; the bare concrete steps with worn edges; the street lamp and parked e-bike glimpsed through the door crack. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Weathered, lived-in materials: chipped paint, water stains, patina on metal, worn wood grain, dust in corners and light shafts. Atmospheric depth with haze or volumetric light where the space allows. Plain cold grey-blue palette, oppressive dead-end mood, readable structure from every angle.","tags":["environment sheet","old chinese walk-up stairwell","peeling plaster","night darkness","weathered materials","cinematic"]},"usage":{"episodes":[3],"beats":["镜中真相","封锁"]}},{"id":"S04","name":"ICU走廊与玻璃门","primary":true,"summary":"设计意图：妈妈的世界，也是循环里所有墙后声音的真实来源。荧光灯走廊、塑料座椅、玻璃门上的手印——外部世界的情感出口，用冷白和出租屋的暗暖形成真实与循环的对照。","anchors":[{"name":"玻璃门上的手印","desc":"重症监护室玻璃门上拍满的手印与掌痕，一左一右的旧印"},{"name":"走廊塑料座椅","desc":"荧光灯下的一排塑料座椅，坐着守夜的人"},{"name":"荧光灯管","desc":"走廊顶上一排冷白荧光灯管，照得人发青"},{"name":"监护室门牌","desc":"玻璃门旁贴着重症监护室的门牌与消毒提示"}],"lighting":[{"state":"走廊荧光冷光","prompt":"harsh cold white fluorescent light from the corridor ceiling tubes, flat clinical illumination, pale greenish-white walls, glass door reflections, shadows of waiting people stretching on the floor"},{"state":"清晨走廊微光","prompt":"early dawn, the fluorescent tubes still on but dimmer, pale grey morning light mixing from the window at the corridor end, quieter softer shadows"}],"image":{"prompt":"An empty ICU corridor of a modern Chinese public hospital, 2020s, at night: a row of cold white fluorescent tubes on the ceiling, pale greenish-white walls, a glass door with the intensive care sign and handprints on the pane, a row of plastic waiting chairs, disinfectant smell implied by the clean clinical surfaces. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette, clinical quiet dread, readable structure from every angle.","negativePrompt":"people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature","sheet":"Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU corridor at night, cold white fluorescent tubes, pale greenish-white walls, glass door with the intensive care sign and handprints, row of plastic waiting chairs. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the handprints on the glass door pane; the intensive care sign beside the door. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the row of plastic waiting chairs; the cold white fluorescent tubes; the worn threshold directly inside the door. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette, clinical quiet dread, readable structure from every angle.","tags":["environment sheet","modern chinese hospital","icu corridor","fluorescent light","maintained materials","cinematic"]},"usage":{"episodes":[6],"beats":["真声音","最大反转","情感收束"]}},{"id":"S03","name":"ICU病房内","primary":true,"variantOf":"S04","changes":"机位翻到玻璃内侧：病床、床头监护仪、输液架、缠纱布的病人、玻璃门外走廊人影与冷光","summary":"设计意图：真实世界的终点。病床、监护仪、输液架，苏晚躺在这里。消毒水的白与机器的滴声，是循环里所有墙后声音的来源；玻璃门把妈妈挡在外面，也把循环里的水声翻译成了这台机器的滴声。","anchors":[{"name":"床头监护仪","desc":"床头的监护仪，绿色波形线一跳一跳，机器滴声的来源"},{"name":"输液架与针管","desc":"床侧输液架，输液管连着病人手背的针"},{"name":"缠纱布的头部","desc":"病人头上缠着纱布，脸白，鼻里有管"},{"name":"玻璃门外的人影","desc":"玻璃门外走廊冷光下站着的人影，隔着玻璃看不清脸"}],"lighting":[{"state":"病房夜灯","prompt":"dim ICU night lighting, the green glow of the bedside monitor as the main light accent, soft blue-white ambient, patient lying still under a thin white sheet, cold clinical darkness"},{"state":"清晨病房光","prompt":"early dawn grey light through the corridor window and glass door, quieter softer tone, monitor still glowing green, pale clinical morning"}],"image":{"prompt":"An empty ICU ward bay of a modern Chinese public hospital, 2020s, at night — no people, only the bed made up with a thin white sheet, a bedside monitor with a glowing green waveform, an IV stand with tubing, head bandaging folded at the pillow, a glass door at the side with faint corridor light and a blurred figure silhouette outside. Keep the structure, materials and wear identical to the reference image of the ICU corridor — the same pale greenish-white walls, the same cold white-blue palette. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Empty scene, absolutely no people anywhere, no human figures, no characters. Plain composition, cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.","negativePrompt":"people, human figures, characters, crowds, silhouettes of people, oversaturated colours, sterile showroom cleanliness, warped perspective, melted geometry, floating objects, text, watermark, signature","sheet":"Single environment sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), a variant scene: keep the structure, materials and wear identical to the reference image of the ICU corridor. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the standard view of the ICU ward bay at night, bed with thin white sheet, bedside monitor with glowing green waveform, IV stand, glass door with blurred corridor light. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge, each a cropped enlargement of a real part of the master view: the bedside monitor with its green waveform; the IV stand with tubing. BOTTOM ROW — three detail close-ups in a row beneath the master view, each a cropped enlargement of a real part of the master view: the folded head bandaging on the pillow; the glass door with the blurred corridor silhouette outside; the thin white sheet with its clinical creases. THE SPACE MUST BE IDENTICAL ACROSS ALL PANELS — nothing invented that is not present in the master view. Absolutely no people anywhere, no human figures, no characters in any panel. Well-kept, actively maintained materials: sound lacquer with an even sheen, swept stone and timber, polished metal fittings, tight joinery, no peeling paint and no water staining; wear confined to the traffic a space like this really takes — thresholds, handrails, the stone directly inside a doorway. Atmospheric depth with haze or volumetric light where the space allows. Plain cold white-blue palette with the green monitor glow, clinical quiet dread, readable structure from every angle.","tags":["environment sheet","modern chinese hospital","icu ward","night monitor glow","maintained materials","cinematic"]},"usage":{"episodes":[6],"beats":["真声音","最大反转","情感收束"]}}],"props":[{"id":"P01","name":"手机（三格电）","scale":"手持级","summary":"戏剧功能：循环里唯一属于人的东西。电量和时间永远卡在02:00与三格电，是循环的判据；结尾用它发出那条到家的消息，屏幕还剩三格电然后没电。","anchors":[{"name":"红色小电池三格","desc":"右上角红色小电池图标，永远只剩三格，充电也不涨"},{"name":"02:00时间显示","desc":"屏幕右上角时间永远停在02:00"},{"name":"白色充电线","desc":"一条绕在枕边的白色充电线，插上也不涨电"}],"states":[{"state":"亮屏02:00三格电","prompt":"a modern smartphone on a worn wooden bedside table, handheld scale, screen lit showing the time 02:00 with a red battery icon at three bars, dim cold light from the screen, plain white background"},{"state":"黑屏关机","prompt":"a modern smartphone lying face-up on a worn wooden bedside table, handheld scale, screen completely black and off, red battery icon faintly visible when the power key is pressed, plain white background"},{"state":"微信发出到家了妈","prompt":"a modern smartphone held in screen view, handheld scale, chat interface showing a sent green message bubble with the Chinese characters reading dao jia le ma (arrived home, mom), the time 02:00 and a red battery icon at three bars at the top, plain white background"}],"relatedScenes":["S01","S03","S04"],"carriedBy":["苏晚"],"image":{"prompt":"A modern smartphone, handheld scale, lying on a worn wooden bedside table next to a glass of water and a power bank, screen lit showing the time 02:00 with a red battery icon at exactly three bars, a white charging cable loosely coiled beside it, dim cold blue-grey ambient from the screen. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.","negativePrompt":"people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background","sheet":"Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the smartphone at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the smartphone on the worn wooden bedside table, screen showing 02:00 with a red battery icon at three bars, white charging cable beside it. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the red battery icon at three bars; the time display 02:00. BOTTOM ROW — three detail close-ups in a row beneath the master view: the white charging cable coil; the worn wood grain of the tabletop; the screen edge with the chat interface hint. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, dust in the corners. Plain pure white background, balanced composition with generous even white margins.","tags":["prop sheet","smartphone","handheld scale","white background","night screen glow"]},"usage":{"episodes":[1,2,3,4,5,6],"beats":["循环揭示","情感收束"]}},{"id":"P02","name":"床头那杯水","scale":"桌面级","summary":"戏剧功能：第一件让苏晚发现循环的物证。放了一夜的温吞水证明这不是新的一天；杯垫边上一滩圆形的积水是她在过的痕迹。","anchors":[{"name":"透明玻璃杯","desc":"一只普通透明玻璃杯，半杯水"},{"name":"圆形水痕","desc":"杯垫边上一滩圆形的积水印，像从很高处垂直落下来的"},{"name":"杯垫","desc":"床头柜上的旧杯垫，边缘洇着水印"}],"states":[{"state":"半杯温水","prompt":"a plain transparent glass with half a glass of water on a worn bedside table, tabletop scale, condensation faint on the glass, dim cold blue-grey room ambience, plain white background"},{"state":"杯垫边缘水痕","prompt":"a plain transparent glass beside a round wet stain on the coaster at the edge of a worn bedside table, tabletop scale, the stain shaped like drops falling from a height, plain white background"}],"relatedScenes":["S01"],"carriedBy":[],"image":{"prompt":"A plain transparent glass of water, tabletop scale, sitting on a worn wooden bedside table on an old coaster, half full with faint condensation, a round wet stain on the coaster edge shaped like drops falling from a height, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.","negativePrompt":"people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background","sheet":"Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the glass of water at tabletop scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the transparent glass half full of water on the old coaster on the worn bedside table, round wet stain on the coaster edge. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the round wet stain on the coaster; the condensation on the glass. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water surface with its faint rim light; the worn wood grain of the tabletop; the glass rim with a small chip. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the tabletop, water stain on the coaster. Plain pure white background, balanced composition with generous even white margins.","tags":["prop sheet","glass of water","tabletop scale","white background","water stain"]},"usage":{"episodes":[1],"beats":["循环揭示"]}},{"id":"P03","name":"便利贴（1与17）","scale":"手持级","summary":"戏剧功能：苏晚试图留下痕迹的锚。写上1和17贴在床头，下一次醒来一张不剩——坐实循环会重置一切，包括她亲手写下的字。","anchors":[{"name":"黄色便利贴","desc":"巴掌大的黄色便利贴，边角微卷"},{"name":"黑笔手写1","desc":"黑笔手写的数字1，笔迹用力"},{"name":"黑笔手写17","desc":"第二张便利贴上黑笔手写的17"}],"states":[{"state":"一张写1","prompt":"a single yellow sticky note on a white wall beside a bed, handheld scale, the number 1 hand-written in black pen with pressed strokes, slightly curled corner, plain white background"},{"state":"两张并排1与17","prompt":"two yellow sticky notes side by side on a white wall beside a bed, handheld scale, the numbers 1 and 17 hand-written in black pen with pressed strokes, slightly curled corners, plain white background"},{"state":"墙面空白","prompt":"a bare white wall beside a bed, handheld scale context, absolutely clean with no sticky notes, no pen marks, no tape residue, plain white background"}],"relatedScenes":["S01"],"carriedBy":[],"image":{"prompt":"A yellow sticky note, handheld scale, stuck on a bare white wall beside a bed, the number 1 hand-written in black pen with pressed firm strokes, corner slightly curled, a second identical note beside it showing the number 17, dim cold blue-grey ambience. Weathered, lived-in materials: faint shadow of the bed rail on the wall. Photographed straight-on at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.","negativePrompt":"people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background","sheet":"Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the sticky notes at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state, two yellow sticky notes side by side on the bare white wall, the numbers 1 and 17 in pressed black pen strokes. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the number 1 with its pressed pen strokes; the number 17. BOTTOM ROW — three detail close-ups in a row beneath the master view: the curled corner of the note; the note edge against the white wall; the empty clean wall state with no residue. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Plain pure white background, balanced composition with generous even white margins.","tags":["prop sheet","sticky note","handheld scale","white background","handwritten number"]},"usage":{"episodes":[2],"beats":["倒计时发现"]}},{"id":"P04","name":"衣柜镜","scale":"家具级","summary":"戏剧功能：第一个她不是外来者的暗示。泼水后镜中浮出白衣影子，用湿手指写下别回头三个字——镜面是循环里唯一会说话的界面。","anchors":[{"name":"整块镜面","desc":"衣柜门上整块落地镜，擦干净时映出整间屋"},{"name":"泼水水痕","desc":"泼水后镜面淌下的水痕，一条一条"},{"name":"湿指痕三个字","desc":"水汽里用湿手指写的三个字，笔迹模糊"}],"states":[{"state":"干净镜面","prompt":"a full-length mirror on a wardrobe door in a small rented room, furniture scale, clean reflective surface showing an empty dim room, wooden frame, plain white background"},{"state":"泼水水痕","prompt":"a full-length mirror on a wardrobe door, furniture scale, water streaks running down the reflective surface, a faint pale figure-shaped blur inside the water streaks, wooden frame, dim cold ambience, plain white background"},{"state":"湿指痕三个字","prompt":"a full-length mirror on a wardrobe door, furniture scale, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, water droplets running down, wooden frame, plain white background"}],"relatedScenes":["S01"],"carriedBy":[],"image":{"prompt":"A full-length mirror mounted on a wardrobe door, furniture scale, in a small rented room, wooden frame, the reflective surface showing water streaks and a faint pale figure-shaped blur inside them, three Chinese characters reading bie hui tou (do not look back) traced in wet fingerprints on the misted glass, dim cold blue-grey ambience. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.","negativePrompt":"people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background","sheet":"Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the wardrobe mirror at furniture scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the full-length mirror on the wardrobe door, water streaks and the faint pale figure-shaped blur inside them, wet fingerprint characters on the misted glass. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the three wet-fingerprint characters bie hui tou; the pale figure-shaped blur inside the water streaks. BOTTOM ROW — three detail close-ups in a row beneath the master view: the wooden frame corner with worn grain; the water streaks running down the glass; the misted glass edge with droplets. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: worn wood grain on the frame, faint water stains at the mirror bottom. Plain pure white background, balanced composition with generous even white margins.","tags":["prop sheet","wardrobe mirror","furniture scale","white background","water streaks"]},"usage":{"episodes":[3],"beats":["镜中真相"]}},{"id":"P05","name":"水果刀","scale":"手持级","summary":"戏剧功能：挖开热墙的工具。刀尖插进墙里挖出一个拳头大的洞，挖进去是凉的、空的——热的只是表面那层皮，是自己在摸自己。","anchors":[{"name":"折叠水果刀","desc":"一把普通折叠水果刀，刀柄旧塑料"},{"name":"崩口的刀尖","desc":"挖墙挖到刀尖崩了一个口"},{"name":"刀上白灰","desc":"刀刃和刀尖沾着白漆、腻子、砖灰"}],"states":[{"state":"合上","prompt":"a closed folding fruit knife, handheld scale, worn plastic handle, plain white background"},{"state":"打开刀尖崩口沾灰","prompt":"an open folding fruit knife, handheld scale, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, worn plastic handle, plain white background"}],"relatedScenes":["S01"],"carriedBy":["苏晚"],"image":{"prompt":"An open folding fruit knife, handheld scale, worn plastic handle, chipped blade tip, white paint dust and plaster crumbs and brick dust stuck to the blade, dim cold blue-grey ambience. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.","negativePrompt":"people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background","sheet":"Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the fruit knife at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the open folding knife with chipped tip and dust on the blade. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the chipped blade tip; the white plaster dust and brick crumbs on the blade. BOTTOM ROW — three detail close-ups in a row beneath the master view: the worn plastic handle; the hinge of the folding mechanism; the fine scratches on the blade metal. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: scuffed plastic handle, worn blade metal with fine scratches. Plain pure white background, balanced composition with generous even white margins.","tags":["prop sheet","folding knife","handheld scale","white background","chipped blade"]},"usage":{"episodes":[4],"beats":["假妈妈识破"]}},{"id":"P06","name":"青白旧衬衫","scale":"手持级","summary":"戏剧功能：身份反转的关键物证。衣柜里那件是以为有过的，她身上那件是出事当晚真的穿过的——青白、领口磨毛、袖子一块黄，下摆湿透。","anchors":[{"name":"青白泛灰","desc":"旧棉布的颜色发青发灰，不是纯白"},{"name":"领口磨毛","desc":"领口磨起毛边"},{"name":"袖子一块黄","desc":"一只袖子上有一块洗不掉的黄渍"},{"name":"下摆湿透","desc":"下摆湿透，洇出深色"}],"states":[{"state":"湿透挂着的旧衬衫","prompt":"an old washed-out blue-white shirt hanging from a hanger, handheld scale context, fabric damp and darkened at the hem, water droplets on the fabric, frayed collar, a yellow stain on one sleeve, plain white background"},{"state":"叠在柜底","prompt":"an old washed-out blue-white shirt folded at the bottom of an empty wardrobe, handheld scale context, dry and creased, frayed collar, a yellow stain on one sleeve, plain white background"}],"relatedScenes":["S01","S03"],"carriedBy":["白衣的她"],"image":{"prompt":"An old washed-out blue-white shirt, handheld scale context, hanging from a plain hanger, fabric damp and darkened at the hem with water droplets on the cloth, frayed collar, a yellow stain that will not wash out on one sleeve, dim cold blue-grey ambience. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Photographed at three-quarter view, isolated on a plain pure white background, no people, no hands, no fingers.","negativePrompt":"people, human figures, hands, fingers, any body part, oversaturated colours, warped perspective, melted geometry, floating objects, text overlay, watermark, signature, busy or patterned background","sheet":"Single prop sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9), the old shirt at handheld scale. The canvas is divided into a master view plus an L-shaped detail border by thin hairline rules on a plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. MASTER ZONE — the upper-left region occupying about 72% of the canvas width and 70% of the canvas height: the main state at three-quarter view, the damp blue-white shirt hanging from a hanger, darkened hem, water droplets on the fabric. RIGHT COLUMN — two detail close-ups stacked vertically along the right edge: the frayed collar with pilling; the yellow stain on the sleeve. BOTTOM ROW — three detail close-ups in a row beneath the master view: the water droplets on the damp hem; the faded uneven cotton weave; the soft worn fabric texture at the shoulder. Each panel is a cropped enlargement of a real part of the master view, nothing invented that is not present in the master view, and all panels are pure white background with no people, no hands, no fingers anywhere. Weathered, lived-in materials: soft worn cotton with pilling at the collar, faded uneven colour. Plain pure white background, balanced composition with generous even white margins.","tags":["prop sheet","old blue-white shirt","handheld scale","white background","damp fabric"]},"usage":{"episodes":[6],"beats":["最大反转"]}}]}</script>
+<script>
+const L = {"copied":"已复制","failed":"复制失败"};
+
+// 图片弹层：点图放大，点背景或 Esc 关闭
+const lb = document.querySelector('.lightbox');
+const lbImg = lb.querySelector('img');
+function closeLb() { lb.classList.remove('on'); lbImg.removeAttribute('src'); }
+document.addEventListener('click', (e) => {
+  const z = e.target.closest('.zoom');
+  if (z) { lbImg.src = z.dataset.src; lb.classList.add('on'); return; }
+  if (e.target.closest('.lightbox')) closeLb();
+});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
+
+// 复制按钮
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('.copy');
+  if (!btn) return;
+  e.preventDefault();
+  const label = btn.textContent;
+  try {
+    await navigator.clipboard.writeText(btn.dataset.copy);
+    btn.textContent = L.copied;
+    btn.dataset.done = '1';
+  } catch {
+    btn.textContent = L.failed;
+  }
+  setTimeout(() => { btn.textContent = label; delete btn.dataset.done; }, 1600);
+});
+
+// 导出：报告自己带着完整的 art.json，下载的是它原样
+document.querySelector('.expo').addEventListener('click', (e) => {
+  const btn = e.currentTarget;
+  const url = URL.createObjectURL(
+    new Blob([document.getElementById('art-data').textContent], { type: 'application/json' }),
+  );
+  const a = Object.assign(document.createElement('a'), { href: url, download: btn.dataset.name });
+  a.click();
+  // 别立刻回收——Safari 会抢在下载读完之前撤掉 blob
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+});
+</script>
+</body></html>

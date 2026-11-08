@@ -1,0 +1,62 @@
+{
+  "name": "苏晚",
+  "lang": "zh",
+  "source": "别睡 · 番茄版",
+  "identity": {
+    "age": 26,
+    "gender": "female",
+    "en": "A gaunt twenty-six-year-old Chinese woman, contemporary urban China, a tired office worker renting a cramped single room",
+    "text": "26 岁中国都市女性，电商代运营职员，租住十四平米朝北单间",
+    "source": "stated"
+  },
+  "face": {
+    "en": "Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips with a small healing split at the corner, tired bloodshot eyes with damp lower lids and faint reddened inner corners, slightly asymmetrical eyelids and brows",
+    "text": "脸瘦、颧骨明显，黑眼圈重到发青，嘴唇干裂、唇角一小块结痂口子，眼睛疲惫充血、下眼睑湿润、内眼角泛红，眼睑与眉毛略不对称",
+    "source": "stated"
+  },
+  "hair": {
+    "en": "Black medium-length hair, half-dried, loose strands sticking to her cheeks, carelessly tied in a low ponytail",
+    "text": "黑色中长发，半干，碎发贴脸，随手扎低马尾",
+    "source": "stated"
+  },
+  "outfit": {
+    "id": "default",
+    "label": "常态 · 家居夜装",
+    "top": {
+      "en": "an oversized faded cotton t-shirt, collar and cuffs softened and slightly pilled, hanging with real weight and soft folds",
+      "text": "宽大的褪色棉T恤，领口袖口磨软起球，垂坠有真实重量",
+      "source": "stated"
+    },
+    "bottom": {
+      "en": "loose home pants, barefoot",
+      "text": "宽松家居裤，光脚",
+      "source": "stated"
+    },
+    "details": [
+      {
+        "slot": "hair",
+        "en": "the carelessly tied low ponytail with individual flyaway strands breaking the silhouette",
+        "text": "随手扎的低马尾，碎发破开轮廓",
+        "source": "stated"
+      },
+      {
+        "slot": "neck",
+        "en": "the pilled collar of the oversized faded cotton t-shirt",
+        "text": "起球磨软的T恤领口",
+        "source": "stated"
+      },
+      {
+        "slot": "sleeve",
+        "en": "the soft pilled cuff of the faded cotton t-shirt sleeve",
+        "text": "磨软起球的T恤袖口",
+        "source": "stated"
+      },
+      {
+        "slot": "feet",
+        "en": "bare feet, the ankle of a barefoot young woman",
+        "text": "光脚与脚踝",
+        "source": "stated"
+      }
+    ]
+  }
+}

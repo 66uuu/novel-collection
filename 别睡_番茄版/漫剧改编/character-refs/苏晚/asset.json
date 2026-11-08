@@ -1,0 +1,187 @@
+{
+  "name": "苏晚",
+  "source": "别睡 · 番茄版",
+  "lang": "zh",
+  "layers": {
+    "identity": {
+      "age": 26,
+      "gender": "female",
+      "en": "A gaunt twenty-six-year-old Chinese woman, contemporary urban China, a tired office worker renting a cramped single room",
+      "text": "26 岁中国都市女性，电商代运营职员，租住十四平米朝北单间",
+      "source": "stated"
+    },
+    "face": {
+      "en": "Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips with a small healing split at the corner, tired bloodshot eyes with damp lower lids and faint reddened inner corners, slightly asymmetrical eyelids and brows",
+      "text": "脸瘦、颧骨明显，黑眼圈重到发青，嘴唇干裂、唇角一小块结痂口子，眼睛疲惫充血、下眼睑湿润、内眼角泛红，眼睑与眉毛略不对称",
+      "source": "stated"
+    },
+    "hair": {
+      "en": "Black medium-length hair, half-dried, loose strands sticking to her cheeks, carelessly tied in a low ponytail",
+      "text": "黑色中长发，半干，碎发贴脸，随手扎低马尾",
+      "source": "stated"
+    }
+  },
+  "outfits": {
+    "default": {
+      "label": "常态 · 家居夜装",
+      "top": {
+        "en": "an oversized faded cotton t-shirt, collar and cuffs softened and slightly pilled, hanging with real weight and soft folds",
+        "text": "宽大的褪色棉T恤，领口袖口磨软起球，垂坠有真实重量",
+        "source": "stated"
+      },
+      "bottom": {
+        "en": "loose home pants, barefoot",
+        "text": "宽松家居裤，光脚",
+        "source": "stated"
+      },
+      "details": [
+        {
+          "slot": "hair",
+          "en": "the carelessly tied low ponytail with individual flyaway strands breaking the silhouette",
+          "text": "随手扎的低马尾，碎发破开轮廓",
+          "source": "stated"
+        },
+        {
+          "slot": "neck",
+          "en": "the pilled collar of the oversized faded cotton t-shirt",
+          "text": "起球磨软的T恤领口",
+          "source": "stated"
+        },
+        {
+          "slot": "sleeve",
+          "en": "the soft pilled cuff of the faded cotton t-shirt sleeve",
+          "text": "磨软起球的T恤袖口",
+          "source": "stated"
+        },
+        {
+          "slot": "feet",
+          "en": "bare feet, the ankle of a barefoot young woman",
+          "text": "光脚与脚踝",
+          "source": "stated"
+        }
+      ],
+      "overrides": {},
+      "look": {
+        "id": "realistic-photo",
+        "label": {
+          "zh": "写实照片",
+          "en": "Realistic photo",
+          "ja": "写実写真"
+        },
+        "medium": "photo",
+        "style": "A real photograph, not a render: shot on a full-frame digital camera with an 85mm portrait lens at f/5.6, natural true-to-life colors and white balance. Natural skin texture with the pores and fine lines the person's age calls for, a no-makeup look, no retouching, no beauty filter. Real fabric with natural creases. Subtle film grain.",
+        "clean": "White seamless paper backdrop lit to pure white. A soft directional key light from the front-left with a weaker fill, so the face and clothes have gentle natural shadows and volume. Exactly one person, empty hands, no props, no text, no watermark.",
+        "neg": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, smooth plastic skin, waxy skin, doll face, beauty filter, overly symmetrical face, oversharpened, HDR, glossy, over-saturated, flat lighting, porcelain skin, big anime eyes"
+      },
+      "views": {
+        "front-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚/default/front-full/v1",
+              "file": "default/front-full.v1.png",
+              "sha256": "f9a011aa4128cf8a164f0c926c6aa8b38a5e556e192dcc4041a56029b7a859db",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a gaunt twenty-six-year-old Chinese woman, contemporary urban China, a tired office worker. Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips, tired bloodshot eyes. Black medium-length hair half-dried in a low ponytail. Oversized faded cotton t-shirt, loose home pants, barefoot. Portrait 2:3, white seamless backdrop, realistic photo.",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [],
+              "notes": [],
+              "layersHash": "ea591508e98919d4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "face-front": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚/default/face-front/v1",
+              "file": "default/face-front.v1.png",
+              "sha256": "c7feffadab5df29a942ad82aa103ef89cd4eb21ca548cf2d3cafc4a0f4b3fd3a",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a gaunt twenty-six-year-old Chinese woman, contemporary urban China, a tired office worker. Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips, tired bloodshot eyes. Black medium-length hair half-dried in a low ponytail. Oversized faded cotton t-shirt, loose home pants, barefoot. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: face-front)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "f9a011aa4128cf8a164f0c926c6aa8b38a5e556e192dcc4041a56029b7a859db"
+                }
+              ],
+              "notes": [],
+              "layersHash": "ea591508e98919d4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "side-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚/default/side-full/v1",
+              "file": "default/side-full.v1.png",
+              "sha256": "1fb54a51f5c297256e4c8e3b695eb329dba153a0fd70385a4b9cac56c7e6ae79",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a gaunt twenty-six-year-old Chinese woman, contemporary urban China, a tired office worker. Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips, tired bloodshot eyes. Black medium-length hair half-dried in a low ponytail. Oversized faded cotton t-shirt, loose home pants, barefoot. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: side-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "f9a011aa4128cf8a164f0c926c6aa8b38a5e556e192dcc4041a56029b7a859db"
+                }
+              ],
+              "notes": [],
+              "layersHash": "ea591508e98919d4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "back-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚/default/back-full/v1",
+              "file": "default/back-full.v1.png",
+              "sha256": "7ba7a866d4321c6692e3e82c11ad22ce6e8c9cf1b47a04f02a4831692f88f907",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a gaunt twenty-six-year-old Chinese woman, contemporary urban China, a tired office worker. Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips, tired bloodshot eyes. Black medium-length hair half-dried in a low ponytail. Oversized faded cotton t-shirt, loose home pants, barefoot. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: back-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "f9a011aa4128cf8a164f0c926c6aa8b38a5e556e192dcc4041a56029b7a859db"
+                }
+              ],
+              "notes": [],
+              "layersHash": "ea591508e98919d4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        }
+      },
+      "upgrades": []
+    }
+  }
+}

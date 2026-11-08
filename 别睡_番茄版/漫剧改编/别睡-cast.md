@@ -1,0 +1,399 @@
+# 别睡 — 角色表
+
+共 5 位角色：苏晚、白衣的她、张秀兰、苏晚父亲、ICU护士
+
+## 故事摘要
+
+二十六岁的电商运营苏晚加班到深夜，回到十四平米朝北的出租屋，凌晨两点被一只从床底伸出的手抓住脚踝。此后她被困在这间屋子里反复醒来，时间永远停在02:00，手机永远剩三格电。床头那个白衣湿发的女人一句话不说，只一滴一滴往下滴水，而苏晚身上每天多一处自己解释不了的伤。她试着逃跑、反抗、求饶，最后决定去看清那个一直站在床头的她——在这间屋子之外，有人在等她的一个回音。
+
+---
+
+## 苏晚（晚晚）
+
+> 主角 · 二十六岁的电商运营，凌晨两点被困在出租屋里反复醒来，身上的伤一天比一天多。
+
+### 画像
+
+- **性别**：女
+- **年龄**：二十六岁
+- **身份**：电商代运营公司职员，都市打工族，租住十四平米朝北单间
+- 能扛 / 嘴硬 / 习惯拆解问题 / 心软
+
+**外貌**　身形偏瘦，久坐办公室的体态，肩颈略前倾（推断）。头发黑色中长，常态是半湿或随手扎起的低马尾，常有碎发贴脸；洗完澡不吹头就躺下，头发一缕缕贴在脸颊两侧。脸瘦，黑眼圈重到发青，嘴唇上有一小块干裂的口子，眼睛容易充血发红。右手食指侧面有一道很细的划痕，指关节与手腕有来历不明的淤青，随剧情逐集加深（是外面病床上真实的她被抢救留下的映射）。常态造型是宽松旧棉T恤配家居长裤，光脚或穿拖鞋，秋冬会套一件起球的毛衣。
+
+**性情**　平时说话利落、带点自嘲，会把问题拆成清单一条条试；被吓到时会用气音压住自己，拼命数数、掐手心稳住神；对妈妈发来的消息习惯想等会儿再回，语气笃定到近乎轻慢，这成了她全剧的心结。
+
+**动机**　要回去——回妈妈那条消息。
+
+**人物弧光**　从恐惧、绝望、崩溃，到敢于看清自己并承认不肯走的是自己，最后拼尽力气回出那条消息
+
+**关系**
+
+- 张秀兰 — 妈妈，每天发消息等她回音的人
+- 苏晚父亲 — 爸爸，脑梗后行动不便
+- 白衣的她 — 循环里的自己，被她看着的人
+
+**原文依据**
+
+> 黑眼圈已经重到发青
+
+> 嘴唇上有一小块干裂的口子
+
+> 脸瘦了一圈
+
+> 我右手食指的侧面，有一道很细的划痕
+
+> 妈，我在这儿。
+
+> 我不跑了。
+
+> 我不睡了。
+
+### 形象
+
+`character sheet`, `cold grey-blue palette`, `contemporary urban china`, `home nightwear`, `exhausted skin`, `directional key light`
+
+**出图提示词 · 喂出图模型用这条**
+
+```text
+A gaunt twenty-six-year-old Chinese woman in a cramped modern city apartment, nightwear of an oversized faded cotton t-shirt and loose home pants, barefoot, black medium-length hair half-dried and sticking to her cheeks in loose strands, carelessly tied low ponytail. Thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips with a small healing split at the corner, tired bloodshot eyes with a damp lower lid, faint reddened inner corners; slightly asymmetrical eyelids and brows; a thin pale scratch on the side of her right index finger and faint bruises on the knuckles and wrist. Young but exhausted skin, uneven tone, faint capillaries at the nostrils, visible pores, subtle subsurface scattering at the ear edge; eyes with a wet specular highlight and visible iris fibres; individual flyaway strands breaking the hairline and ponytail silhouette. Loose cotton knit with a visible weave, softened and slightly pilled at the collar and cuffs, the t-shirt hanging with real weight and soft folds. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold grey-blue palette, contemporary urban China, dim single-room rental apartment, lonely midnight mood, readable silhouette from every angle.
+```
+
+消瘦的二十六岁中国都市女性，身处逼仄的现代出租单间，穿宽大的褪色棉T恤和宽松家居裤，光脚，黑色中长发半干，碎发贴脸，随手扎着低马尾。脸瘦、颧骨明显，黑眼圈重到发青，嘴唇干裂、唇角有一小块结痂的口子，眼睛疲惫充血、下眼睑湿润、内眼角泛红；眼睑和眉毛略不对称；右手食指侧面有一道细划痕，指关节与手腕有淡淡的淤青。年轻却疲惫的皮肤，肤色不匀、鼻翼有细微毛细血管、毛孔可见、耳缘透光；眼睛有湿润高光与虹膜纤维；发际线与马尾边缘有碎发破开轮廓。宽松棉针织可见织纹，领口袖口磨软起球，T恤垂坠有真实重量与柔软褶皱。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷灰蓝调，当代中国都市，深夜出租屋，孤寂氛围，任意角度剪影可辨。
+
+**反向提示词**
+
+```text
+plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop
+```
+
+**角色设定图提示词 EN**
+
+```text
+Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears an oversized faded cotton t-shirt, black medium-length hair half-dried and sticking to the cheeks, carelessly tied low ponytail, with the face rendered in full detail: thin face with prominent cheekbones, deep bluish-black under-eye circles, chapped lips with a small healing split at the corner, tired bloodshot eyes, slightly asymmetrical eyelids and brows, a thin pale scratch on the right index finger. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Neutral relaxed standing posture, arms at the sides, barefoot. The figure is a gaunt twenty-six-year-old Chinese woman in home nightwear of an oversized faded cotton t-shirt and loose home pants, black medium-length hair half-dried in loose strands. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the bluish-black under-eye circle and the chapped split at the lip corner; the thin pale scratch on the right index finger; the loose wet hair strands sticking to the cheek; the pilled collar of the faded t-shirt; the carelessly tied low ponytail. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold grey-blue palette, contemporary urban China, lonely midnight mood, readable silhouette from every angle.
+```
+
+### 声音
+
+- **音色**：年轻女声，音色偏沉带一点哑，气声明显
+- **音高**：中音，偏低
+- **语速**：中偏慢，紧张时字句变碎
+- **口音**：标准普通话，无明显地域口音
+- **情绪**：疲惫而警觉，强撑镇定
+- **类比**：像一个加班到深夜、被吓得半死还要告诉自己别慌的都市女孩
+
+**音色提示词 · 喂 TTS 引擎用这条**
+
+```text
+26-year-old female, low mezzo with a slightly husky edge, mid-to-low pitch, modest chest support, medium dynamic range. Medium-slow pace, words tightening into short bursts when stressed, occasional swallowed breath. Standard Mandarin, no regional accent. Exhausted, watchful, holding calm by effort.
+```
+
+---
+
+## 白衣的她（她、白衣女人）
+
+> 主角 · 站在床头的白衣女人，湿发滴水，脸藏在阴影里，是整个循环唯一的机关。
+
+### 画像
+
+- **性别**：女
+- **年龄**：二十六岁（与苏晚同龄）
+- **身份**：苏晚在循环里的自己，最初以鬼影面目出现
+- 沉默 / 安静 / 坚持
+
+**外貌**　穿一件很旧的青白衬衫，领口磨毛、袖口有一块洗不掉的黄，下摆垂到地上、边角湿透，洇出一圈深色浸在地板上。黑色长发湿透，一缕缕贴在脸颊两侧，往下滴水。皮肤苍白泛青，像在水里泡过很久（推断），脸瘦，眼下青黑，嘴唇干裂结痂，脸颊有一枚细小的针眼。日常呈现为垂着头、脸被湿发和阴影盖住，只在被托起下巴时露出全脸——那张脸与苏晚是同一张脸，只是更白、更湿、更像从水里捞出来的。
+
+**性情**　不说不动不应声，唯一的动作是滴水；发梢的水滴从十七倒数到一。开口只说别睡两个字，声音从很远的地方传来，像隔着水。
+
+**动机**　让苏晚别睡、别留在这间屋子里（后段揭示）。
+
+**人物弧光**　从令人恐惧的鬼影、滴水倒数的机关，到被认出的、一直在等自己敢看她的那部分苏晚
+
+**关系**
+
+- 苏晚 — 循环里的自己，一直站在床头看着她的人
+
+**原文依据**
+
+> 白衣裳。那种很旧的、洗过很多次的、没有花纹的白色。
+
+> 头发很长，黑色的，湿的。头发一缕一缕贴在脸颊两侧，往下滴水。
+
+> 她的脸是一片完全的漆黑。
+
+> 别睡。
+
+> 她的眼睛是睁着的。
+
+> 她看着我，眼里的水在动。
+
+### 形象
+
+`character sheet`, `near-monochrome cold grey-blue palette`, `contemporary urban china`, `drenched wet look`, `translucent pale skin`, `directional key light`
+
+**出图提示词 · 喂出图模型用这条**
+
+```text
+A ghostly gaunt young Chinese woman in her twenties, drenched and dripping, wearing an old washed-out blue-white shirt with a frayed collar and a yellowed patch on one sleeve, the hem sodden and darkened where it touches the floor. Long black wet hair plastered in thick strands against her cheeks and neck, dripping water from the tips. Skin pale with a cold bluish undertone, translucent like skin soaked in water, sunken dark eye sockets, chapped split lips, a faint needle mark on one cheek, eyes open but glassy and empty with a wet glint; slightly asymmetrical eyelids and brows. Face partly hidden behind wet hair and shadow in its default state, head hanging low. The wet fabric clings to the body with real translucent weight, heavier and darker at the hem; water drops visible on the hair tips and shoulders. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. near-monochrome cold grey-blue palette, contemporary urban China, eerie dim single-room apartment, dripping silence, readable silhouette from every angle.
+```
+
+幽灵般消瘦的二十多岁中国女性，浑身湿透、滴着水，穿一件很旧的青白衬衫，领口磨毛、一只袖口有块洗不掉的黄，下摆湿透洇深贴地。黑色长发湿透，一缕缕贴在脸颊与脖颈，发梢滴水。皮肤苍白泛青、半透明，像在水里泡过，眼窝深陷发青，嘴唇干裂起皮，脸颊有一枚细小的针眼，眼睛睁着却空洞湿润。常态垂着头，脸被湿发与阴影盖住。湿衣贴身有真实半透重量，下摆更重更深；发梢与肩头可见水珠。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。近单色的冷灰蓝调，当代中国都市，逼仄昏暗的出租单间，滴水般的寂静，任意角度剪影可辨。
+
+**反向提示词**
+
+```text
+plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop
+```
+
+**角色设定图提示词 EN**
+
+```text
+Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears an old washed-out blue-white shirt, long black wet hair plastered to the cheeks, with the face rendered in full detail: thin gaunt face with sunken dark eye sockets, pale skin with a cold bluish undertone, chapped split lips, a faint needle mark on one cheek, eyes open and glassy with a wet glint, slightly asymmetrical eyelids and brows; the face is lifted and visible in this portrait, not hidden by hair. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line, head hanging low in the default posture. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Standing posture with arms hanging limp at the sides, wet fabric clinging to the body with translucent weight, water drops on hair tips and shoulders. The figure is a ghostly gaunt young Chinese woman in her twenties, drenched, wearing an old washed-out blue-white shirt with a frayed collar and a yellowed patch on one sleeve. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the wet hair tip with a single hanging water drop; the frayed collar and the yellowed patch on the sleeve; the faint needle mark on the cheek; the sodden darkened hem of the shirt; the glassy wet eye. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. near-monochrome cold grey-blue palette, contemporary urban China, eerie dim single-room apartment, dripping silence, readable silhouette from every angle.
+```
+
+### 声音
+
+- **音色**：年轻女声，气声极重，像隔着水传过来，尾音发虚
+- **音高**：中音，气息不稳
+- **语速**：极慢，字与字之间拖长
+- **口音**：标准普通话，字音发飘
+- **情绪**：空、累、恳求，几乎不带情绪波动
+- **类比**：像一个在水底憋了很久、好不容易开口说一句话的人
+
+**音色提示词 · 喂 TTS 引擎用这条**
+
+```text
+26-year-old female, heavily breathy hushed voice, mid pitch with unstable airy support, narrow dynamic range. Very slow pace with elongated syllable tails, words arriving from far away through water. Standard Mandarin, softened drifting articulation. Hollow, exhausted, quietly pleading.
+```
+
+---
+
+## 张秀兰（妈妈）
+
+> 配角 · 五十三岁的超市理货员，女儿出事后再没换过那身衣服，隔着玻璃一声声喊她别睡。
+
+### 画像
+
+- **性别**：女
+- **年龄**：五十三岁
+- **身份**：超市理货员，苏晚的妈妈，一个人撑着脑梗丈夫的家
+- 坚韧 / 不抱怨 / 惦记得细 / 话不多
+
+**外貌**　头发花白、鬓角尤甚（推断），发丝常乱、顾不上梳。皮肤偏黄，眼角与嘴角有操劳的细纹，手上有理货磨出的粗茧（推断）。体型中等偏瘦（推断）。常穿超市工装或深色旧外套，围裙，跑进医院时衣服没换、鞋穿错一只黑一只棕。眼底是熬出来的青，喊到嗓子哑。
+
+**性情**　平时只发一句到家了吗，从不追问；着急时声音又大又哑，拍着玻璃一声接一声喊；后来不再拍玻璃，坐在椅子上一条条发微信，语气平静得像在跟女儿说家常。
+
+**动机**　等女儿回一句，叫醒她。
+
+**人物弧光**　从等不到回音的母亲，到一条条发消息、隔着玻璃喊你别睡、终于看见女儿手指动了的守候者
+
+**关系**
+
+- 苏晚 — 女儿，每天发消息等她回音
+- 苏晚父亲 — 丈夫，脑梗后由她一人照顾
+
+**原文依据**
+
+> 到家了吗。
+
+> 晚晚，你别睡啊——
+
+> 妈在这儿——
+
+> 妈不怪你。
+
+> 妈永远不怪你。
+
+> 你回一句就行。
+
+> 就一个字也行。
+
+> 妈等着。
+
+### 形象
+
+`character sheet`, `cold grey-blue palette`, `contemporary urban china`, `working mother`, `hospital corridor light`, `exhausted skin`
+
+**出图提示词 · 喂出图模型用这条**
+
+```text
+A worn fifty-three-year-old Chinese working woman, hair greying at the temples and slightly dishevelled, wearing a dark old coat over a supermarket uniform vest and a food-stained apron, mismatched shoes, one black and one brown. Round tired face with deep crow's feet and nasolabial folds, sallow uneven skin, heavy dark circles from sleepless nights, reddened eyes, thin dry lips pressed tight; slightly asymmetrical eyelids and brows; grey-streaked hair escaping from a loose low bun. Work-roughened hands with calloused palms. The fabric of the old coat is matte and softened with years of washing, the apron shows faint stains. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold grey-blue palette with a warm skin counterpoint, contemporary urban China, hospital corridor light, exhausted maternal determination, readable silhouette from every angle.
+```
+
+操劳的五十三岁中国劳动女性，鬓角花白、发丝微乱，穿深色旧外套，内搭超市工装背心和带油渍的围裙，脚上鞋子穿错，一只黑一只棕。圆脸疲惫，眼角与法令纹深，肤色蜡黄不匀，眼底是熬出来的青，眼睛发红，嘴唇薄而干抿紧；眼睑与眉毛略不对称；花白头发从松散的低发髻里逃出来。手上有理货磨出的茧。旧外套面料哑光、洗得发软，围裙上有淡淡的污渍。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷灰蓝调配暖肤色，当代中国都市，医院走廊的光，疲惫而执拗的母性，任意角度剪影可辨。
+
+**反向提示词**
+
+```text
+plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop
+```
+
+**角色设定图提示词 EN**
+
+```text
+Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears a dark old coat over a supermarket uniform vest and a stained apron, hair greying at the temples and slightly dishevelled, with the face rendered in full detail: round tired face with deep crow's feet and nasolabial folds, sallow uneven skin, heavy dark circles, reddened eyes, thin dry lips, grey-streaked hair escaping from a loose low bun. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Neutral standing posture, arms at the sides, one black and one brown shoe clearly visible. The figure is a worn fifty-three-year-old Chinese working woman in a dark old coat over a supermarket uniform vest and a stained apron. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the mismatched black and brown shoes; the calloused hand; the grey-streaked hair escaping the bun; the stained apron; the reddened tired eye. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold grey-blue palette with a warm skin counterpoint, contemporary urban China, hospital corridor light, exhausted maternal determination, readable silhouette from every angle.
+```
+
+### 声音
+
+- **音色**：中年女声，音色偏干、微微发哑，带着哭过的痕迹
+- **音高**：中音
+- **语速**：平时平缓，喊话时又快又急、声音劈
+- **口音**：标准普通话，着急时尾音上扬
+- **情绪**：克制地急，压着哭腔
+- **类比**：像一个每天发一条家常消息、却在病房外喊哑了嗓子的母亲
+
+**音色提示词 · 喂 TTS 引擎用这条**
+
+```text
+53-year-old female, dry slightly hoarse mid-range voice, modest chest support, medium dynamic range. Calm even pace in everyday speech, urgent rapid bursts with a cracking edge when calling out, rising tail at the end of cries. Standard Mandarin, no regional accent. Restrained urgency, holding back tears.
+```
+
+---
+
+## 苏晚父亲（爹）
+
+> 龙套 · 五十八岁，脑梗后左边身子不利索，每天换两趟公交来医院，坐在走廊里跟女儿说话。
+
+### 画像
+
+- **性别**：男
+- **年龄**：五十八岁
+- **身份**：脑梗后遗症患者，退休在家（推断）
+- 沉默 / 笨拙 / 执拗
+
+**外貌**　左边身子僵、走路微跛（推断），行动要拄拐杖，左手不好使、发木。头发花白，脸有沟壑、皱纹深（推断），眼神钝而执拗。穿旧夹克、深色裤子、布鞋（推断），坐姿前倾、手搭在膝盖上。沉默，喊女儿小名时语气很软。
+
+**性情**　说话慢，一句话要停两下；打字一个字一个字按；每隔几分钟就看一次手机，但发什么最后都删掉。跟女儿说话时句子很短，像怕说多了会累着她。
+
+**动机**　每天来看看女儿，跟她说说话。
+
+**人物弧光**　静止。他是走廊里一直坐着的那个人，唯一的变化是每隔几分钟看一眼手机。
+
+**关系**
+
+- 苏晚 — 女儿，昏迷在ICU里的人
+- 张秀兰 — 妻子，一起守在医院的家人
+
+**原文依据**
+
+> 晚晚，爹来看你了。
+
+> 晚晚，你的绿萝我拿回家浇水了，你工位太干了。
+
+> 晚晚，你妈昨天晚上又没睡。
+
+### 形象
+
+`character sheet`, `cold grey-brown palette`, `contemporary urban china`, `stroke survivor`, `wooden cane`, `hospital corridor light`
+
+**出图提示词 · 喂出图模型用这条**
+
+```text
+A stooped fifty-eight-year-old Chinese man with the left side of his body stiff from a stroke, leaning on a wooden cane held in his right hand, left arm held slightly rigid at his side. Deeply lined weathered face, grey hair, heavy drooping eyelids, dull tired eyes, mouth set in a patient flat line; slightly asymmetrical features with the left side of the face marginally slack. Wearing a plain worn dark jacket over a rumpled checked shirt, dark trousers, cloth shoes. Old skin with visible pores, age spots on the cheeks and forehead, prominent nasolabial folds; individual grey hairs breaking the hairline. The jacket fabric is matte and softened with years of wear. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold grey-brown palette, contemporary urban China, hospital corridor light, quiet grief held still, readable silhouette from every angle.
+```
+
+弯腰驼背的五十八岁中国男性，脑梗后左边身子僵硬，右手拄着一根木拐杖，左臂僵直地垂在身侧。脸皱纹深、头发花白，眼皮沉重下垂，眼神钝而疲惫，嘴抿成一条耐心的直线；五官略不对称，左侧面部微微松弛。穿朴素旧深色夹克，内搭皱格子衬衫，深色裤子，布鞋。老皮肤毛孔可见，脸颊与额头有老年斑，法令纹深；发际线有单根灰发破开。夹克面料哑光、洗得发软。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷灰棕调，当代中国都市，医院走廊的光，沉默克制的悲痛，任意角度剪影可辨。
+
+**反向提示词**
+
+```text
+plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop
+```
+
+**角色设定图提示词 EN**
+
+```text
+Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears a plain worn dark jacket over a rumpled checked shirt, grey hair, with the face rendered in full detail: deeply lined weathered face, heavy drooping eyelids, dull tired eyes, mouth set in a patient flat line, slightly asymmetrical features with the left side marginally slack, age spots on cheeks and forehead. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Standing posture with a wooden cane in the right hand, the left arm held slightly rigid at the side, feet planted with a slight uneven stance. The figure is a stooped fifty-eight-year-old Chinese man in a plain worn dark jacket over a rumpled checked shirt, dark trousers, cloth shoes. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the hand gripping the wooden cane; the slightly slack left side of the face; the grey hair breaking the hairline; the worn cloth shoes; the rumpled checked shirt collar. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold grey-brown palette, contemporary urban China, hospital corridor light, quiet grief held still, readable silhouette from every angle.
+```
+
+### 声音
+
+- **音色**：老年男声，中低音，中气不足，字与字之间停顿明显
+- **音高**：低
+- **语速**：很慢，一句话要停两下
+- **口音**：标准普通话，带一点含混
+- **情绪**：钝、软、努力平稳
+- **类比**：像一个说每句话都要歇一口气、却每天坚持跟女儿说话的父亲
+
+**音色提示词 · 喂 TTS 引擎用这条**
+
+```text
+58-year-old male, low baritone with weak breath support, narrow dynamic range. Very slow pace with deliberate pauses between phrases, words slightly slurred from the stroke, gentle softened delivery. Standard Mandarin with a mild indistinct edge. Dull, soft, trying hard to stay steady.
+```
+
+---
+
+## ICU护士
+
+> 龙套 · 重症监护室的护士，走路快，声音克制，是病房内外唯一传话的人。
+
+### 画像
+
+- **性别**：女（推断）
+- **年龄**：三十岁上下（推断）
+- **身份**：重症监护室护士
+- 专业 / 克制 / 有分寸
+
+**外貌**　穿白大褂，内衬淡色洗手服，胸前挂着工牌，头发利落地盘起或扎紧（推断），口罩常挂在下巴（推断）。步伐快而稳，眼底有夜班的青（推断）。说话时微微放轻声音，职业但不冷漠。
+
+**性情**　语速快而轻，报讯时不带多余情绪，但会特意放轻声音、放慢一拍；叫家属时声音稳定，像在递一个事实。
+
+**动机**　做好分内的事，把病房里的动静传出去。
+
+**人物弧光**　静止。她是病房与走廊之间的报讯人，情绪始终保持职业的克制。
+
+**关系**
+
+- 苏晚 — 病房里的病人
+- 张秀兰 — 病人家属，报讯的对象
+
+**原文依据**
+
+> 心率上来了。
+
+> 再观察。你们继续跟她说。
+
+> 你们家孩子刚才，右手动了一下。
+
+> 很轻，但是动了。机器上看得出来。
+
+### 形象
+
+`character sheet`, `cold white-blue palette`, `contemporary chinese hospital`, `icu nurse`, `white coat`, `fluorescent light`
+
+**出图提示词 · 喂出图模型用这条**
+
+```text
+A composed Chinese hospital nurse in her early thirties, wearing a clean white coat over pale scrubs with an ID badge on the chest, hair pulled back tightly in a low bun, surgical mask hanging at the chin. Neat oval face, calm steady eyes with faint dark circles from night shifts, light professional makeup or none, thin neutral mouth; slightly asymmetrical eyelids and brows. Even-toned skin with visible pores, faint capillaries at the nostrils. The white coat is crisp but slightly creased at the elbows from work, the scrubs a soft pale blue-grey. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold white-blue palette, contemporary Chinese hospital, fluorescent corridor light, professional quiet restraint, readable silhouette from every angle.
+```
+
+沉稳的中国医院护士，三十岁上下，穿干净的白大褂，内搭淡色洗手服，胸前挂工牌，头发利落地盘成低发髻，口罩挂在下巴。脸型端正，眼神平静沉稳，眼底有夜班的淡青，妆容清淡或素颜，嘴唇薄而中性；眼睑与眉毛略不对称。皮肤肤色均匀、毛孔可见、鼻翼有细微毛细血管。白大褂挺括但肘部有工作折痕，洗手服是柔和的淡蓝灰色。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷白蓝调，当代中国医院，荧光走廊的光，专业克制的安静，任意角度剪影可辨。
+
+**反向提示词**
+
+```text
+plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop
+```
+
+**角色设定图提示词 EN**
+
+```text
+Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears a clean white coat over pale scrubs with an ID badge on the chest, hair pulled back in a low bun, surgical mask hanging at the chin, with the face rendered in full detail: neat oval face, calm steady eyes with faint dark circles, thin neutral mouth, slightly asymmetrical eyelids and brows. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Neutral upright standing posture, arms at the sides, wearing flat white ward shoes. The figure is a composed Chinese hospital nurse in her early thirties in a clean white coat over pale scrubs. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the ID badge on the chest; the surgical mask hanging at the chin; the low bun with strands tucked in; the flat white ward shoes; the slightly creased elbow of the white coat. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold white-blue palette, contemporary Chinese hospital, fluorescent corridor light, professional quiet restraint, readable silhouette from every angle.
+```
+
+### 声音
+
+- **音色**：三十岁上下女声，音色清亮偏干，训练过的平稳
+- **音高**：中高
+- **语速**：快而稳，报讯时会放轻放慢一拍
+- **口音**：标准普通话，医院用语干净
+- **情绪**：专业平静，带一点小心
+- **类比**：像一个每天在病房里报了很多次消息、懂得把坏消息放轻的护士
+
+**音色提示词 · 喂 TTS 引擎用这条**
+
+```text
+30-year-old female, clear slightly dry mid-high voice, steady breath support, medium dynamic range. Fast and even pace, slowing and softening a beat when delivering news to family. Standard Mandarin, clean clinical phrasing. Professional calm with a careful edge.
+```
+

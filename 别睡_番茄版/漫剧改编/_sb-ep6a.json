@@ -1,0 +1,308 @@
+[
+  {
+    "id": "E06-01",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [1, 1], "seconds": 2.5, "size": "medium", "camera": "Static Shot",
+        "characters": ["C01", "C02"],
+        "frame": "中景，深夜手机屏光下，苏晚躺在床上看着站在床头的白衣的她，慢慢坐起来。景别：中景。",
+        "shot": "深夜房间，年轻女子躺在床上，看着站在床头的白衣身影，慢慢坐起来。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "看向床头", "focus": "锁定苏晚", "stability": "stable"
+      },
+      {
+        "beats": [2, 2], "seconds": 2.5, "size": "medium", "camera": "Static Shot",
+        "characters": ["C01", "C02"],
+        "frame": "中景，苏晚赤脚走到白衣的她面前站定，两个人隔着一步。景别：中景。",
+        "shot": "年轻女子赤脚走到白衣身影面前，站定，两个人隔着一步。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "双人 + 平视侧面", "composition": "对称", "eyeline": "直视白衣身影", "focus": "锁定苏晚", "stability": "stable"
+      },
+      {
+        "beats": [3, 3], "seconds": 2.5, "size": "close", "camera": "Static Shot",
+        "characters": ["C01", "C02"],
+        "frame": "特写，苏晚伸出手轻轻托起白衣的她下巴，往上抬。景别：特写。",
+        "shot": "年轻女子伸出手，轻轻托起白衣身影的下巴，往上抬。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "双人 + 平视正面", "composition": "中心构图", "eyeline": "看向白衣身影的脸", "focus": "锁定苏晚的手", "stability": "stable"
+      }
+    ],
+    "blocking": "白衣身影在画面左侧，苏晚从床上坐起、走到她面前，两人相距一步。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video; Picture 3 (from Shot 3) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, in the dim room lit by phone light, the young woman lies in bed looking at the white-clad figure standing at the head of the bed, and slowly sits up.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, she walks barefoot to the white-clad figure and stops, one step apart.\n[Shot 3] At 00:05.000, the camera cuts to <Picture 3>: in a static shot, she reaches out, gently lifts the figure's chin and raises her head.\n\noverall_soundscape: Room silence, faint drip, her shallow breath.\n\nnon_diegetic_music: Low drone, sparse piano.",
+    "soundscape": "房间寂静，远处水滴声，她浅促的呼吸。",
+    "music": "低频持续音，稀疏钢琴。"
+  },
+  {
+    "id": "E06-02",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [4, 4], "seconds": 2.5, "size": "close", "camera": "Static Shot",
+        "characters": ["C02"],
+        "frame": "特写，那张低着的脸慢慢抬起来，瘦的苍白的眼下一片青。景别：特写。",
+        "shot": "那张低着的脸慢慢抬起来——瘦的，苍白的，眼下一片青。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "白衣身影 + 平视正面", "composition": "中心构图", "eyeline": "慢慢抬起", "focus": "锁定白衣身影的脸", "stability": "stable"
+      },
+      {
+        "beats": [5, 5], "seconds": 1.1, "size": "close", "camera": "Static Shot",
+        "characters": ["C01", "C02"],
+        "frame": "特写，苏晚看着那张脸，声音发抖。景别：特写。",
+        "shot": "年轻女子看着那张脸，声音发抖：<d>[Chinese]……是我。</d> (S1)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视正面", "composition": "中心构图", "eyeline": "直视白衣身影的脸", "focus": "锁定苏晚面部", "stability": "stable"
+      }
+    ],
+    "blocking": "白衣身影在画面左侧，苏晚在画面右侧；那张脸缓缓抬起对着她。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, the lowered face slowly rises — thin, pale, dark circles under the eyes.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, looking at that face, her voice trembles: <d>[Chinese]……是我。</d> (S1).\n\noverall_soundscape: Room silence, a single drip, held breath.\n\nnon_diegetic_music: Drone, one low piano note.",
+    "soundscape": "房间寂静，一声水滴，屏住的呼吸。",
+    "music": "持续音，一声低沉钢琴。"
+  },
+  {
+    "id": "E06-03",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [6, 6], "seconds": 2.5, "size": "extreme-close", "camera": "Static Shot",
+        "characters": ["C02"], "props": ["P06"],
+        "frame": "大特写，白衣的她身上那件青白旧衬衫，领口磨毛袖子一块黄。景别：大特写。",
+        "shot": "白衣身影身上那件青白旧衬衫，领口磨毛，袖子一块黄。",
+        "lens": "85mm 长焦，极浅景深", "cameraPosition": "衬衫领口 + 微距", "composition": "中心构图", "eyeline": "看向衬衫", "focus": "锁定领口磨毛", "stability": "stable"
+      },
+      {
+        "beats": [7, 7], "seconds": 3.1, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，苏晚声音发哑。景别：特写。",
+        "shot": "年轻女子声音发哑：<d>[Chinese]这是出事那天……我穿的那件。</d> (S1)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视正面", "composition": "中心构图", "eyeline": "看向那件衬衫", "focus": "锁定苏晚面部", "stability": "stable"
+      },
+      {
+        "beats": [8, 9], "seconds": 5.0, "size": "close", "camera": "Static Shot",
+        "characters": ["C01", "C02"],
+        "frame": "特写，白衣的她眼睛睁着眼里水在动，苏晚抬手轻轻碰了碰她的脸。景别：特写。",
+        "shot": "白衣身影看着她，眼睛睁着，眼里的水在动；年轻女子抬起手，轻轻碰了碰她的脸，指尖凉得发麻。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "双人 + 平视正面", "composition": "中心构图", "eyeline": "两人对视", "focus": "锁定触碰的指尖", "stability": "stable"
+      }
+    ],
+    "blocking": "白衣身影在画面左侧，苏晚在画面右侧抬手触碰她的脸。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video; Picture 3 (from Shot 3) aligns with the 5.60-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, the white-clad figure's worn blue-white old shirt, collar frayed, a yellow stain on the sleeve.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, her voice hoarse: <d>[Chinese]这是出事那天……我穿的那件。</d> (S1).\n[Shot 3] At 00:05.600, the camera cuts to <Picture 3>: in a static shot, the figure watches her, eyes open, water moving in them; she reaches out and gently touches the figure's face; her fingertips go numb with cold.\n\noverall_soundscape: Drip, room silence, fabric rustle.\n\nnon_diegetic_music: Drone, sorrowful piano.",
+    "soundscape": "水滴声，房间寂静，布料窸窣。",
+    "music": "持续音，悲伤的钢琴。"
+  },
+  {
+    "id": "E06-04",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [10, 11], "seconds": 3.2, "size": "close", "camera": "Static Shot",
+        "characters": ["C01", "C02"],
+        "frame": "特写，白衣的她开口，苏晚眼泪一下下来了，用力点头。景别：特写。",
+        "shot": "白衣身影开口，声音很轻很虚：<d>[Chinese]别睡。</d> (S2, 与年轻女子同一张脸的白衣身影，声音轻而空)；年轻女子眼泪一下下来了，她点头，用力点头。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "双人 + 平视正面", "composition": "中心构图", "eyeline": "两人对视", "focus": "锁定苏晚", "stability": "stable"
+      },
+      {
+        "beats": [12, 12], "seconds": 2.4, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，苏晚哭着说，声音发颤。景别：特写。",
+        "shot": "年轻女子哭着说，声音发颤：<d>[Chinese]我不睡。我妈还在外面。</d> (S1)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视正面", "composition": "中心构图", "eyeline": "看向白衣身影", "focus": "锁定苏晚面部", "stability": "stable"
+      }
+    ],
+    "blocking": "白衣身影在画面左侧，苏晚在画面右侧，两人隔着一步对视。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 3.20-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, the white-clad figure speaks, voice light and hollow: <d>[Chinese]别睡。</d> (S2, the white-clad figure with the same face as the young woman, voice light and empty); the young woman's tears come at once, and she nods, hard.\n[Shot 2] At 00:03.200, the camera cuts to <Picture 2>: in a static shot, crying, her voice trembles: <d>[Chinese]我不睡。我妈还在外面。</d> (S1).\n\noverall_soundscape: Drip, her sobbing, room silence.\n\nnon_diegetic_music: Warm thin strings, sorrowful.",
+    "soundscape": "水滴声，她的啜泣，房间寂静。",
+    "music": "温暖的细弦，悲伤。"
+  },
+  {
+    "id": "E06-05",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [13, 14], "seconds": 4.7, "size": "medium", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "中景，远处传来劈了嗓子的呼喊，一个女人声音急切。景别：中景。",
+        "shot": "忽然，远处传来一个劈了嗓子的呼喊，一个女人声音急切：<d>[Chinese]动一下手指头！晚晚！</d> (S3, 40岁中国女性，声音劈裂急切，从很远的地方传来)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "看向声音方向", "focus": "锁定苏晚", "stability": "stable"
+      },
+      {
+        "beats": [15, 15], "seconds": 2.5, "size": "extreme-close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "大特写，苏晚的右手手指在身侧轻轻蜷了一下。景别：大特写。",
+        "shot": "年轻女子的右手手指，在身侧轻轻蜷了一下。",
+        "lens": "85mm 长焦，极浅景深", "cameraPosition": "右手 + 俯拍", "composition": "中心构图", "eyeline": "看向手指", "focus": "锁定蜷动的手指", "stability": "stable"
+      },
+      {
+        "beats": [16, 16], "seconds": 2.0, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，远处的呼喊再次响起，苏晚整个人僵住。景别：特写。",
+        "shot": "远处的声音又响起来：<d>[Chinese]晚晚！你别睡啊——</d> (S3)；年轻女子整个人站直了。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视正面", "composition": "中心构图", "eyeline": "看向声音方向", "focus": "锁定苏晚面部", "stability": "stable"
+      }
+    ],
+    "blocking": "苏晚在画面中央，声音从画面左侧远处传来；她侧身倾听。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 4.70-second mark of the target video; Picture 3 (from Shot 3) aligns with the 7.20-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, suddenly a torn voice calls from far away, urgent: <d>[Chinese]动一下手指头！晚晚！</d> (S3, a 40-year-old Chinese woman, voice cracked and urgent, from very far away).\n[Shot 2] At 00:04.700, the camera cuts to <Picture 2>: in a static shot, the young woman's right fingers curl slightly at her side.\n[Shot 3] At 00:07.200, the camera cuts to <Picture 3>: in a static shot, the voice rings out again: <d>[Chinese]晚晚！你别睡啊——</d> (S3); she stands up straight.\n\noverall_soundscape: A distant shouting voice, drip, room silence.\n\nnon_diegetic_music: Drone, rising tension.",
+    "soundscape": "远处劈裂的呼喊声，水滴声，房间寂静。",
+    "music": "持续音，紧张上升。"
+  },
+  {
+    "id": "E06-06",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [17, 18], "seconds": 2.9, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，苏晚整个人站直了，声音发亮地喊。景别：特写。",
+        "shot": "那个声音不是屋子学的；年轻女子声音发亮地喊：<d>[Chinese]妈！</d> (S1)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视正面", "composition": "中心构图", "eyeline": "看向声音方向", "focus": "锁定苏晚面部", "stability": "stable"
+      },
+      {
+        "beats": [19, 19], "seconds": 2.5, "size": "medium", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "中景，苏晚转过身走回床边躺下，把手放在身体两侧。景别：中景。",
+        "shot": "年轻女子转过身，走回床边，躺下，把手放在身体两侧。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "看向天花板", "focus": "锁定苏晚", "stability": "stable"
+      },
+      {
+        "beats": [20, 20], "seconds": 3.8, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，苏晚躺平着说，声音坚定。景别：特写。",
+        "shot": "年轻女子躺平着说，声音坚定：<d>[Chinese]妈，我在这儿。我不跑了。我不睡了。</d> (S1)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "看向天花板", "focus": "锁定苏晚面部", "stability": "stable"
+      }
+    ],
+    "blocking": "床在画面中央，苏晚走回床边躺平，白衣身影在床头（画面左侧）。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.90-second mark of the target video; Picture 3 (from Shot 3) aligns with the 5.40-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, this voice was not something the room learned; the young woman calls out brightly <d>[Chinese]妈！</d> (S1).\n[Shot 2] At 00:02.900, the camera cuts to <Picture 2>: in a static shot, she turns, walks back to the bed, lies down, hands at her sides.\n[Shot 3] At 00:05.400, the camera cuts to <Picture 3>: in a static shot, lying flat, her voice steady: <d>[Chinese]妈，我在这儿。我不跑了。我不睡了。</d> (S1).\n\noverall_soundscape: Bed creak, distant shouting fading, drip.\n\nnon_diegetic_music: Strings rising, hope.",
+    "soundscape": "床板吱呀，远处呼喊渐远，水滴声。",
+    "music": "弦乐上升，带希望。"
+  },
+  {
+    "id": "E06-07",
+    "sceneIndex": 1,
+    "cuts": [
+      {
+        "beats": [21, 21], "seconds": 2.5, "size": "extreme-close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "大特写，苏晚慢慢睁开一条缝，一片刺眼的白光亮起来。景别：大特写。",
+        "shot": "年轻女子慢慢睁开一条缝，一片刺眼的白光亮起来。",
+        "lens": "85mm 长焦，极浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "中心构图", "eyeline": "眯眼看向白光", "focus": "锁定苏晚的眼睛", "stability": "stable"
+      },
+      {
+        "beats": [22, 23], "seconds": 4.3, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，苏晚闭上眼睛数着心跳，声音很轻。景别：特写。",
+        "shot": "年轻女子闭上眼睛，数着心跳：<d>[Chinese]一……二……三。</d> (S1)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "闭眼", "focus": "锁定苏晚面部", "stability": "stable"
+      },
+      {
+        "beats": [24, 24], "seconds": 2.5, "size": "medium", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "中景，消毒水的味道冲进鼻子，苏晚看见很近的地方有一个人影。景别：中景。",
+        "shot": "消毒水的味道冲进鼻子，年轻女子看见很近的地方有一个人影。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "看向人影", "focus": "锁定人影", "stability": "stable"
+      }
+    ],
+    "blocking": "苏晚躺床上画面中央，白光从画面右侧涌来，人影在光中。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video; Picture 3 (from Shot 3) aligns with the 6.80-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, the young woman slowly opens her eyes a crack; a harsh white light flares up.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, she closes her eyes and counts her heartbeat: <d>[Chinese]一……二……三。</d> (S1).\n[Shot 3] At 00:06.800, the camera cuts to <Picture 3>: in a static shot, the smell of disinfectant hits her nose; she sees a figure very close.\n\noverall_soundscape: White noise, monitor beeps fading in, her breath.\n\nnon_diegetic_music: Strings swelling, then thin.",
+    "soundscape": "白光底噪，监护仪滴声渐入，她的呼吸。",
+    "music": "弦乐渐强，随后转细。"
+  },
+  {
+    "id": "E06-08",
+    "sceneIndex": 2,
+    "cuts": [
+      {
+        "beats": [1, 1], "seconds": 2.5, "size": "close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "特写，病床上苏晚闭眼躺着，头上缠着纱布，鼻子里有管。景别：特写。",
+        "shot": "病床上，年轻女子闭着眼睛躺着，头上缠着纱布，鼻子里有管。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "苏晚 + 平视侧面", "composition": "三分法", "eyeline": "闭眼", "focus": "锁定苏晚", "stability": "stable"
+      },
+      {
+        "beats": [2, 2], "seconds": 2.5, "size": "extreme-close", "camera": "Static Shot",
+        "characters": [],
+        "frame": "大特写，床头监护仪的绿色波形一跳一跳，机器滴声规律地响。景别：大特写。",
+        "shot": "床头监护仪的绿色波形一跳一跳，机器滴声规律地响。",
+        "lens": "85mm 长焦，极浅景深", "cameraPosition": "监护仪 + 平视", "composition": "中心构图", "eyeline": "看向波形", "focus": "锁定绿色波形", "stability": "stable"
+      }
+    ],
+    "blocking": "病床在画面中央，苏晚躺其上；监护仪在床头（画面左侧）。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, on the hospital bed the young woman lies with her eyes closed, head bandaged, a tube in her nose.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, the green waveform on the bedside monitor jumps; the machine beeps steadily.\n\noverall_soundscape: Steady monitor beeps, ventilator hiss.\n\nnon_diegetic_music: Thin ambient hum.",
+    "soundscape": "监护仪规律的滴声，呼吸机的气流声。",
+    "music": "一条极淡的环境嗡鸣。"
+  },
+  {
+    "id": "E06-09",
+    "sceneIndex": 2,
+    "cuts": [
+      {
+        "beats": [3, 3], "seconds": 2.5, "size": "extreme-close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "大特写，苏晚的右手搭在被子外面，手指微微蜷着。景别：大特写。",
+        "shot": "年轻女子的右手搭在被子外面，手指微微蜷着。",
+        "lens": "85mm 长焦，极浅景深", "cameraPosition": "右手 + 俯拍", "composition": "中心构图", "eyeline": "看向手指", "focus": "锁定右手", "stability": "stable"
+      },
+      {
+        "beats": [4, 4], "seconds": 2.5, "size": "extreme-close", "camera": "Static Shot",
+        "characters": ["C01"],
+        "frame": "大特写，那只手的手指很轻很轻地动了一下。景别：大特写。",
+        "shot": "那只手的手指，很轻很轻地，动了一下。",
+        "lens": "85mm 长焦，极浅景深", "cameraPosition": "手指 + 微距", "composition": "中心构图", "eyeline": "看向手指", "focus": "锁定动的那根手指", "stability": "stable"
+      }
+    ],
+    "blocking": "右手搭在被子外画面中央，白床单与纱布是画面主体。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, the young woman's right hand rests on the blanket, fingers slightly curled.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, the fingers of that hand, very very lightly, move once.\n\noverall_soundscape: Monitor beeps, ventilator, a subtle rustle.\n\nnon_diegetic_music: A single soft piano note.",
+    "soundscape": "监护仪滴声，呼吸机声，一声极轻的布料响。",
+    "music": "一声轻柔的钢琴单音。"
+  },
+  {
+    "id": "E06-10",
+    "sceneIndex": 3,
+    "cuts": [
+      {
+        "beats": [1, 2], "seconds": 4.7, "size": "medium", "camera": "Static Shot",
+        "characters": ["C03"],
+        "frame": "中景，ICU玻璃门外妈妈整个人贴在玻璃上手掌拍得啪的一声，她喊。景别：中景。",
+        "shot": "ICU玻璃门外，中年女人整个人贴在玻璃上，手掌拍得啪的一声，她喊：<d>[Chinese]晚晚！你听见妈妈吗！</d> (S3)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "妈妈 + 平视侧面", "composition": "三分法", "eyeline": "看向玻璃内", "focus": "锁定妈妈", "stability": "stable"
+      },
+      {
+        "beats": [3, 4], "seconds": 3.6, "size": "close", "camera": "Static Shot",
+        "characters": ["C03", "C04"],
+        "frame": "特写，旁边的父亲拄着拐说了一句，妈妈用力点头眼泪往下掉。景别：特写。",
+        "shot": "旁边的中年男人拄着拐，声音很低：<d>[Chinese]她听见了。</d> (S4, 55岁中国男性，声音低哑)；中年女人用力点头，眼泪往下掉。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "双人 + 平视正面", "composition": "三分法", "eyeline": "妈妈看向玻璃，父亲看向妈妈", "focus": "锁定妈妈", "stability": "stable"
+      }
+    ],
+    "blocking": "妈妈在画面中央贴玻璃，父亲拄拐在画面右侧；玻璃门内病床隐约可见。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 4.70-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, outside the ICU glass door the middle-aged woman presses herself against the glass, palm slapping with a crack; she shouts <d>[Chinese]晚晚！你听见妈妈吗！</d> (S3).\n[Shot 2] At 00:04.700, the camera cuts to <Picture 2>: in a static shot, the middle-aged man beside her leans on a cane, voice low: <d>[Chinese]她听见了。</d> (S4, a 55-year-old Chinese man, voice low and hoarse); the woman nods hard, tears falling.\n\noverall_soundscape: Palm hitting glass, corridor echo, monitor beeps through the door.\n\nnon_diegetic_music: Thin strings, tense.",
+    "soundscape": "手掌拍玻璃声，走廊回声，门内监护仪滴声。",
+    "music": "细弦，紧张。"
+  },
+  {
+    "id": "E06-11",
+    "sceneIndex": 3,
+    "cuts": [
+      {
+        "beats": [5, 5], "seconds": 2.5, "size": "medium", "camera": "Static Shot",
+        "characters": ["C03", "C04"],
+        "frame": "中景，父亲拄着拐撑在墙上嘴唇抿成一条线，妈妈还贴在玻璃上。景别：中景。",
+        "shot": "中年男人拄着拐，撑在墙上，嘴唇抿成一条线；中年女人还贴在玻璃上。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "双人 + 平视侧面", "composition": "三分法", "eyeline": "父亲看向玻璃内", "focus": "锁定父亲", "stability": "stable"
+      },
+      {
+        "beats": [6, 6], "seconds": 2.5, "size": "medium", "camera": "Static Shot",
+        "characters": ["C03", "C04", "C05"],
+        "frame": "中景，护士快步走过来放轻声音，隔着玻璃门喊话。景别：中景。",
+        "shot": "一名年轻护士快步走过来，放轻声音，隔着玻璃门喊话。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "三人 + 平视侧面", "composition": "三分法", "eyeline": "护士看向父母", "focus": "锁定护士", "stability": "stable"
+      },
+      {
+        "beats": [7, 7], "seconds": 4.0, "size": "close", "camera": "Static Shot",
+        "characters": ["C03", "C04", "C05"],
+        "frame": "特写，护士声音很轻地告诉他们。景别：特写。",
+        "shot": "年轻护士声音很轻：<d>[Chinese]阿姨，你们家孩子刚才，右手动了一下。</d> (S5, 28岁中国女性，护士，声音轻而克制)。",
+        "lens": "50mm 标准，中浅景深", "cameraPosition": "护士 + 平视正面", "composition": "中心构图", "eyeline": "看向妈妈", "focus": "锁定护士面部", "stability": "stable"
+      }
+    ],
+    "blocking": "父亲在画面左侧撑墙，护士在画面中央，妈妈在画面右侧贴玻璃。",
+    "h3Prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 2.50-second mark of the target video; Picture 3 (from Shot 3) aligns with the 5.00-second mark of the target video.\n\nintegrated_multimodal_description:\n[Shot 1] <Picture 1>: in a static shot, the middle-aged man leans on his cane against the wall, lips pressed into a line; the woman still presses against the glass.\n[Shot 2] At 00:02.500, the camera cuts to <Picture 2>: in a static shot, a young nurse hurries over, softens her voice, and calls through the glass door.\n[Shot 3] At 00:05.000, the camera cuts to <Picture 3>: in a static shot, the young nurse says softly <d>[Chinese]阿姨，你们家孩子刚才，右手动了一下。</d> (S5, a 28-year-old Chinese woman, nurse, voice soft and restrained).\n\noverall_soundscape: Corridor footsteps, monitor beeps, hushed voices.\n\nnon_diegetic_music: Thin strings, hope rising.",
+    "soundscape": "走廊脚步声，监护仪滴声，压低的人声。",
+    "music": "细弦，希望渐起。"
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "name": "张秀兰",
+  "source": "别睡 · 番茄版",
+  "lang": "zh",
+  "layers": {
+    "identity": {
+      "age": 53,
+      "gender": "female",
+      "en": "A worn fifty-three-year-old Chinese working woman, contemporary urban China, a supermarket worker",
+      "text": "53 岁中国劳动女性，超市理货员，苏晚的妈妈",
+      "source": "stated"
+    },
+    "face": {
+      "en": "Round tired face with deep crow's feet and nasolabial folds, sallow uneven skin, heavy dark circles from sleepless nights, reddened eyes, thin dry lips pressed tight, slightly asymmetrical eyelids and brows",
+      "text": "圆脸疲惫，眼角与法令纹深，肤色蜡黄不匀，眼底是熬出来的青，眼睛发红，嘴唇薄而干、抿紧",
+      "source": "stated"
+    },
+    "hair": {
+      "en": "Greying hair at the temples, slightly dishevelled, grey-streaked strands escaping from a loose low bun",
+      "text": "花白头发、鬓角尤甚，发丝微乱，花白发丝从松散的低发髻里逃出来",
+      "source": "inferred"
+    }
+  },
+  "outfits": {
+    "default": {
+      "label": "常态 · 医院守夜装",
+      "top": {
+        "en": "a dark old coat over a supermarket uniform vest and a food-stained apron, the coat fabric matte and softened with years of washing",
+        "text": "深色旧外套，内搭超市工装背心，带油渍的围裙，外套面料哑光洗得发软",
+        "source": "stated"
+      },
+      "bottom": {
+        "en": "dark worn trousers, mismatched shoes, one black and one brown",
+        "text": "深色旧裤，脚上鞋子穿错，一只黑一只棕",
+        "source": "stated"
+      },
+      "details": [
+        {
+          "slot": "hair",
+          "en": "the grey-streaked hair escaping from her loose low bun",
+          "text": "从松散低发髻里逃出的花白发丝",
+          "source": "inferred"
+        },
+        {
+          "slot": "neck",
+          "en": "the collar of the dark old coat with the stained apron straps crossing over it",
+          "text": "旧外套领口与压在领口的围裙带",
+          "source": "inferred"
+        },
+        {
+          "slot": "sleeve",
+          "en": "the matte softened sleeve of the old dark coat",
+          "text": "洗得发软的旧外套袖口",
+          "source": "inferred"
+        },
+        {
+          "slot": "feet",
+          "en": "the mismatched shoes, one black and one brown",
+          "text": "穿错的一只黑鞋一只棕鞋",
+          "source": "stated"
+        }
+      ],
+      "overrides": {},
+      "look": {
+        "id": "realistic-photo",
+        "label": {
+          "zh": "写实照片",
+          "en": "Realistic photo",
+          "ja": "写実写真"
+        },
+        "medium": "photo",
+        "style": "A real photograph, not a render: shot on a full-frame digital camera with an 85mm portrait lens at f/5.6, natural true-to-life colors and white balance. Natural skin texture with the pores and fine lines the person's age calls for, a no-makeup look, no retouching, no beauty filter. Real fabric with natural creases. Subtle film grain.",
+        "clean": "White seamless paper backdrop lit to pure white. A soft directional key light from the front-left with a weaker fill, so the face and clothes have gentle natural shadows and volume. Exactly one person, empty hands, no props, no text, no watermark.",
+        "neg": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, smooth plastic skin, waxy skin, doll face, beauty filter, overly symmetrical face, oversharpened, HDR, glossy, over-saturated, flat lighting, porcelain skin, big anime eyes"
+      },
+      "views": {
+        "front-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "张秀兰/default/front-full/v1",
+              "file": "default/front-full.v1.png",
+              "sha256": "8bfe36689e2d3fa390d034dad17a85325c3b85ad1bb4aac099063b282236fff0",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a worn fifty-three-year-old Chinese supermarket worker. Round tired face, deep crow's feet, sallow skin, greying hair in a loose low bun. Dark old coat over uniform vest and stained apron, dark trousers, mismatched shoes one black one brown. Portrait 2:3, white seamless backdrop, realistic photo.",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [],
+              "notes": [],
+              "layersHash": "d779ac08713574b2",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "face-front": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "张秀兰/default/face-front/v1",
+              "file": "default/face-front.v1.png",
+              "sha256": "60f73c6010cb9225d2a0788632f83c4fc9a50d5151605da1c20ee5672323a40a",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a worn fifty-three-year-old Chinese supermarket worker. Round tired face, deep crow's feet, sallow skin, greying hair in a loose low bun. Dark old coat over uniform vest and stained apron, dark trousers, mismatched shoes one black one brown. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: face-front)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "8bfe36689e2d3fa390d034dad17a85325c3b85ad1bb4aac099063b282236fff0"
+                }
+              ],
+              "notes": [],
+              "layersHash": "d779ac08713574b2",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "side-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "张秀兰/default/side-full/v1",
+              "file": "default/side-full.v1.png",
+              "sha256": "8ccea9ccceffa7e9f8ebd4ddadc5ec6b3e80f710e37169e386451f040175368d",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a worn fifty-three-year-old Chinese supermarket worker. Round tired face, deep crow's feet, sallow skin, greying hair in a loose low bun. Dark old coat over uniform vest and stained apron, dark trousers, mismatched shoes one black one brown. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: side-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "8bfe36689e2d3fa390d034dad17a85325c3b85ad1bb4aac099063b282236fff0"
+                }
+              ],
+              "notes": [],
+              "layersHash": "d779ac08713574b2",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "back-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "张秀兰/default/back-full/v1",
+              "file": "default/back-full.v1.png",
+              "sha256": "0e6996cdd9b476853c752491ebe17297b0d75cc350478f84002a006d7786b2e8",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a worn fifty-three-year-old Chinese supermarket worker. Round tired face, deep crow's feet, sallow skin, greying hair in a loose low bun. Dark old coat over uniform vest and stained apron, dark trousers, mismatched shoes one black one brown. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: back-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "8bfe36689e2d3fa390d034dad17a85325c3b85ad1bb4aac099063b282236fff0"
+                }
+              ],
+              "notes": [],
+              "layersHash": "d779ac08713574b2",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        }
+      },
+      "upgrades": []
+    }
+  }
+}

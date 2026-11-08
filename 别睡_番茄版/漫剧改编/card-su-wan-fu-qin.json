@@ -1,0 +1,41 @@
+{
+  "name": "苏晚父亲",
+  "aliases": ["爹"],
+  "importance": "minor",
+  "oneLiner": "五十八岁，脑梗后左边身子不利索，每天换两趟公交来医院，坐在走廊里跟女儿说话。",
+  "persona": {
+    "gender": "男",
+    "ageRange": "五十八岁",
+    "identity": "脑梗后遗症患者，退休在家（推断）",
+    "appearance": "左边身子僵、走路微跛（推断），行动要拄拐杖，左手不好使、发木。头发花白，脸有沟壑、皱纹深（推断），眼神钝而执拗。穿旧夹克、深色裤子、布鞋（推断），坐姿前倾、手搭在膝盖上。沉默，喊女儿小名时语气很软。",
+    "personality": ["沉默", "笨拙", "执拗"],
+    "temperament": "说话慢，一句话要停两下；打字一个字一个字按；每隔几分钟就看一次手机，但发什么最后都删掉。跟女儿说话时句子很短，像怕说多了会累着她。",
+    "motivation": "每天来看看女儿，跟她说说话。",
+    "arc": "静止。他是走廊里一直坐着的那个人，唯一的变化是每隔几分钟看一眼手机。",
+    "relationships": [
+      { "name": "苏晚", "relation": "女儿，昏迷在ICU里的人" },
+      { "name": "张秀兰", "relation": "妻子，一起守在医院的家人" }
+    ],
+    "evidence": [
+      "晚晚，爹来看你了。",
+      "晚晚，你的绿萝我拿回家浇水了，你工位太干了。",
+      "晚晚，你妈昨天晚上又没睡。"
+    ]
+  },
+  "image": {
+    "prompt": "A stooped fifty-eight-year-old Chinese man with the left side of his body stiff from a stroke, leaning on a wooden cane held in his right hand, left arm held slightly rigid at his side. Deeply lined weathered face, grey hair, heavy drooping eyelids, dull tired eyes, mouth set in a patient flat line; slightly asymmetrical features with the left side of the face marginally slack. Wearing a plain worn dark jacket over a rumpled checked shirt, dark trousers, cloth shoes. Old skin with visible pores, age spots on the cheeks and forehead, prominent nasolabial folds; individual grey hairs breaking the hairline. The jacket fabric is matte and softened with years of wear. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold grey-brown palette, contemporary urban China, hospital corridor light, quiet grief held still, readable silhouette from every angle.",
+    "promptLocal": "弯腰驼背的五十八岁中国男性，脑梗后左边身子僵硬，右手拄着一根木拐杖，左臂僵直地垂在身侧。脸皱纹深、头发花白，眼皮沉重下垂，眼神钝而疲惫，嘴抿成一条耐心的直线；五官略不对称，左侧面部微微松弛。穿朴素旧深色夹克，内搭皱格子衬衫，深色裤子，布鞋。老皮肤毛孔可见，脸颊与额头有老年斑，法令纹深；发际线有单根灰发破开。夹克面料哑光、洗得发软。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷灰棕调，当代中国都市，医院走廊的光，沉默克制的悲痛，任意角度剪影可辨。",
+    "negativePrompt": "plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop",
+    "tags": ["character sheet", "cold grey-brown palette", "contemporary urban china", "stroke survivor", "wooden cane", "hospital corridor light"],
+    "sheet": "Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears a plain worn dark jacket over a rumpled checked shirt, grey hair, with the face rendered in full detail: deeply lined weathered face, heavy drooping eyelids, dull tired eyes, mouth set in a patient flat line, slightly asymmetrical features with the left side marginally slack, age spots on cheeks and forehead. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Standing posture with a wooden cane in the right hand, the left arm held slightly rigid at the side, feet planted with a slight uneven stance. The figure is a stooped fifty-eight-year-old Chinese man in a plain worn dark jacket over a rumpled checked shirt, dark trousers, cloth shoes. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the hand gripping the wooden cane; the slightly slack left side of the face; the grey hair breaking the hairline; the worn cloth shoes; the rumpled checked shirt collar. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold grey-brown palette, contemporary urban China, hospital corridor light, quiet grief held still, readable silhouette from every angle."
+  },
+  "voice": {
+    "timbre": "老年男声，中低音，中气不足，字与字之间停顿明显",
+    "pitch": "低",
+    "pace": "很慢，一句话要停两下",
+    "accent": "标准普通话，带一点含混",
+    "emotion": "钝、软、努力平稳",
+    "prompt": "58-year-old male, low baritone with weak breath support, narrow dynamic range. Very slow pace with deliberate pauses between phrases, words slightly slurred from the stroke, gentle softened delivery. Standard Mandarin with a mild indistinct edge. Dull, soft, trying hard to stay steady.",
+    "referenceHint": "像一个说每句话都要歇一口气、却每天坚持跟女儿说话的父亲"
+  }
+}

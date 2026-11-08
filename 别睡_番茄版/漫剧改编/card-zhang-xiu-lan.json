@@ -1,0 +1,46 @@
+{
+  "name": "张秀兰",
+  "aliases": ["妈妈"],
+  "importance": "supporting",
+  "oneLiner": "五十三岁的超市理货员，女儿出事后再没换过那身衣服，隔着玻璃一声声喊她别睡。",
+  "persona": {
+    "gender": "女",
+    "ageRange": "五十三岁",
+    "identity": "超市理货员，苏晚的妈妈，一个人撑着脑梗丈夫的家",
+    "appearance": "头发花白、鬓角尤甚（推断），发丝常乱、顾不上梳。皮肤偏黄，眼角与嘴角有操劳的细纹，手上有理货磨出的粗茧（推断）。体型中等偏瘦（推断）。常穿超市工装或深色旧外套，围裙，跑进医院时衣服没换、鞋穿错一只黑一只棕。眼底是熬出来的青，喊到嗓子哑。",
+    "personality": ["坚韧", "不抱怨", "惦记得细", "话不多"],
+    "temperament": "平时只发一句到家了吗，从不追问；着急时声音又大又哑，拍着玻璃一声接一声喊；后来不再拍玻璃，坐在椅子上一条条发微信，语气平静得像在跟女儿说家常。",
+    "motivation": "等女儿回一句，叫醒她。",
+    "arc": "从等不到回音的母亲，到一条条发消息、隔着玻璃喊你别睡、终于看见女儿手指动了的守候者",
+    "relationships": [
+      { "name": "苏晚", "relation": "女儿，每天发消息等她回音" },
+      { "name": "苏晚父亲", "relation": "丈夫，脑梗后由她一人照顾" }
+    ],
+    "evidence": [
+      "到家了吗。",
+      "晚晚，你别睡啊——",
+      "妈在这儿——",
+      "妈不怪你。",
+      "妈永远不怪你。",
+      "你回一句就行。",
+      "就一个字也行。",
+      "妈等着。"
+    ]
+  },
+  "image": {
+    "prompt": "A worn fifty-three-year-old Chinese working woman, hair greying at the temples and slightly dishevelled, wearing a dark old coat over a supermarket uniform vest and a food-stained apron, mismatched shoes, one black and one brown. Round tired face with deep crow's feet and nasolabial folds, sallow uneven skin, heavy dark circles from sleepless nights, reddened eyes, thin dry lips pressed tight; slightly asymmetrical eyelids and brows; grey-streaked hair escaping from a loose low bun. Work-roughened hands with calloused palms. The fabric of the old coat is matte and softened with years of washing, the apron shows faint stains. Three-quarter view, waist-up, plain neutral background. Soft directional key light from the upper left with a cool fill, gentle falloff, ambient occlusion under the chin and in the folds; shallow depth of field with the face in sharpest focus. muted cold grey-blue palette with a warm skin counterpoint, contemporary urban China, hospital corridor light, exhausted maternal determination, readable silhouette from every angle.",
+    "promptLocal": "操劳的五十三岁中国劳动女性，鬓角花白、发丝微乱，穿深色旧外套，内搭超市工装背心和带油渍的围裙，脚上鞋子穿错，一只黑一只棕。圆脸疲惫，眼角与法令纹深，肤色蜡黄不匀，眼底是熬出来的青，眼睛发红，嘴唇薄而干抿紧；眼睑与眉毛略不对称；花白头发从松散的低发髻里逃出来。手上有理货磨出的茧。旧外套面料哑光、洗得发软，围裙上有淡淡的污渍。四分之三视角，半身，纯中性背景。左上方柔和主光配冷调补光，下巴与衣褶处有环境遮蔽；浅景深，面部最实。冷灰蓝调配暖肤色，当代中国都市，医院走廊的光，疲惫而执拗的母性，任意角度剪影可辨。",
+    "negativePrompt": "plastic or waxy skin, over-smoothed airbrushed complexion, poreless doll face, perfectly symmetrical face, dead flat eyes without specular highlight, helmet-like hair with no loose strands, flat untextured fabric, stiff mannequin posing, extra fingers, malformed hands, text, watermark, signature, busy or patterned background, harsh cast shadows on the backdrop",
+    "tags": ["character sheet", "cold grey-blue palette", "contemporary urban china", "working mother", "hospital corridor light", "exhausted skin"],
+    "sheet": "Single character model sheet on ONE 16:9 landscape canvas (widescreen, width to height exactly 16:9). The canvas is divided into three zones by thin hairline rules. LEFT ZONE — a vertical column occupying about 34% of the canvas width, separated from the rest by a thin vertical rule: one bust portrait, head and shoulders, front-facing, centred, framed like an ID photograph. BOTH SHOULDERS ARE FULLY VISIBLE with clear space on either side; do not crop the shoulders at the sides, and do not fade, vignette or round off the bottom edge — the portrait ends in a clean straight horizontal cut just below the chest. The figure wears a dark old coat over a supermarket uniform vest and a stained apron, hair greying at the temples and slightly dishevelled, with the face rendered in full detail: round tired face with deep crow's feet and nasolabial folds, sallow uneven skin, heavy dark circles, reddened eyes, thin dry lips, grey-streaked hair escaping from a loose low bun. LIGHTING IN THE LEFT ZONE ONLY: a soft directional key light from the upper left with gentle falloff, subtle ambient occlusion under the chin, in the eye sockets and where the collar meets the neck, giving the head real volume. RIGHT-TOP ZONE — the upper part of the remaining 66%, separated from the zone beneath it by a thin horizontal rule: three FULL-BODY views of the SAME character standing side by side — front view, left side profile, and back view — aligned on one shared ground line. PROPORTIONS ARE CRITICAL: all three figures share exactly the same height, head-to-body ratio and costume details; anatomy must be correct and natural — correct limb lengths, correct head size relative to the body, feet planted on the ground line; no stretching, squashing or foreshortening to make a figure fit the space. Each figure is drawn head to toe with clear margin above the head and below the feet. Neutral standing posture, arms at the sides, one black and one brown shoe clearly visible. The figure is a worn fifty-three-year-old Chinese working woman in a dark old coat over a supermarket uniform vest and a stained apron. The faces on all three full-body views are fully drawn and must match the bust portrait exactly — same features, same hairstyle, same expression. LIGHTING IN THE RIGHT ZONES: flat even orthographic lighting with no directional key and no cast shadows, so the figures stay measurable and cleanly cut out — only the left bust portrait is dramatically lit. RIGHT-BOTTOM ZONE — a detail strip beneath the three views, above which sits the thin horizontal rule: four to five small isolated close-up studies of the character's key details, evenly spaced in a row and clearly smaller than the full-body figures: the mismatched black and brown shoes; the calloused hand; the grey-streaked hair escaping the bun; the stained apron; the reddened tired eye. If these details do not fit comfortably in one row along the bottom, continue them in a narrow vertical column down the right-hand edge of the canvas — but NEVER shrink or distort the three full-body figures to make room; the detail studies give way, not the figures. Plain pure white background (#FFFFFF) throughout, suitable for clean cut-out. Balanced composition with generous, even white margins; nothing crowded against an edge. muted cold grey-blue palette with a warm skin counterpoint, contemporary urban China, hospital corridor light, exhausted maternal determination, readable silhouette from every angle."
+  },
+  "voice": {
+    "timbre": "中年女声，音色偏干、微微发哑，带着哭过的痕迹",
+    "pitch": "中音",
+    "pace": "平时平缓，喊话时又快又急、声音劈",
+    "accent": "标准普通话，着急时尾音上扬",
+    "emotion": "克制地急，压着哭腔",
+    "prompt": "53-year-old female, dry slightly hoarse mid-range voice, modest chest support, medium dynamic range. Calm even pace in everyday speech, urgent rapid bursts with a cracking edge when calling out, rising tail at the end of cries. Standard Mandarin, no regional accent. Restrained urgency, holding back tears.",
+    "referenceHint": "像一个每天发一条家常消息、却在病房外喊哑了嗓子的母亲"
+  }
+}

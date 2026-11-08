@@ -1,0 +1,62 @@
+{
+  "name": "张秀兰",
+  "lang": "zh",
+  "source": "别睡 · 番茄版",
+  "identity": {
+    "age": 53,
+    "gender": "female",
+    "en": "A worn fifty-three-year-old Chinese working woman, contemporary urban China, a supermarket worker",
+    "text": "53 岁中国劳动女性，超市理货员，苏晚的妈妈",
+    "source": "stated"
+  },
+  "face": {
+    "en": "Round tired face with deep crow's feet and nasolabial folds, sallow uneven skin, heavy dark circles from sleepless nights, reddened eyes, thin dry lips pressed tight, slightly asymmetrical eyelids and brows",
+    "text": "圆脸疲惫，眼角与法令纹深，肤色蜡黄不匀，眼底是熬出来的青，眼睛发红，嘴唇薄而干、抿紧",
+    "source": "stated"
+  },
+  "hair": {
+    "en": "Greying hair at the temples, slightly dishevelled, grey-streaked strands escaping from a loose low bun",
+    "text": "花白头发、鬓角尤甚，发丝微乱，花白发丝从松散的低发髻里逃出来",
+    "source": "inferred"
+  },
+  "outfit": {
+    "id": "default",
+    "label": "常态 · 医院守夜装",
+    "top": {
+      "en": "a dark old coat over a supermarket uniform vest and a food-stained apron, the coat fabric matte and softened with years of washing",
+      "text": "深色旧外套，内搭超市工装背心，带油渍的围裙，外套面料哑光洗得发软",
+      "source": "stated"
+    },
+    "bottom": {
+      "en": "dark worn trousers, mismatched shoes, one black and one brown",
+      "text": "深色旧裤，脚上鞋子穿错，一只黑一只棕",
+      "source": "stated"
+    },
+    "details": [
+      {
+        "slot": "hair",
+        "en": "the grey-streaked hair escaping from her loose low bun",
+        "text": "从松散低发髻里逃出的花白发丝",
+        "source": "inferred"
+      },
+      {
+        "slot": "neck",
+        "en": "the collar of the dark old coat with the stained apron straps crossing over it",
+        "text": "旧外套领口与压在领口的围裙带",
+        "source": "inferred"
+      },
+      {
+        "slot": "sleeve",
+        "en": "the matte softened sleeve of the old dark coat",
+        "text": "洗得发软的旧外套袖口",
+        "source": "inferred"
+      },
+      {
+        "slot": "feet",
+        "en": "the mismatched shoes, one black and one brown",
+        "text": "穿错的一只黑鞋一只棕鞋",
+        "source": "stated"
+      }
+    ]
+  }
+}

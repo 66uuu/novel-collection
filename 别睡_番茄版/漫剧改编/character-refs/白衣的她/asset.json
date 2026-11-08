@@ -1,0 +1,187 @@
+{
+  "name": "白衣的她",
+  "source": "别睡 · 番茄版",
+  "lang": "zh",
+  "layers": {
+    "identity": {
+      "age": 26,
+      "gender": "female",
+      "en": "A ghostly gaunt young Chinese woman in her twenties, drenched and dripping, contemporary urban China",
+      "text": "26 岁中国女性，苏晚在循环里的自己，浑身湿透、滴着水",
+      "source": "stated"
+    },
+    "face": {
+      "en": "Thin gaunt face with sunken dark eye sockets, pale skin with a cold bluish undertone, chapped split lips, a faint needle mark on one cheek, eyes open but glassy and empty with a wet glint, slightly asymmetrical eyelids and brows; face partly hidden behind wet hair and shadow in its default state, head hanging low",
+      "text": "脸瘦、眼窝深陷发青，皮肤苍白泛青像在水里泡过，嘴唇干裂起皮，脸颊一枚细小针眼，眼睛睁着却空洞湿润；常态垂着头，脸被湿发与阴影盖住",
+      "source": "stated"
+    },
+    "hair": {
+      "en": "Long black wet hair plastered in thick strands against her cheeks and neck, dripping water from the tips",
+      "text": "黑色长发湿透，一缕缕贴在脸颊与脖颈，发梢往下滴水",
+      "source": "stated"
+    }
+  },
+  "outfits": {
+    "default": {
+      "label": "常态 · 湿透青白衬衫",
+      "top": {
+        "en": "an old washed-out blue-white shirt with a frayed collar and a yellowed patch on one sleeve, the hem sodden and darkened where it touches the floor",
+        "text": "很旧的青白衬衫，领口磨毛，一只袖口有块洗不掉的黄，下摆湿透洇深贴地",
+        "source": "stated"
+      },
+      "bottom": {
+        "en": "the old shirt hanging past her knees over bare legs, a small pool of water gathering at her feet",
+        "text": "衬衫下摆垂到膝下，赤脚，脚下积着一小滩水",
+        "source": "inferred"
+      },
+      "details": [
+        {
+          "slot": "hair",
+          "en": "a single wet hair tip with a hanging drop of water",
+          "text": "发梢悬着一滴将落的水",
+          "source": "stated"
+        },
+        {
+          "slot": "neck",
+          "en": "the frayed collar of the old washed-out blue-white shirt",
+          "text": "磨毛的青白衬衫领口",
+          "source": "stated"
+        },
+        {
+          "slot": "sleeve",
+          "en": "the yellowed patch on one sleeve of the old washed-out blue-white shirt",
+          "text": "袖口那块洗不掉的黄渍",
+          "source": "stated"
+        },
+        {
+          "slot": "feet",
+          "en": "bare feet standing in a small pool of water",
+          "text": "赤脚站在积水中",
+          "source": "inferred"
+        }
+      ],
+      "overrides": {},
+      "look": {
+        "id": "realistic-photo",
+        "label": {
+          "zh": "写实照片",
+          "en": "Realistic photo",
+          "ja": "写実写真"
+        },
+        "medium": "photo",
+        "style": "A real photograph, not a render: shot on a full-frame digital camera with an 85mm portrait lens at f/5.6, natural true-to-life colors and white balance. Natural skin texture with the pores and fine lines the person's age calls for, a no-makeup look, no retouching, no beauty filter. Real fabric with natural creases. Subtle film grain.",
+        "clean": "White seamless paper backdrop lit to pure white. A soft directional key light from the front-left with a weaker fill, so the face and clothes have gentle natural shadows and volume. Exactly one person, empty hands, no props, no text, no watermark.",
+        "neg": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, smooth plastic skin, waxy skin, doll face, beauty filter, overly symmetrical face, oversharpened, HDR, glossy, over-saturated, flat lighting, porcelain skin, big anime eyes"
+      },
+      "views": {
+        "front-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "白衣的她/default/front-full/v1",
+              "file": "default/front-full.v1.png",
+              "sha256": "c253a113142391c8d65b1751674f25824372ee1d7fff164ac477edef6938661d",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a ghostly gaunt young Chinese woman in her twenties, drenched and dripping. Pale bluish skin, sunken dark eye sockets, glassy empty wet eyes, head hanging low behind wet hair. Old washed-out blue-white shirt with yellowed patch, shirt past knees, bare feet in a pool of water. Portrait 2:3, white seamless backdrop, realistic photo.",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [],
+              "notes": [],
+              "layersHash": "cb9df571e754f99b",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "face-front": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "白衣的她/default/face-front/v1",
+              "file": "default/face-front.v1.png",
+              "sha256": "fe13fef972afce65eed1877c55be406b6dfa0818499826a8fb1b1075d85bfa17",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a ghostly gaunt young Chinese woman in her twenties, drenched and dripping. Pale bluish skin, sunken dark eye sockets, glassy empty wet eyes, head hanging low behind wet hair. Old washed-out blue-white shirt with yellowed patch, shirt past knees, bare feet in a pool of water. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: face-front)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "c253a113142391c8d65b1751674f25824372ee1d7fff164ac477edef6938661d"
+                }
+              ],
+              "notes": [],
+              "layersHash": "cb9df571e754f99b",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "side-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "白衣的她/default/side-full/v1",
+              "file": "default/side-full.v1.png",
+              "sha256": "c1a2931be0622f8609b287c0eaa08308ae557c5d2af2a6ed1a60cf72bf02c42b",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a ghostly gaunt young Chinese woman in her twenties, drenched and dripping. Pale bluish skin, sunken dark eye sockets, glassy empty wet eyes, head hanging low behind wet hair. Old washed-out blue-white shirt with yellowed patch, shirt past knees, bare feet in a pool of water. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: side-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "c253a113142391c8d65b1751674f25824372ee1d7fff164ac477edef6938661d"
+                }
+              ],
+              "notes": [],
+              "layersHash": "cb9df571e754f99b",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "back-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "白衣的她/default/back-full/v1",
+              "file": "default/back-full.v1.png",
+              "sha256": "036e08110e45bf7b858fad013eea0280a05f65ffe53da1537e2300a579c66a78",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a ghostly gaunt young Chinese woman in her twenties, drenched and dripping. Pale bluish skin, sunken dark eye sockets, glassy empty wet eyes, head hanging low behind wet hair. Old washed-out blue-white shirt with yellowed patch, shirt past knees, bare feet in a pool of water. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: back-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "c253a113142391c8d65b1751674f25824372ee1d7fff164ac477edef6938661d"
+                }
+              ],
+              "notes": [],
+              "layersHash": "cb9df571e754f99b",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        }
+      },
+      "upgrades": []
+    }
+  }
+}

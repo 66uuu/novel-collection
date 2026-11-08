@@ -1,0 +1,62 @@
+{
+  "name": "白衣的她",
+  "lang": "zh",
+  "source": "别睡 · 番茄版",
+  "identity": {
+    "age": 26,
+    "gender": "female",
+    "en": "A ghostly gaunt young Chinese woman in her twenties, drenched and dripping, contemporary urban China",
+    "text": "26 岁中国女性，苏晚在循环里的自己，浑身湿透、滴着水",
+    "source": "stated"
+  },
+  "face": {
+    "en": "Thin gaunt face with sunken dark eye sockets, pale skin with a cold bluish undertone, chapped split lips, a faint needle mark on one cheek, eyes open but glassy and empty with a wet glint, slightly asymmetrical eyelids and brows; face partly hidden behind wet hair and shadow in its default state, head hanging low",
+    "text": "脸瘦、眼窝深陷发青，皮肤苍白泛青像在水里泡过，嘴唇干裂起皮，脸颊一枚细小针眼，眼睛睁着却空洞湿润；常态垂着头，脸被湿发与阴影盖住",
+    "source": "stated"
+  },
+  "hair": {
+    "en": "Long black wet hair plastered in thick strands against her cheeks and neck, dripping water from the tips",
+    "text": "黑色长发湿透，一缕缕贴在脸颊与脖颈，发梢往下滴水",
+    "source": "stated"
+  },
+  "outfit": {
+    "id": "default",
+    "label": "常态 · 湿透青白衬衫",
+    "top": {
+      "en": "an old washed-out blue-white shirt with a frayed collar and a yellowed patch on one sleeve, the hem sodden and darkened where it touches the floor",
+      "text": "很旧的青白衬衫，领口磨毛，一只袖口有块洗不掉的黄，下摆湿透洇深贴地",
+      "source": "stated"
+    },
+    "bottom": {
+      "en": "the old shirt hanging past her knees over bare legs, a small pool of water gathering at her feet",
+      "text": "衬衫下摆垂到膝下，赤脚，脚下积着一小滩水",
+      "source": "inferred"
+    },
+    "details": [
+      {
+        "slot": "hair",
+        "en": "a single wet hair tip with a hanging drop of water",
+        "text": "发梢悬着一滴将落的水",
+        "source": "stated"
+      },
+      {
+        "slot": "neck",
+        "en": "the frayed collar of the old washed-out blue-white shirt",
+        "text": "磨毛的青白衬衫领口",
+        "source": "stated"
+      },
+      {
+        "slot": "sleeve",
+        "en": "the yellowed patch on one sleeve of the old washed-out blue-white shirt",
+        "text": "袖口那块洗不掉的黄渍",
+        "source": "stated"
+      },
+      {
+        "slot": "feet",
+        "en": "bare feet standing in a small pool of water",
+        "text": "赤脚站在积水中",
+        "source": "inferred"
+      }
+    ]
+  }
+}

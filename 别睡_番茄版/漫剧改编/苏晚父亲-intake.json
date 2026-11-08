@@ -1,0 +1,62 @@
+{
+  "name": "苏晚父亲",
+  "lang": "zh",
+  "source": "别睡 · 番茄版",
+  "identity": {
+    "age": 58,
+    "gender": "male",
+    "en": "A stooped fifty-eight-year-old Chinese man, contemporary urban China, a stroke survivor retired at home",
+    "text": "58 岁中国男性，脑梗后遗症，退休在家，苏晚的父亲",
+    "source": "stated"
+  },
+  "face": {
+    "en": "Deeply lined weathered face, grey hair, heavy drooping eyelids, dull tired eyes, mouth set in a patient flat line, slightly asymmetrical features with the left side of the face marginally slack, age spots on cheeks and forehead",
+    "text": "脸皱纹深、头发花白，眼皮沉重下垂，眼神钝而疲惫，嘴抿成一条耐心的直线，五官略不对称、左侧面部微微松弛，脸颊与额头有老年斑",
+    "source": "stated"
+  },
+  "hair": {
+    "en": "Grey hair with individual grey hairs breaking the hairline",
+    "text": "花白头发，发际线有单根灰发破开",
+    "source": "inferred"
+  },
+  "outfit": {
+    "id": "default",
+    "label": "常态 · 医院探视装",
+    "top": {
+      "en": "a plain worn dark jacket over a rumpled checked shirt, the jacket fabric matte and softened with years of wear",
+      "text": "朴素旧深色夹克，内搭皱格子衬衫，夹克面料哑光洗得发软",
+      "source": "stated"
+    },
+    "bottom": {
+      "en": "dark trousers and plain cloth shoes",
+      "text": "深色裤子、布鞋",
+      "source": "inferred"
+    },
+    "details": [
+      {
+        "slot": "hair",
+        "en": "the grey hair breaking the hairline",
+        "text": "发际线破开的灰发",
+        "source": "inferred"
+      },
+      {
+        "slot": "neck",
+        "en": "the rumpled checked shirt collar under the dark jacket",
+        "text": "夹克领口下皱着的格子衬衫领",
+        "source": "inferred"
+      },
+      {
+        "slot": "sleeve",
+        "en": "the matte softened sleeve of the worn dark jacket",
+        "text": "洗得发软的旧夹克袖口",
+        "source": "inferred"
+      },
+      {
+        "slot": "feet",
+        "en": "the plain cloth shoes",
+        "text": "素色布鞋",
+        "source": "inferred"
+      }
+    ]
+  }
+}

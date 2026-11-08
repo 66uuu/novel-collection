@@ -1,0 +1,187 @@
+{
+  "name": "苏晚父亲",
+  "source": "别睡 · 番茄版",
+  "lang": "zh",
+  "layers": {
+    "identity": {
+      "age": 58,
+      "gender": "male",
+      "en": "A stooped fifty-eight-year-old Chinese man, contemporary urban China, a stroke survivor retired at home",
+      "text": "58 岁中国男性，脑梗后遗症，退休在家，苏晚的父亲",
+      "source": "stated"
+    },
+    "face": {
+      "en": "Deeply lined weathered face, grey hair, heavy drooping eyelids, dull tired eyes, mouth set in a patient flat line, slightly asymmetrical features with the left side of the face marginally slack, age spots on cheeks and forehead",
+      "text": "脸皱纹深、头发花白，眼皮沉重下垂，眼神钝而疲惫，嘴抿成一条耐心的直线，五官略不对称、左侧面部微微松弛，脸颊与额头有老年斑",
+      "source": "stated"
+    },
+    "hair": {
+      "en": "Grey hair with individual grey hairs breaking the hairline",
+      "text": "花白头发，发际线有单根灰发破开",
+      "source": "inferred"
+    }
+  },
+  "outfits": {
+    "default": {
+      "label": "常态 · 医院探视装",
+      "top": {
+        "en": "a plain worn dark jacket over a rumpled checked shirt, the jacket fabric matte and softened with years of wear",
+        "text": "朴素旧深色夹克，内搭皱格子衬衫，夹克面料哑光洗得发软",
+        "source": "stated"
+      },
+      "bottom": {
+        "en": "dark trousers and plain cloth shoes",
+        "text": "深色裤子、布鞋",
+        "source": "inferred"
+      },
+      "details": [
+        {
+          "slot": "hair",
+          "en": "the grey hair breaking the hairline",
+          "text": "发际线破开的灰发",
+          "source": "inferred"
+        },
+        {
+          "slot": "neck",
+          "en": "the rumpled checked shirt collar under the dark jacket",
+          "text": "夹克领口下皱着的格子衬衫领",
+          "source": "inferred"
+        },
+        {
+          "slot": "sleeve",
+          "en": "the matte softened sleeve of the worn dark jacket",
+          "text": "洗得发软的旧夹克袖口",
+          "source": "inferred"
+        },
+        {
+          "slot": "feet",
+          "en": "the plain cloth shoes",
+          "text": "素色布鞋",
+          "source": "inferred"
+        }
+      ],
+      "overrides": {},
+      "look": {
+        "id": "realistic-photo",
+        "label": {
+          "zh": "写实照片",
+          "en": "Realistic photo",
+          "ja": "写実写真"
+        },
+        "medium": "photo",
+        "style": "A real photograph, not a render: shot on a full-frame digital camera with an 85mm portrait lens at f/5.6, natural true-to-life colors and white balance. Natural skin texture with the pores and fine lines the person's age calls for, a no-makeup look, no retouching, no beauty filter. Real fabric with natural creases. Subtle film grain.",
+        "clean": "White seamless paper backdrop lit to pure white. A soft directional key light from the front-left with a weaker fill, so the face and clothes have gentle natural shadows and volume. Exactly one person, empty hands, no props, no text, no watermark.",
+        "neg": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, smooth plastic skin, waxy skin, doll face, beauty filter, overly symmetrical face, oversharpened, HDR, glossy, over-saturated, flat lighting, porcelain skin, big anime eyes"
+      },
+      "views": {
+        "front-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚父亲/default/front-full/v1",
+              "file": "default/front-full.v1.png",
+              "sha256": "204f06b1658d4018d589970ddbd985065dfc784c055ec7d3e7d39832d1ac04e4",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a stooped fifty-eight-year-old Chinese man, stroke survivor. Deeply lined weathered face, grey hair, heavy drooping eyelids, age spots. Worn dark jacket over rumpled checked shirt, dark trousers, plain cloth shoes. Portrait 2:3, white seamless backdrop, realistic photo.",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [],
+              "notes": [],
+              "layersHash": "21d607aafc4ffea4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "face-front": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚父亲/default/face-front/v1",
+              "file": "default/face-front.v1.png",
+              "sha256": "c9eef0bde9894a97c539a1df111ce242d50991e8e0c1c339c4bdb741d92845e6",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a stooped fifty-eight-year-old Chinese man, stroke survivor. Deeply lined weathered face, grey hair, heavy drooping eyelids, age spots. Worn dark jacket over rumpled checked shirt, dark trousers, plain cloth shoes. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: face-front)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "204f06b1658d4018d589970ddbd985065dfc784c055ec7d3e7d39832d1ac04e4"
+                }
+              ],
+              "notes": [],
+              "layersHash": "21d607aafc4ffea4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "side-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚父亲/default/side-full/v1",
+              "file": "default/side-full.v1.png",
+              "sha256": "17b692d5ada8ecf318762aeae20650f5bffee124a65a8dcca6efb0826513ec2e",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a stooped fifty-eight-year-old Chinese man, stroke survivor. Deeply lined weathered face, grey hair, heavy drooping eyelids, age spots. Worn dark jacket over rumpled checked shirt, dark trousers, plain cloth shoes. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: side-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "204f06b1658d4018d589970ddbd985065dfc784c055ec7d3e7d39832d1ac04e4"
+                }
+              ],
+              "notes": [],
+              "layersHash": "21d607aafc4ffea4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "back-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "苏晚父亲/default/back-full/v1",
+              "file": "default/back-full.v1.png",
+              "sha256": "3ff52d90c54c94885b331ce37d68f788e2539044deebea49f04bb38750e05ff8",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a stooped fifty-eight-year-old Chinese man, stroke survivor. Deeply lined weathered face, grey hair, heavy drooping eyelids, age spots. Worn dark jacket over rumpled checked shirt, dark trousers, plain cloth shoes. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: back-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 1,
+                  "sha256": "204f06b1658d4018d589970ddbd985065dfc784c055ec7d3e7d39832d1ac04e4"
+                }
+              ],
+              "notes": [],
+              "layersHash": "21d607aafc4ffea4",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        }
+      },
+      "upgrades": []
+    }
+  }
+}

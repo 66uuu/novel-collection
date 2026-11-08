@@ -1,0 +1,206 @@
+{
+  "name": "ICU护士",
+  "source": "别睡 · 番茄版",
+  "lang": "zh",
+  "layers": {
+    "identity": {
+      "age": 30,
+      "gender": "female",
+      "en": "A composed Chinese hospital nurse in her early thirties, contemporary Chinese hospital",
+      "text": "30 岁上下的中国医院护士，重症监护室",
+      "source": "inferred"
+    },
+    "face": {
+      "en": "Neat oval face, calm steady eyes with faint dark circles from night shifts, thin neutral mouth, slightly asymmetrical eyelids and brows, light professional makeup or none",
+      "text": "脸型端正，眼神平静沉稳，眼底有夜班的淡青，嘴唇薄而中性，眼睑与眉毛略不对称，妆容清淡或素颜",
+      "source": "inferred"
+    },
+    "hair": {
+      "en": "Hair pulled back tightly in a low bun, strands tucked in",
+      "text": "头发利落地盘成低发髻，发丝收拢",
+      "source": "inferred"
+    }
+  },
+  "outfits": {
+    "default": {
+      "label": "常态 · ICU工作装",
+      "top": {
+        "en": "a clean white coat over pale blue-grey scrubs with an ID badge on the chest, surgical mask hanging at the chin, the coat crisp but slightly creased at the elbows from work",
+        "text": "干净白大褂，内搭淡蓝灰洗手服，胸前挂工牌，口罩挂在下巴，白大褂挺括但肘部有工作折痕",
+        "source": "stated"
+      },
+      "bottom": {
+        "en": "pale blue-grey scrub trousers and flat white ward shoes",
+        "text": "淡蓝灰洗手裤，白色病房平底鞋",
+        "source": "inferred"
+      },
+      "details": [
+        {
+          "slot": "hair",
+          "en": "the low bun with strands tucked in",
+          "text": "收拢的低发髻",
+          "source": "inferred"
+        },
+        {
+          "slot": "neck",
+          "en": "the clean collar of the white coat with the ID badge hanging below it",
+          "text": "白大褂干净的领口与胸前的工牌",
+          "source": "inferred"
+        },
+        {
+          "slot": "sleeve",
+          "en": "the slightly creased elbow of the white coat",
+          "text": "白大褂肘部的工作折痕",
+          "source": "inferred"
+        },
+        {
+          "slot": "feet",
+          "en": "the flat white ward shoes",
+          "text": "白色病房平底鞋",
+          "source": "inferred"
+        }
+      ],
+      "overrides": {},
+      "look": {
+        "id": "realistic-photo",
+        "label": {
+          "zh": "写实照片",
+          "en": "Realistic photo",
+          "ja": "写実写真"
+        },
+        "medium": "photo",
+        "style": "A real photograph, not a render: shot on a full-frame digital camera with an 85mm portrait lens at f/5.6, natural true-to-life colors and white balance. Natural skin texture with the pores and fine lines the person's age calls for, a no-makeup look, no retouching, no beauty filter. Real fabric with natural creases. Subtle film grain.",
+        "clean": "White seamless paper backdrop lit to pure white. A soft directional key light from the front-left with a weaker fill, so the face and clothes have gentle natural shadows and volume. Exactly one person, empty hands, no props, no text, no watermark.",
+        "neg": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, smooth plastic skin, waxy skin, doll face, beauty filter, overly symmetrical face, oversharpened, HDR, glossy, over-saturated, flat lighting, porcelain skin, big anime eyes"
+      },
+      "views": {
+        "front-full": {
+          "current": 2,
+          "versions": [
+            {
+              "v": 1,
+              "id": "ICU护士/default/front-full/v1",
+              "file": "default/front-full.v1.png",
+              "sha256": "358e202d2b892f159a19869060d2ca92dd5e909b59ee4c6a12f070f1322d8be8",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a composed Chinese ICU nurse in her early thirties. Neat oval face, calm steady eyes, low bun. Clean white coat over pale blue-grey scrubs, ID badge, surgical mask at chin, flat white ward shoes. Portrait 2:3, white seamless backdrop, realistic photo.",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [],
+              "notes": [
+                "v1 背景带病房环境，已由 v2 白底版替代"
+              ],
+              "layersHash": "1e37b123e6a7edc6",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            },
+            {
+              "v": 2,
+              "id": "ICU护士/default/front-full/v2",
+              "file": "default/front-full.v2.png",
+              "sha256": "ec09bcc374c69127f7ae44ab19d903114c2640434d1e8aa33c804d5086e3fba5",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a composed Chinese ICU nurse in her early thirties. Neat oval face, calm steady eyes, low bun. Clean white coat over pale blue-grey scrubs, ID badge, surgical mask at chin, flat white ward shoes. Portrait 2:3, white seamless backdrop, realistic photo.",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [],
+              "notes": [],
+              "layersHash": "1e37b123e6a7edc6",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "face-front": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "ICU护士/default/face-front/v1",
+              "file": "default/face-front.v1.png",
+              "sha256": "506f7267f2e6963220af1e35a71ebd7f257ad599bf1988a3022d03bef0dcf614",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a composed Chinese ICU nurse in her early thirties. Neat oval face, calm steady eyes, low bun. Clean white coat over pale blue-grey scrubs, ID badge, surgical mask at chin, flat white ward shoes. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: face-front)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 2,
+                  "sha256": "ec09bcc374c69127f7ae44ab19d903114c2640434d1e8aa33c804d5086e3fba5"
+                }
+              ],
+              "notes": [],
+              "layersHash": "1e37b123e6a7edc6",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "side-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "ICU护士/default/side-full/v1",
+              "file": "default/side-full.v1.png",
+              "sha256": "96ab2de68d94b2bf24ec8d3ea1d1c653b0fdbdaf4f18595a58f9315c1fea5c13",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a composed Chinese ICU nurse in her early thirties. Neat oval face, calm steady eyes, low bun. Clean white coat over pale blue-grey scrubs, ID badge, surgical mask at chin, flat white ward shoes. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: side-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 2,
+                  "sha256": "ec09bcc374c69127f7ae44ab19d903114c2640434d1e8aa33c804d5086e3fba5"
+                }
+              ],
+              "notes": [],
+              "layersHash": "1e37b123e6a7edc6",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        },
+        "back-full": {
+          "current": 1,
+          "versions": [
+            {
+              "v": 1,
+              "id": "ICU护士/default/back-full/v1",
+              "file": "default/back-full.v1.png",
+              "sha256": "9a202bbeb894536801eb1065e5898c37aac66fa47f0c7481b7bad5a74eb075fd",
+              "model": "doubao-image",
+              "seed": null,
+              "prompt": "Full-body photograph of a composed Chinese ICU nurse in her early thirties. Neat oval face, calm steady eyes, low bun. Clean white coat over pale blue-grey scrubs, ID badge, surgical mask at chin, flat white ward shoes. Portrait 2:3, white seamless backdrop, realistic photo. (derived view: back-full)",
+              "negative": "CGI, 3D render, digital painting, illustration, anime, airbrushed skin, plastic skin, beauty filter, oversharpened, HDR, glossy, text, watermark",
+              "refs": [
+                {
+                  "view": "front-full",
+                  "v": 2,
+                  "sha256": "ec09bcc374c69127f7ae44ab19d903114c2640434d1e8aa33c804d5086e3fba5"
+                }
+              ],
+              "notes": [],
+              "layersHash": "1e37b123e6a7edc6",
+              "lookHash": "a99adeae961084ca",
+              "gates": [],
+              "createdAt": "2026-10-05T09:56:10.017Z",
+              "confirmed": "auto"
+            }
+          ]
+        }
+      },
+      "upgrades": []
+    }
+  }
+}

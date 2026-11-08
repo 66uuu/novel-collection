@@ -1,0 +1,187 @@
+{
+  "source": "别睡",
+  "lang": "zh",
+  "summary": "",
+  "characters": [
+    {
+      "id": "C01",
+      "name": "苏晚",
+      "importance": "protagonist",
+      "aliases": [],
+      "oneLiner": "",
+      "persona": {
+        "gender": "",
+        "ageRange": "",
+        "identity": "",
+        "appearance": "",
+        "personality": [],
+        "temperament": "",
+        "motivation": "",
+        "arc": "从恐惧、绝望、崩溃，到敢于看清自己并承认不肯走的是自己，最后拼尽力气回出那条消息",
+        "relationships": [],
+        "evidence": []
+      },
+      "image": {
+        "prompt": "",
+        "promptLocal": "",
+        "negativePrompt": "",
+        "tags": [],
+        "sheet": ""
+      },
+      "voice": {
+        "timbre": "",
+        "pitch": "",
+        "pace": "",
+        "accent": "",
+        "emotion": "",
+        "prompt": "",
+        "referenceHint": ""
+      },
+      "seedNote": "角色码 C01　大纲定位：女主，26岁电商代运营，被困循环的人　大纲分档：lead　合并自：原著苏晚"
+    },
+    {
+      "id": "C02",
+      "name": "白衣的她",
+      "importance": "protagonist",
+      "aliases": [],
+      "oneLiner": "",
+      "persona": {
+        "gender": "",
+        "ageRange": "",
+        "identity": "",
+        "appearance": "",
+        "personality": [],
+        "temperament": "",
+        "motivation": "",
+        "arc": "从令人恐惧的鬼影、滴水倒数的机关，到被认出的、一直在等自己敢看她的那部分苏晚",
+        "relationships": [],
+        "evidence": []
+      },
+      "image": {
+        "prompt": "",
+        "promptLocal": "",
+        "negativePrompt": "",
+        "tags": [],
+        "sheet": ""
+      },
+      "voice": {
+        "timbre": "",
+        "pitch": "",
+        "pace": "",
+        "accent": "",
+        "emotion": "",
+        "prompt": "",
+        "referenceHint": ""
+      },
+      "seedNote": "角色码 C02　大纲定位：床头的白衣女人，苏晚在循环里的自己　大纲分档：lead　合并自：原著白衣女子、合并：镜中影子与墙上热源拟人化的同一实体"
+    },
+    {
+      "id": "C03",
+      "name": "张秀兰",
+      "importance": "supporting",
+      "aliases": [],
+      "oneLiner": "",
+      "persona": {
+        "gender": "",
+        "ageRange": "",
+        "identity": "",
+        "appearance": "",
+        "personality": [],
+        "temperament": "",
+        "motivation": "",
+        "arc": "从等不到回音的母亲，到一条条发消息、隔着玻璃喊你别睡、终于看见女儿手指动了的守候者",
+        "relationships": [],
+        "evidence": []
+      },
+      "image": {
+        "prompt": "",
+        "promptLocal": "",
+        "negativePrompt": "",
+        "tags": [],
+        "sheet": ""
+      },
+      "voice": {
+        "timbre": "",
+        "pitch": "",
+        "pace": "",
+        "accent": "",
+        "emotion": "",
+        "prompt": "",
+        "referenceHint": ""
+      },
+      "seedNote": "角色码 C03　大纲定位：苏晚的妈妈，ICU玻璃外喊话的人　大纲分档：support　合并自：原著苏晚妈妈、合并：苏建国视角的喊话功能"
+    },
+    {
+      "id": "C04",
+      "name": "苏晚父亲",
+      "importance": "minor",
+      "aliases": [],
+      "oneLiner": "",
+      "persona": {
+        "gender": "",
+        "ageRange": "",
+        "identity": "",
+        "appearance": "",
+        "personality": [],
+        "temperament": "",
+        "motivation": "",
+        "arc": "",
+        "relationships": [],
+        "evidence": []
+      },
+      "image": {
+        "prompt": "",
+        "promptLocal": "",
+        "negativePrompt": "",
+        "tags": [],
+        "sheet": ""
+      },
+      "voice": {
+        "timbre": "",
+        "pitch": "",
+        "pace": "",
+        "accent": "",
+        "emotion": "",
+        "prompt": "",
+        "referenceHint": ""
+      },
+      "seedNote": "角色码 C04　大纲定位：脑梗后行动不便的父亲，ICU玻璃外的沉默背影　大纲分档：functional　合并自：原著苏建国（压缩为背景角色）"
+    },
+    {
+      "id": "C05",
+      "name": "ICU护士",
+      "importance": "minor",
+      "aliases": [],
+      "oneLiner": "",
+      "persona": {
+        "gender": "",
+        "ageRange": "",
+        "identity": "",
+        "appearance": "",
+        "personality": [],
+        "temperament": "",
+        "motivation": "",
+        "arc": "",
+        "relationships": [],
+        "evidence": []
+      },
+      "image": {
+        "prompt": "",
+        "promptLocal": "",
+        "negativePrompt": "",
+        "tags": [],
+        "sheet": ""
+      },
+      "voice": {
+        "timbre": "",
+        "pitch": "",
+        "pace": "",
+        "accent": "",
+        "emotion": "",
+        "prompt": "",
+        "referenceHint": ""
+      },
+      "seedNote": "角色码 C05　大纲定位：报心率、报手指动了的护士　大纲分档：functional　合并自：原著护士、合并：急诊医生的报讯功能"
+    }
+  ]
+}

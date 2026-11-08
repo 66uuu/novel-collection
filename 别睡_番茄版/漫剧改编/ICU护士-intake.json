@@ -1,0 +1,62 @@
+{
+  "name": "ICU护士",
+  "lang": "zh",
+  "source": "别睡 · 番茄版",
+  "identity": {
+    "age": 30,
+    "gender": "female",
+    "en": "A composed Chinese hospital nurse in her early thirties, contemporary Chinese hospital",
+    "text": "30 岁上下的中国医院护士，重症监护室",
+    "source": "inferred"
+  },
+  "face": {
+    "en": "Neat oval face, calm steady eyes with faint dark circles from night shifts, thin neutral mouth, slightly asymmetrical eyelids and brows, light professional makeup or none",
+    "text": "脸型端正，眼神平静沉稳，眼底有夜班的淡青，嘴唇薄而中性，眼睑与眉毛略不对称，妆容清淡或素颜",
+    "source": "inferred"
+  },
+  "hair": {
+    "en": "Hair pulled back tightly in a low bun, strands tucked in",
+    "text": "头发利落地盘成低发髻，发丝收拢",
+    "source": "inferred"
+  },
+  "outfit": {
+    "id": "default",
+    "label": "常态 · ICU工作装",
+    "top": {
+      "en": "a clean white coat over pale blue-grey scrubs with an ID badge on the chest, surgical mask hanging at the chin, the coat crisp but slightly creased at the elbows from work",
+      "text": "干净白大褂，内搭淡蓝灰洗手服，胸前挂工牌，口罩挂在下巴，白大褂挺括但肘部有工作折痕",
+      "source": "stated"
+    },
+    "bottom": {
+      "en": "pale blue-grey scrub trousers and flat white ward shoes",
+      "text": "淡蓝灰洗手裤，白色病房平底鞋",
+      "source": "inferred"
+    },
+    "details": [
+      {
+        "slot": "hair",
+        "en": "the low bun with strands tucked in",
+        "text": "收拢的低发髻",
+        "source": "inferred"
+      },
+      {
+        "slot": "neck",
+        "en": "the clean collar of the white coat with the ID badge hanging below it",
+        "text": "白大褂干净的领口与胸前的工牌",
+        "source": "inferred"
+      },
+      {
+        "slot": "sleeve",
+        "en": "the slightly creased elbow of the white coat",
+        "text": "白大褂肘部的工作折痕",
+        "source": "inferred"
+      },
+      {
+        "slot": "feet",
+        "en": "the flat white ward shoes",
+        "text": "白色病房平底鞋",
+        "source": "inferred"
+      }
+    ]
+  }
+}
